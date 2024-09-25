@@ -22,10 +22,10 @@ router.get("/", async (req, res) => {
 
 // CREATE A NEW Destination
 router.post("/", async (req, res) => {
-  const { name } = req.body;
+  const { name, longitude, latitude } = req.body;
 
-  if (!name) {
-    return res.status(400).json({ message: "Name field is required" });
+  if (!name || longitude === undefined || latitude === undefined) {
+    return res.status(400).json({ message: "Name, longitude, and latitude fields are required" });
   }
 
   try {
@@ -34,7 +34,7 @@ router.post("/", async (req, res) => {
       return res.status(400).json({ message: "Destination already exists" });
     }
 
-    const newDestination = new Destination({ name });
+    const newDestination = new Destination({ name, longitude, latitude });
     await newDestination.save();
 
     res.status(201).json(newDestination);
