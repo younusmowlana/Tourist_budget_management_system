@@ -5,16 +5,24 @@ const router = express.Router();
 // GET ALL or SEARCH Destinations
 router.get("/", async (req, res) => {
   try {
-    const { name } = req.query;
+    const { name, limit, offset } = req.query;
 
     let query = {};
 
     if (name) {
-      query.name = { $regex: name, $options: "i" };
+      query.name = { $regex: name, $options: "i" }; 
     }
 
-    const destinations = await Destination.find(query);
-    res.status(200).json(destinations);
+    const destinations = await Destination.find(query)
+      .limit(parseInt(limit))
+      .skip(parseInt(offset));
+
+    const totalDestinations = await Destination.countDocuments(query);
+
+    res.status(200).json({
+      data: destinations,
+      total: totalDestinations,
+    });
   } catch (err) {
     res.status(500).json({ message: "Server error", error: err });
   }
@@ -25,7 +33,9 @@ router.post("/", async (req, res) => {
   const { name, longitude, latitude } = req.body;
 
   if (!name || longitude === undefined || latitude === undefined) {
-    return res.status(400).json({ message: "Name, longitude, and latitude fields are required" });
+    return res
+      .status(400)
+      .json({ message: "Name, longitude, and latitude fields are required" });
   }
 
   try {
