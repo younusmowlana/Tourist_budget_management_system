@@ -1,6 +1,18 @@
 import React, { useState } from "react";
-import ReactSelect from "react-select"; // For the destination dropdown
-import "./TouristForm.css"; // Create your own CSS for responsive design
+import ReactSelect from "react-select";
+import "./Tourist.css";
+import TextField from '@mui/material/TextField';
+import AttachMoneyIcon from '@mui/icons-material/AttachMoney';
+import IconButton from '@mui/material/IconButton';
+import Input from '@mui/material/Input';
+import FilledInput from '@mui/material/FilledInput';
+import OutlinedInput from '@mui/material/OutlinedInput';
+import InputLabel from '@mui/material/InputLabel';
+import InputAdornment from '@mui/material/InputAdornment';
+import FormHelperText from '@mui/material/FormHelperText';
+import FormControl from '@mui/material/FormControl';
+import MenuItem from '@mui/material/MenuItem';
+import PersonOutlineOutlinedIcon from '@mui/icons-material/PersonOutlineOutlined';
 
 const TouristForm = () => {
   const [budget, setBudget] = useState('');
@@ -47,6 +59,74 @@ const TouristForm = () => {
           />
           <span className="currency">{currency}</span>
         </div>
+
+        {/* <FormControl sx={{ m: 1, width: '25ch' }} variant="outlined">
+          <InputLabel htmlFor="outlined-adornment-password">Budget</InputLabel>
+          <OutlinedInput
+            id="outlined-adornment-password"
+            type= 'text' 
+            endAdornment={
+              <InputAdornment position="end">
+                <IconButton
+                  edge="end"
+                >
+                 <AttachMoneyIcon/>
+                </IconButton>
+              </InputAdornment>
+            }
+            label="Password"
+          />
+        </FormControl>
+
+        <TextField
+          id="outlined-select-currency-native"
+          select
+          label="Location"
+          defaultValue=""
+          slotProps={{
+            select: {
+              native: true,
+            },
+          }}
+          helperText="Please select your desired travelling area"
+        >         
+        </TextField>
+
+        <FormControl sx={{ m: 1, width: '25ch' }} variant="outlined">
+          <InputLabel htmlFor="outlined-adornment-password">Visitor Count</InputLabel>
+          <OutlinedInput
+            id="outlined-adornment-password"
+            type= 'text' 
+            endAdornment={
+              <InputAdornment position="end">
+                <IconButton
+                  edge="end"
+                >
+                 <PersonOutlineOutlinedIcon/>
+                </IconButton>
+              </InputAdornment>
+            }
+            label="Password"
+          />
+        </FormControl>
+
+        <FormControl sx={{ m: 1, width: '25ch' }} variant="outlined">
+          <InputLabel htmlFor="outlined-adornment-password">Time stay</InputLabel>
+          <OutlinedInput
+            id="outlined-adornment-password"
+            type= 'text' 
+            endAdornment={
+              <InputAdornment position="end">
+                <IconButton
+                  edge="end"
+                >
+                 <PersonOutlineOutlinedIcon/>
+                </IconButton>
+              </InputAdornment>
+            }
+            label="Password"
+          />
+        </FormControl> */}
 
         {/* Area Selection */}
         <div className="input-container">
