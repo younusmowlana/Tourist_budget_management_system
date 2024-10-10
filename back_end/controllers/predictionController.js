@@ -1,26 +1,39 @@
 const asyncHandler = require("express-async-handler");
 const Prediction = require("../models/Prediction");
-const { green } = require("colors");
-const spawn = require("child_process").spawn;
 const axios = require("axios");
 
 const addPrediction = asyncHandler(async (req, res) => {
-  var result;
-
   const { budget, destination, number_of_days, visitor_count } = req.body;
 
   if (!budget || !destination || !number_of_days || !visitor_count) {
-    res.send(400).json({
+    return res.status(400).json({
       error: "Please fill all the fields",
     });
-    throw new error("Please enter all the fields!!!");
+  }
+
+  if (budget < 100) {
+    return res.status(400).json({
+      error:
+        "The budget is too low to make any prediction. Please enter a higher budget.",
+    });
+  }
+
+  if (number_of_days <= 0) {
+    return res.status(400).json({
+      error: "The number of days should be greater than zero.",
+    });
+  }
+
+  if (visitor_count <= 0) {
+    return res.status(400).json({
+      error: "The visitor count should be greater than zero.",
+    });
   }
 
   console.log("budget " + budget);
   console.log("destination " + destination);
   console.log("number_of_days " + number_of_days);
   console.log("visitor_count " + visitor_count);
-  console.log(budget, destination, number_of_days, visitor_count);
 
   const predictionResult = await Prediction.create({
     budget,
@@ -40,7 +53,7 @@ const addPrediction = asyncHandler(async (req, res) => {
     console.log(response.data); // Logging Flask response
     res.status(200).json({
       message: "Prediction added and processed successfully!",
-      flaskResponse: response.data,
+      predictionResponse: response.data,
     });
   } catch (error) {
     console.error("Error calling Flask API: ", error);
@@ -49,7 +62,6 @@ const addPrediction = asyncHandler(async (req, res) => {
     });
   }
 });
-
 
 module.exports = {
   addPrediction,

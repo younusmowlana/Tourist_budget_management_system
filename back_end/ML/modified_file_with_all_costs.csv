@@ -1,0 +1,872 @@
+Trip ID,Destination,Start date,End date,Duration (days),Traveler name,Traveler age,Traveler gender,Traveler nationality,Accommodation type,Accommodation cost,Transportation type,Transportation cost,Food cost,Activities cost,Others,Total Speding
+1,Colombo,5/1/2023,5/8/2023,7,John Smith,35,Male,American,Hostel,79.8,Cab,144.2,110.5,48.5,24.5,407.5
+2,Colombo,6/15/2023,6/20/2023,5,Jane Doe,28,Female,Canadian,Villa,442.7,Train,41.8,75.4,25,11.7,596.6
+3,Galle,7/1/2023,7/8/2023,7,David Lee,45,Male,Korean,Guesthouse,221.1,Train,59,130.4,43.4,21.7,475.6
+4,Colombo,8/15/2023,8/29/2023,14,Sarah Johnson,29,Female,British,Hostel,145.6,Train,148.7,263,79.3,42.1,678.7
+5,Weligama,9/10/2023,9/17/2023,7,Kim Nguyen,26,Female,Vietnamese,Airbnb,168.9,Train,81.7,126.4,53.9,15.3,446.2
+6,Ella,10/5/2023,10/10/2023,5,Michael Brown,42,Male,American,Guesthouse,184.4,Cab,86.1,90.9,31.2,18.2,410.8
+7,Ella,11/20/2023,11/30/2023,10,Emily Davis,33,Female,Australian,Airbnb,168.1,Bus,80.4,186.7,66.3,28,529.5
+8,Dambulla,1/5/2024,1/12/2024,7,Lucas Santos,25,Male,Brazilian,Guesthouse,237.1,Bus,65.4,124.9,39.7,25.7,492.8
+9,Nuwara Eliya,2/14/2024,2/21/2024,7,Laura Janssen,31,Female,Dutch,Resort,657.5,Cab,126.5,111.5,39.9,23.7,959.1
+10,Ella,3/10/2024,3/17/2024,7,Mohammed Ali,39,Male,Emirati,Hostel,67.8,Cab,162.2,135.5,45.1,26.3,436.9
+11,Kandy,4/1/2024,4/8/2024,7,Ana Hernandez,27,Female,Mexican,Guesthouse,254.6,Train,68.3,137.9,54.8,20.2,535.8
+12,Mirissa,5/15/2024,5/22/2024,7,Carlos Garcia,36,Male,Spanish,Resort,601,Cab,139.8,120.9,47.6,14.5,923.8
+13,Mirissa,6/10/2024,6/18/2024,8,Lily Wong,29,Female,Chinese,Hotel,417.7,Train,85.9,137.9,47.9,20.9,710.3
+14,Nuwara Eliya,7/1/2024,7/10/2024,9,Hans Mueller,48,Male,German,Vacation rental,802.2,Train,74.1,150.7,65.1,28.7,1120.8
+15,Galle,8/20/2024,8/27/2024,7,Fatima Khouri,26,Female,Moroccan,Hotel,377.4,Train,80.4,125.6,37.4,20.4,641.2
+16,Kandy,9/5/2024,9/12/2024,7,James MacKenzie,32,Male,Scottish,Hotel,486.6,Cab,168.3,117.7,44.7,20.5,837.8
+17,Nuwara Eliya,9/1/2023,9/10/2023,9,Sarah Johnson,30,Female,American,Hotel,486.1,Cab,193.2,174,69.4,23.3,946
+18,Colombo,8/15/2023,8/25/2023,10,Michael Chang,28,Male,Chinese,Villa,896.2,Train,84.2,156.3,56.6,31.8,1225.1
+19,Ella,7/22/2023,7/28/2023,6,Olivia Rodriguez,35,Female,British,Resort,578.3,Bus,54.1,97.8,47.9,16,794.1
+20,Mirissa,10/5/2023,10/15/2023,2,Kenji Nakamura,45,Male,Japanese,Airbnb,43.6,Bus,19.5,35.9,13.1,6.4,118.5
+21,Negombo,11/20/2023,11/25/2023,5,Emily Lee,27,Female,American,Villa,434.8,Cab,102.6,99.2,29.7,11.9,678.2
+22,Colombo,12/5/2023,12/12/2023,7,James Wilson,32,Male,Australian,Villa,498.6,Train,69.6,108.1,52,22.1,750.4
+23,Galle,11/1/2023,11/8/2023,7,Sofia Russo,29,Female,Italian,Resort,573.1,Train,80.1,129.1,43.9,24.5,850.7
+24,Kandy,9/15/2023,9/23/2023,8,Raj Patel,40,Male,Indian,Airbnb,144.4,Bus,78.1,129.7,47.2,31.1,430.5
+25,Colombo,12/22/2023,12/28/2023,6,Lily Nguyen,24,Female,Vietnamese,Guesthouse,212.6,Cab,97.1,117.9,42,17.6,487.2
+26,Ella,8/1/2023,8/10/2023,9,David Kim,34,Male,Korean,Villa,674.5,Bus,54.4,148.5,55,19,951.4
+27,Nuwara Eliya,10/20/2023,10/28/2023,8,Maria Garcia,31,Female,Spanish,Guesthouse,246.9,Train,94.3,151.7,58.5,31.9,583.3
+28,Negombo,5/10/2022,5/18/2022,3,Alice Smith,30,Female,American,Guesthouse,102.9,Train,34.5,50.5,15.5,6.3,209.7
+29,Dambulla,6/15/2022,6/22/2022,7,Bob Johnson,45,Male,Canadian,Vacation rental,624.4,Train,61.5,117.6,50.1,17.7,871.3
+30,Nuwara Eliya,7/2/2022,7/11/2022,9,Charlie Lee,25,Male,Korean,Villa,730.1,Train,106.9,138.1,58.1,22,1055.2
+31,Galle,8/20/2022,9/2/2022,13,Emma Davis,28,Female,British,Resort,1232.9,Cab,250.6,258,70,31.8,1843.3
+32,Nuwara Eliya,9/5/2022,9/14/2022,9,Olivia Martin,33,Female,Australian,Resort,890.6,Bus,57.5,149.5,61.8,31,1190.4
+33,Galle,10/12/2022,10/20/2022,8,Harry Wilson,20,Male,American,Guesthouse,265.8,Train,71,143.3,53,24.8,557.9
+34,Galle,11/8/2022,11/15/2022,7,Sophia Lee,37,Female,Canadian,Airbnb,150.9,Bus,44.7,130.4,37.5,16.8,380.3
+35,Ella,1/5/2023,1/15/2023,10,James Brown,42,Male,British,Villa,784.2,Bus,83.2,188.8,50.1,20.7,1127
+36,Dambulla,2/14/2023,2/20/2023,6,Mia Johnson,31,Female,American,Guesthouse,205.2,Bus,59.8,104.9,37.6,13.6,421.1
+37,Ella,3/23/2023,3/31/2023,8,William Davis,27,Male,Korean,Villa,623,Cab,120.6,140,48.6,31.5,963.7
+38,Weligama,4/19/2023,4/26/2023,7,Amelia Brown,38,Female,Australian,Guesthouse,250.6,Cab,118.3,136.2,39.6,15.7,560.4
+39,Weligama,6/12/2022,6/19/2022,7,Mia Johnson,25,Female,American,Villa,600.2,Cab,108.4,138.6,47,20.2,914.4
+40,Mirissa,1/2/2023,1/9/2023,7,Adam Lee,33,Male,Canadian,Vacation rental,560.6,Train,70.2,111.7,55.5,23.7,821.7
+41,Weligama,12/10/2022,12/18/2022,8,Sarah Wong,28,Female,Chinese,Villa,580.7,Cab,169.8,126.6,43.2,30.3,950.6
+42,Galle,7/1/2023,7/8/2023,7,John Smith,45,Male,American,Hostel,58.7,Cab,139.2,138.2,51.4,17,404.5
+43,Mirissa,11/20/2022,11/27/2022,7,Maria Silva,30,Female,Brazilian,Hotel,369.4,Cab,117.8,130.6,47.8,23.1,688.7
+44,Ella,3/5/2023,3/12/2023,7,Peter Brown,55,Male,British,Villa,617.4,Bus,55.9,120.8,41.4,19.2,854.7
+45,Ella,8/18/2023,8/25/2023,7,Emma Garcia,27,Female,Spanish,Villa,521.5,Train,64.1,133.7,37.4,24.4,781.1
+46,Mirissa,9/15/2022,9/22/2022,7,Michael Davis,41,Male,American,Hostel,82.3,Bus,69.1,119.9,39.6,22,332.9
+47,Weligama,5/1/2023,5/7/2023,6,Nina Patel,29,Female,Indian,Villa,498,Bus,54.3,92.1,30.6,16.8,691.8
+48,Ella,7/10/2022,7/17/2022,7,Kevin Kim,24,Male,Korean,Guesthouse,239.6,Bus,62.6,131.1,42.6,28,503.9
+49,Galle,6/20/2023,6/28/2023,8,Laura van den Berg,31,Female,Dutch,Hostel,80.2,Cab,154.7,150.8,59.9,19.7,465.3
+50,Negombo,8/15/2023,8/22/2023,7,Jennifer Nguyen,31,Female,Canadian,Vacation rental,567.4,Cab,165.4,110.6,49.8,18.2,911.4
+51,Ella,10/10/2023,10/20/2023,10,David Kim,25,Male,American,Guesthouse,304.9,Cab,175.1,198,58.5,36.3,772.8
+52,Nuwara Eliya,11/5/2023,11/12/2023,7,Rachel Lee,27,Female,South Korean,Hostel,58.9,Train,61,129.8,54.4,18.3,322.4
+53,Ella,12/24/2023,12/31/2023,7,Jessica Wong,28,Female,Canadian,Hotel,365,Bus,56,139.6,49.8,25.7,636.1
+54,Colombo,1/15/2024,1/24/2024,9,Felipe Almeida,30,Male,Brazilian,Hotel,615.7,Cab,170,164.7,58,21.7,1030.1
+55,Ella,2/1/2024,2/9/2024,8,Nisa Patel,23,Female,Indian,Vacation rental,565,Train,77.5,121.9,52.7,26.6,843.7
+56,Nuwara Eliya,3/15/2024,3/23/2024,8,Ben Smith,35,Male,British,Resort,650.2,Bus,57.4,143.3,48.3,22.9,922.1
+57,Galle,4/5/2024,4/13/2024,8,Laura Gomez,29,Female,Spanish,Hotel,483.1,Train,73,138.3,62.7,25.8,782.9
+58,Nuwara Eliya,5/10/2024,5/18/2024,8,Park Min Woo,27,Male,South Korean,Vacation rental,626.5,Bus,59.6,151.6,53,16.6,907.3
+59,Colombo,6/20/2024,6/27/2024,7,Michael Chen,26,Male,Chinese,Hostel,60.4,Cab,151,130.5,50.3,27.2,419.4
+60,Mirissa,7/15/2024,7/23/2024,8,Sofia Rossi,33,Female,Italian,Villa,691.4,Cab,191.9,141.1,46.7,19.8,1090.9
+61,Colombo,7/12/2022,7/18/2022,6,Rachel Sanders,35,Female,American,Resort,531.5,Train,71.1,93.1,38.2,18.5,752.4
+62,Habarana,9/3/2022,9/10/2022,7,Kenji Nakamura,28,Male,Japanese,Airbnb,168,Train,69.6,109.2,51.1,26,423.9
+63,Dambulla,1/7/2023,1/16/2023,9,Emily Watson,29,Female,British,Villa,764.3,Train,92.4,167.6,48.1,26.8,1099.2
+64,Colombo,6/23/2023,6/29/2023,6,David Lee,43,Male,Australian,Hotel,315.2,Train,48.7,112.3,30,17.1,523.3
+65,Galle,8/18/2023,8/25/2023,7,Ana Rodriguez,31,Female,Spanish,Guesthouse,242.1,Cab,134.5,134.5,51,25.1,587.2
+66,Galle,2/1/2024,2/8/2024,7,Tom Wilson,27,Male,American,Resort,670.9,Bus,66.9,133.9,41,26.4,939.1
+67,Weligama,5/6/2024,5/12/2024,6,Olivia Green,39,Female,French,Resort,538,Bus,48.5,112.4,33.4,12.4,744.7
+68,Mirissa,7/20/2024,7/26/2024,6,James Chen,25,Male,American,Guesthouse,198,Bus,41.7,93.6,42.7,14.2,390.2
+69,Ella,9/8/2024,9/16/2024,8,Lila Patel,33,Female,Indian,Airbnb,171.8,Train,83.2,124.1,42.9,29.3,451.3
+70,Mirissa,2/14/2025,2/20/2025,6,Marco Rossi,41,Male,Italian,Airbnb,147.2,Train,64.1,111.1,43.6,14.6,380.6
+71,Mirissa,5/21/2025,5/29/2025,8,Sarah Brown,37,Female,British,Airbnb,135.9,Cab,183.8,145.8,49.1,29.2,543.8
+72,Colombo,,,,,,,,Villa,,Train,,,,,0
+73,Habarana,8/5/2022,8/12/2022,7,Sarah Lee,35,Female,South Korean,Vacation rental,539.2,Train,71,118.2,47.7,15.1,791.2
+74,Hambantota,1/1/2023,1/9/2023,8,Alex Kim,29,Male,American,Guesthouse,266.4,Cab,154.3,154,52.5,18.9,646.1
+75,Kandy,4/15/2023,4/22/2023,7,Maria Hernandez,42,Female,Mexican,Airbnb,127.9,Train,82.5,120.5,49.4,21.6,401.9
+76,Kandy,6/7/2023,6/14/2023,7,John Smith,46,Male,British,Hostel,56.2,Bus,49.7,106.3,50.1,26.2,288.5
+77,Colombo,9/1/2023,9/10/2023,9,Mark Johnson,31,Male,South African,Airbnb,217.5,Train,85,177.8,52.9,34.1,567.3
+78,Kandy,11/12/2023,11/19/2023,7,Amanda Chen,25,Female,Taiwanese,Hotel,389,Bus,44.2,128.9,46.3,16.2,624.6
+79,Colombo,2/5/2024,2/12/2024,7,David Lee,38,Male,Australian,Resort,627.5,Bus,66.3,137,47.8,24.1,902.7
+80,Matara,5/15/2024,5/22/2024,7,Nana Kwon,27,Female,Korean,Resort,665.9,Cab,168.2,124,52.5,26.7,1037.3
+81,Matara,8/20/2024,8/27/2024,7,Tom Hanks,60,Male,American,Airbnb,159.5,Train,77.4,132.6,41.1,19.3,429.9
+82,Nuwara Eliya,1/1/2025,1/8/2025,7,Emma Watson,32,Female,British,Guesthouse,218.9,Bus,46.8,131.6,53.4,16.6,467.3
+83,Ella,4/15/2025,4/22/2025,7,James Kim,41,Male,American,Guesthouse,230.6,Cab,114.9,110.8,39.5,22.3,518.1
+84,Galle,6/15/2021,6/20/2021,6,John Smith,35,Male,American,Hostel,55.3,Train,57,99.9,34.8,13,260
+85,Kandy,7/1/2021,7/10/2021,10,Sarah Lee,28,Female,Korean,Guesthouse,334.3,Train,94.1,194.6,58.5,37.1,718.6
+86,Kandy,8/10/2021,8/20/2021,11,Maria Garcia,42,Female,Spanish,Villa,826.6,Cab,183.9,212.2,73.4,42.8,1338.9
+87,Anuradhapura,9/1/2021,9/10/2021,9,David Lee,45,Male,Australian,Villa,702.7,Train,101.1,152.8,59.1,32.3,1048
+88,Colombo,10/15/2021,10/20/2021,6,Emily Davis,31,Female,American,Hotel,356.6,Cab,113.7,96.9,35,23,625.2
+89,Ella,11/20/2021,11/30/2021,11,James Wilson,29,Male,British,Hotel,721.2,Bus,79.3,209.4,83.2,28.1,1121.2
+90,Galle,1/1/2022,1/8/2022,8,Fatima Ahmed,24,Female,Emirati,Guesthouse,302.7,Bus,51.6,123.8,48.2,29.6,555.9
+91,Ella,2/14/2022,2/20/2022,7,Liam Nguyen,26,Male,Vietnamese,Hotel,377,Cab,129.7,124.2,40.8,19.7,691.4
+92,Galle,3/10/2022,3/20/2022,11,Giulia Rossi,30,Female,Italian,Airbnb,175.3,Cab,204.4,213.9,68.6,39.8,702
+93,Nuwara Eliya,4/15/2022,4/25/2022,11,Putra Wijaya,33,Male,Indonesian,Airbnb,255.8,Cab,199.2,167.4,60.6,25.1,708.1
+94,Nuwara Eliya,5/1/2022,5/10/2022,3,Kim Min-ji,27,Female,Korean,Villa,228.6,Bus,23.3,58.5,23.7,8.7,342.8
+95,Matara,6/15/2022,6/20/2022,3,John Smith,35,Male,USA,Vacation rental,226.4,Cab,64.4,48.1,16.5,9.6,365
+96,Anuradhapura,9/1/2022,9/10/2022,3,Emily Johnson,28,Female,Canada,Resort,294.9,Bus,27.6,49.5,20.2,9.9,402.1
+97,Galle,11/23/2022,12/2/2022,3,David Lee,45,Male,South Korea,Vacation rental,268.6,Train,32.1,59.2,20.4,11.9,392.2
+98,Ella,2/14/2023,2/19/2023,3,Sarah Brown,37,Female,UK,Airbnb,70.9,Bus,28.1,55,15.4,10.8,180.2
+99,Galle,5/8/2023,5/14/2023,3,Michael Wong,50,Male,China,Vacation rental,252.9,Train,31.9,59.9,20,9.1,373.8
+100,Kandy,8/20/2023,8/27/2023,3,Jessica Chen,31,Female,Taiwan,Hostel,24.7,Cab,67.8,50.1,21.4,6.9,170.9
+101,Kandy,11/12/2023,11/20/2023,3,Ken Tanaka,42,Male,Japan,Hostel,27.3,Bus,25.4,57.2,16,7.2,133.1
+102,Mirissa,1/6/2024,1/14/2024,3,Maria Garcia,27,Female,Spain,Resort,278.9,Bus,26.5,58.8,22.9,9,396.1
+103,Weligama,4/3/2024,4/10/2024,3,Rodrigo Oliveira,33,Male,Brazil,Hostel,27.4,Bus,26.9,59.6,18.3,8.2,140.4
+104,Nuwara Eliya,7/22/2024,7/28/2024,3,Olivia Kim,29,Female,South Korea,Guesthouse,116.9,Bus,29.7,46.8,19.7,6.3,219.4
+105,Nuwara Eliya,10/10/2024,10/17/2024,3,Robert Mueller,41,Male,Germany,Hostel,26.2,Cab,61.1,59.4,23.9,9.3,179.9
+106,Kandy,5/15/2022,5/20/2022,3,John Smith,35,Male,USA,Vacation rental,241.6,Train,26.6,48.4,17.9,8.9,343.4
+107,Ella,9/1/2022,9/10/2022,3,Sarah Lee,28,Female,South Korea,Villa,212.6,Train,33.6,47.7,20.6,8.9,323.4
+108,Colombo,6/20/2022,6/25/2022,3,Michael Wong,42,Male,Hong Kong,Hotel,156.6,Bus,22.8,53.7,17.2,7.1,257.4
+109,Matara,8/12/2022,8/20/2022,3,Lisa Chen,30,Female,Taiwan,Hostel,28,Bus,24.7,55.3,18.6,9.7,136.3
+110,Kandy,7/1/2022,7/10/2022,9,David Kim,26,Male,Canada,Airbnb,176.3,Cab,155.5,154.5,53.9,26.5,566.7
+111,Ella,6/10/2022,6/15/2022,5,Emily Wong,38,Female,United Kingdom,Hostel,42.3,Train,40.1,99.5,34.7,18.4,235
+112,Nuwara Eliya,9/5/2022,9/12/2022,7,Mark Tan,45,Male,Singapore,Vacation rental,547.3,Bus,47.4,129.1,48.4,21.3,793.5
+113,Nuwara Eliya,5/1/2022,5/8/2022,7,Emma Lee,31,Female,Italy,Vacation rental,535.1,Bus,66.4,126.3,51.1,20.8,799.7
+114,Ella,7/15/2022,7/22/2022,7,George Chen,27,Male,Greece,Guesthouse,255.2,Train,65.6,132.1,52,22.1,527
+115,Anuradhapura,8/25/2022,8/30/2022,5,Sophia Kim,29,Female,United Arab Emirates,Villa,435.2,Train,47,75.3,39.8,20,617.3
+116,Negombo,9/10/2022,9/15/2022,5,Alex Ng,33,Male,Cambodia,Guesthouse,160.9,Cab,82.2,98.7,38.4,17.6,397.8
+117,Matara,2/5/2022,2/14/2022,9,Alice Smith,32,Female,American,Guesthouse,354.8,Train,97.1,161.6,56.7,25,695.2
+118,Negombo,3/15/2022,3/22/2022,7,Bob Johnson,47,Male,Canadian,Airbnb,163.4,Cab,136.9,110.7,42,22.1,475.1
+119,Anuradhapura,5/1/2022,5/12/2022,11,Cindy Chen,26,Female,Chinese,Airbnb,207.8,Cab,236.4,198,76.8,40.4,759.4
+120,Colombo,6/10/2022,6/17/2022,7,David Lee,38,Male,Korean,Vacation rental,491.8,Train,74.9,116.6,38.8,23.5,745.6
+121,Kandy,7/20/2022,7/30/2022,10,Emily Kim,29,Female,Korean,Guesthouse,350.7,Cab,231.3,164,66.4,28.1,840.5
+122,Colombo,8/8/2022,8/16/2022,8,Frank Li,41,Male,American,Hostel,73.2,Cab,191.2,139.4,50.4,26.3,480.5
+123,Galle,9/20/2022,9/30/2022,10,Gina Lee,35,Female,Korean,Resort,976.9,Bus,90.2,176.3,70.6,26.8,1340.8
+124,Nuwara Eliya,10/5/2022,10/13/2022,8,Henry Kim,24,Male,Korean,Hostel,74.4,Bus,65.4,134.5,60.5,28.6,363.4
+125,Colombo,11/11/2022,11/21/2022,10,Isabella Chen,30,Female,Chinese,Hostel,118.9,Cab,209.5,152.1,78.1,31,589.6
+126,Weligama,12/24/2022,1/1/2023,8,Jack Smith,28,Male,American,Resort,713.9,Bus,66.7,125.6,43.1,30.8,980.1
+127,Galle,2/10/2023,2/18/2023,8,Katie Johnson,33,Female,Canadian,Guesthouse,258.7,Train,65.8,150.2,51.4,27,553.1
+128,Colombo,,,,,,,,Vacation rental,,Bus,,,,,0
+129,Galle,5/1/2023,5/7/2023,6,John Doe,35,Male,American,Hostel,67,Train,61.5,106.5,34.5,15.9,285.4
+130,Mirissa,5/15/2023,5/22/2023,7,Jane Smith,28,Female,British,Villa,621.1,Bus,56.1,131.8,38.1,24.4,871.5
+131,Colombo,6/1/2023,6/10/2023,9,Michael Johnson,45,Male,South African,Resort,882.6,Bus,88.4,143.7,69.5,18.8,1203
+132,Galle,6/15/2023,6/21/2023,6,Sarah Lee,31,Female,Australian,Guesthouse,184.6,Cab,134.1,93.3,44.9,16.7,473.6
+133,Weligama,7/1/2023,7/8/2023,7,David Kim,42,Male,Korean,Resort,573.5,Train,75.1,133.9,42.6,17.7,842.8
+134,Galle,7/15/2023,7/22/2023,7,Emily Davis,27,Female,American,Villa,591.2,Cab,113.4,114.1,47.3,15.7,881.7
+135,Colombo,8/1/2023,8/10/2023,9,Jose Perez,37,Male,Brazilian,Guesthouse,341.2,Train,81.8,161.8,68.6,18.7,672.1
+136,Galle,8/15/2023,8/21/2023,6,Emma Wilson,29,Female,Canadian,Hostel,63.5,Bus,46.4,96.7,32.6,19.9,259.1
+137,Matara,9/1/2023,9/8/2023,7,Ryan Chen,34,Male,Chinese,Villa,497.5,Train,57.6,138.7,40.2,25.6,759.6
+138,Galle,9/15/2023,9/22/2023,7,Sofia Rodriguez,25,Female,Spanish,Hostel,60,Cab,137.4,119.6,51.8,20,388.8
+139,Nuwara Eliya,10/1/2023,10/8/2023,7,William Brown,39,Male,New Zealander,Hotel,471.9,Bus,67.5,106.1,40.5,24.7,710.7
+140,Colombo,5/1/2023,5/8/2023,7,John Smith,35,Male,American,Villa,539.2,Cab,172,135.3,46.8,16.5,909.8
+141,Colombo,6/15/2023,6/20/2023,5,Jane Doe,28,Female,Canadian,Guesthouse,192.1,Bus,33.7,85.6,35.2,17.1,363.7
+142,Galle,7/1/2023,7/8/2023,7,David Lee,45,Male,Korean,Hostel,70.8,Train,65.1,109.1,46.4,21.1,312.5
+143,Colombo,8/15/2023,8/29/2023,14,Sarah Johnson,29,Female,British,Airbnb,321.5,Bus,89.9,245.6,76.6,47.4,781
+144,Weligama,9/10/2023,9/17/2023,7,Kim Nguyen,26,Female,Vietnamese,Airbnb,106.2,Train,77.9,140,40.7,27.5,392.3
+145,Ella,10/5/2023,10/10/2023,5,Michael Brown,42,Male,American,Vacation rental,374.3,Cab,94.7,77.6,35,10.3,591.9
+146,Ella,11/20/2023,11/30/2023,10,Emily Davis,33,Female,Australian,Guesthouse,361.1,Cab,237.6,156.7,73.8,27.1,856.3
+147,Dambulla,1/5/2024,1/12/2024,7,Lucas Santos,25,Male,Brazilian,Vacation rental,504.9,Cab,116.1,118.1,55.9,21.1,816.1
+148,Nuwara Eliya,2/14/2024,2/21/2024,7,Laura Janssen,31,Female,Dutch,Hotel,482.5,Bus,56,124.8,42.7,23.1,729.1
+149,Ella,3/10/2024,3/17/2024,2,Mohammed Ali,39,Male,Emirati,Resort,162.5,Bus,12.6,37.8,12.6,6.2,231.7
+150,Kandy,4/1/2024,4/8/2024,2,Ana Hernandez,27,Female,Mexican,Guesthouse,71.7,Train,16.4,39.4,11.4,5.5,144.4
+151,Mirissa,5/15/2024,5/22/2024,2,Carlos Garcia,36,Male,Spanish,Resort,166.4,Cab,32.3,39.5,11.5,6,255.7
+152,Mirissa,6/10/2024,6/18/2024,2,Lily Wong,29,Female,Chinese,Resort,164.4,Cab,36.3,37.7,11,6.3,255.7
+153,Nuwara Eliya,7/1/2024,7/10/2024,2,Hans Mueller,48,Male,German,Hotel,110.3,Bus,17.5,31.4,12.3,4.5,176
+154,Galle,8/20/2024,8/27/2024,2,Fatima Khouri,26,Female,Moroccan,Hostel,17.2,Train,21.9,30.8,11.4,7.6,88.9
+155,Kandy,9/5/2024,9/12/2024,2,James MacKenzie,32,Male,Scottish,Guesthouse,65.4,Cab,37.6,36.9,10.2,5.3,155.4
+156,Nuwara Eliya,9/1/2023,9/10/2023,2,Sarah Johnson,30,Female,American,Resort,194.4,Bus,19.8,38.7,11.6,7.7,272.2
+157,Colombo,8/15/2023,8/25/2023,2,Michael Chang,28,Male,Chinese,Villa,172.8,Cab,41.2,30,15.7,6.8,266.5
+158,Ella,7/22/2023,7/28/2023,2,Olivia Rodriguez,35,Female,British,Hotel,106.6,Cab,33.6,38.9,15,6.5,200.6
+159,Mirissa,10/5/2023,10/15/2023,2,Kenji Nakamura,45,Male,Japanese,Airbnb,46.3,Cab,47.1,37,14.1,7,151.5
+160,Negombo,11/20/2023,11/25/2023,2,Emily Lee,27,Female,American,Guesthouse,66.1,Bus,16.2,36.1,11.5,5.3,135.2
+161,Colombo,12/5/2023,12/12/2023,2,James Wilson,32,Male,Australian,Villa,178.1,Train,17,30.4,11.3,6.2,243
+162,Galle,11/1/2023,11/8/2023,2,Sofia Russo,29,Female,Italian,Airbnb,44.7,Bus,13.7,31.1,15.8,5.4,110.7
+163,Kandy,9/15/2023,9/23/2023,2,Raj Patel,40,Male,Indian,Villa,167.1,Train,17,39.4,15.4,4.1,243
+164,Colombo,12/22/2023,12/28/2023,6,Lily Nguyen,24,Female,Vietnamese,Guesthouse,185.3,Train,56.4,116.4,45,12.6,415.7
+165,Ella,8/1/2023,8/10/2023,4,David Kim,34,Male,Korean,Hotel,234.2,Cab,84.9,64.8,23.8,15,422.7
+166,Nuwara Eliya,10/20/2023,10/28/2023,4,Maria Garcia,31,Female,Spanish,Villa,351.5,Cab,94.5,78.6,30.8,15.6,571
+167,Negombo,5/10/2022,5/18/2022,4,Alice Smith,30,Female,American,Resort,345,Train,44.2,62.3,21,13.6,486.1
+168,Dambulla,6/15/2022,6/22/2022,4,Bob Johnson,45,Male,Canadian,Hotel,202.5,Train,36.8,77.2,29.8,11.7,358
+169,Nuwara Eliya,7/2/2022,7/11/2022,4,Charlie Lee,25,Male,Korean,Villa,319.6,Train,47.6,77.5,26.3,15.6,486.6
+170,Galle,8/20/2022,9/2/2022,4,Emma Davis,28,Female,British,Guesthouse,123,Bus,32.4,69,30.8,10,265.2
+171,Nuwara Eliya,9/5/2022,9/14/2022,4,Olivia Martin,33,Female,Australian,Hotel,205.9,Train,36.9,60.2,27,15.8,345.8
+172,Galle,10/12/2022,10/20/2022,4,Harry Wilson,20,Male,American,Guesthouse,129.6,Bus,38.1,76,20.3,12.1,276.1
+173,Galle,11/8/2022,11/15/2022,4,Sophia Lee,37,Female,Canadian,Villa,291.8,Cab,91.3,62,25.2,15.4,485.7
+174,Ella,1/5/2023,1/15/2023,4,James Brown,42,Male,British,Hotel,275.6,Train,42,69.3,28.7,13.7,429.3
+175,Dambulla,2/14/2023,2/20/2023,4,Mia Johnson,31,Female,American,Vacation rental,347.4,Train,39.5,78.5,29.8,8.3,503.5
+176,Ella,3/23/2023,3/31/2023,4,William Davis,27,Male,Korean,Airbnb,69.2,Train,34.7,60.8,21.6,14.1,200.4
+177,Weligama,4/19/2023,4/26/2023,4,Amelia Brown,38,Female,Australian,Guesthouse,124.9,Cab,85,79.6,30.9,15.2,335.6
+178,Weligama,6/12/2022,6/19/2022,4,Mia Johnson,25,Female,American,Hotel,273.4,Cab,96.8,60.9,30.8,11.1,473
+179,Mirissa,1/2/2023,1/9/2023,4,Adam Lee,33,Male,Canadian,Hostel,34.3,Cab,87.2,60.7,28.5,15.6,226.3
+180,Weligama,12/10/2022,12/18/2022,4,Sarah Wong,28,Female,Chinese,Airbnb,97.2,Cab,73.3,70,31,12,283.5
+181,Galle,7/1/2023,7/8/2023,4,John Smith,45,Male,American,Villa,308.9,Cab,75.7,60.8,27.1,9,481.5
+182,Mirissa,11/20/2022,11/27/2022,4,Maria Silva,30,Female,Brazilian,Hostel,44.5,Bus,33.2,72.6,28.5,14,192.8
+183,Ella,3/5/2023,3/12/2023,4,Peter Brown,55,Male,British,Vacation rental,289.8,Train,43.2,71.9,23.7,8.3,436.9
+184,Ella,8/18/2023,8/25/2023,7,Emma Garcia,27,Female,Spanish,Hostel,67.9,Bus,44.1,125.3,52.3,18.1,307.7
+185,Mirissa,9/15/2022,9/22/2022,7,Michael Davis,41,Male,American,Hostel,82.5,Train,78.9,128.8,55.1,22.4,367.7
+186,Weligama,5/1/2023,5/7/2023,6,Nina Patel,29,Female,Indian,Villa,511.5,Cab,133.9,119.2,45.7,18.5,828.8
+187,Ella,7/10/2022,7/17/2022,7,Kevin Kim,24,Male,Korean,Hostel,77.2,Train,57.3,109,46.4,19.4,309.3
+188,Galle,6/20/2023,6/28/2023,8,Laura van den Berg,31,Female,Dutch,Hostel,78.7,Bus,77.2,124.9,45.4,31.5,357.7
+189,Negombo,8/15/2023,8/22/2023,7,Jennifer Nguyen,31,Female,Canadian,Airbnb,129.6,Cab,161.1,127.7,49.3,15.4,483.1
+190,Ella,10/10/2023,10/20/2023,10,David Kim,25,Male,American,Vacation rental,702.3,Cab,212.3,179.1,56.5,23.4,1173.6
+191,Nuwara Eliya,11/5/2023,11/12/2023,7,Rachel Lee,27,Female,South Korean,Vacation rental,546,Train,63.4,107.9,36.9,18.3,772.5
+192,Ella,12/24/2023,12/31/2023,7,Jessica Wong,28,Female,Canadian,Villa,569.4,Cab,146.8,122.4,38.4,17.7,894.7
+193,Colombo,1/15/2024,1/24/2024,9,Felipe Almeida,30,Male,Brazilian,Villa,761.6,Bus,64,169.6,62.6,25.1,1082.9
+194,Ella,2/1/2024,2/9/2024,8,Nisa Patel,23,Female,Indian,Vacation rental,667.5,Bus,57.3,156.1,44.7,30.7,956.3
+195,Nuwara Eliya,3/15/2024,3/23/2024,8,Ben Smith,35,Male,British,Guesthouse,288.2,Train,82.9,157.5,53.6,18.3,600.5
+196,Galle,4/5/2024,4/13/2024,8,Laura Gomez,29,Female,Spanish,Airbnb,169.5,Train,82.6,137.4,54.9,19.7,464.1
+197,Nuwara Eliya,5/10/2024,5/18/2024,8,Park Min Woo,27,Male,South Korean,Hostel,80.7,Cab,192.6,130.5,47.5,18.7,470
+198,Colombo,6/20/2024,6/27/2024,7,Michael Chen,26,Male,Chinese,Resort,623.6,Bus,49.9,124.3,42.8,18.7,859.3
+199,Mirissa,7/15/2024,7/23/2024,8,Sofia Rossi,33,Female,Italian,Guesthouse,290.6,Bus,76.4,141.8,43.1,25.6,577.5
+200,Colombo,7/12/2022,7/18/2022,6,Rachel Sanders,35,Female,American,Airbnb,101.6,Cab,109.1,104.1,42.1,12.4,369.3
+201,Habarana,9/3/2022,9/10/2022,7,Kenji Nakamura,28,Male,Japanese,Guesthouse,232.7,Bus,58.3,124.4,51,16.3,482.7
+202,Dambulla,1/7/2023,1/16/2023,9,Emily Watson,29,Female,British,Vacation rental,795,Bus,79.5,172.5,69.3,19.5,1135.8
+203,Colombo,6/23/2023,6/29/2023,6,David Lee,43,Male,Australian,Hostel,48.5,Cab,105.6,91.2,44.6,21.3,311.2
+204,Galle,8/18/2023,8/25/2023,7,Ana Rodriguez,31,Female,Spanish,Villa,547.6,Train,65.6,115.7,52.3,19.1,800.3
+205,Galle,2/1/2024,2/8/2024,7,Tom Wilson,27,Male,American,Guesthouse,266.4,Bus,67.7,114.9,37.5,17,503.5
+206,Weligama,5/6/2024,5/12/2024,6,Olivia Green,39,Female,French,Resort,508.3,Cab,109.4,94,39,19.9,770.6
+207,Mirissa,7/20/2024,7/26/2024,3,James Chen,25,Male,American,Resort,251.9,Bus,22.2,54.5,15,8.1,351.7
+208,Ella,9/8/2024,9/16/2024,3,Lila Patel,33,Female,Indian,Guesthouse,111.1,Train,34.1,58,18.6,7.4,229.2
+209,Mirissa,2/14/2025,2/20/2025,3,Marco Rossi,41,Male,Italian,Villa,232.6,Train,34.5,47.3,15,8.9,338.3
+210,Mirissa,5/21/2025,5/29/2025,3,Sarah Brown,37,Female,British,Hotel,152.8,Bus,20.3,58.3,15.8,6.4,253.6
+211,Colombo,,,3,,,,,Vacation rental,263.8,Cab,57.7,55,21.8,8.9,407.2
+212,Habarana,8/5/2022,8/12/2022,3,Sarah Lee,35,Female,South Korean,Guesthouse,116.3,Bus,23.2,45.7,23.1,9.5,217.8
+213,Hambantota,1/1/2023,1/9/2023,3,Alex Kim,29,Male,American,Guesthouse,102,Cab,47.3,54.1,21.5,11.1,236
+214,Kandy,4/15/2023,4/22/2023,3,Maria Hernandez,42,Female,Mexican,Guesthouse,96,Train,30.3,51.8,23.5,8.5,210.1
+215,Kandy,6/7/2023,6/14/2023,3,John Smith,46,Male,British,Hotel,157.6,Train,26.5,52.2,23.9,6.5,266.7
+216,Colombo,9/1/2023,9/10/2023,3,Mark Johnson,31,Male,South African,Villa,214.7,Train,34.2,45.7,20.2,9.2,324
+217,Kandy,11/12/2023,11/19/2023,3,Amanda Chen,25,Female,Taiwanese,Resort,285.9,Train,35.2,59.6,19.9,11.4,412
+218,Colombo,2/5/2024,2/12/2024,3,David Lee,38,Male,Australian,Airbnb,49.6,Cab,48.8,47,17.9,11.4,174.7
+219,Matara,5/15/2024,5/22/2024,3,Nana Kwon,27,Female,Korean,Vacation rental,234.8,Cab,50.9,55.2,15.5,7.7,364.1
+220,Matara,8/20/2024,8/27/2024,3,Tom Hanks,60,Male,American,Hotel,205.2,Cab,68.1,54.7,23.4,7,358.4
+221,Nuwara Eliya,1/1/2025,1/8/2025,3,Emma Watson,32,Female,British,Hotel,174.7,Bus,22.6,51.4,22.2,6,276.9
+222,Ella,4/15/2025,4/22/2025,3,James Kim,41,Male,American,Villa,259.8,Bus,25.2,54.7,23.7,8.1,371.5
+223,Galle,6/15/2021,6/20/2021,3,John Smith,35,Male,American,Vacation rental,230.6,Train,26.6,55.6,17.8,11,341.6
+224,Kandy,7/1/2021,7/10/2021,3,Sarah Lee,28,Female,Korean,Hotel,155.7,Train,24.9,49.1,23.2,6.4,259.3
+225,Kandy,8/10/2021,8/20/2021,3,Maria Garcia,42,Female,Spanish,Vacation rental,243.4,Cab,47.8,45.2,21.3,9,366.7
+226,Anuradhapura,9/1/2021,9/10/2021,3,David Lee,45,Male,Australian,Guesthouse,111.5,Train,32,55.4,16.8,8.6,224.3
+227,Colombo,10/15/2021,10/20/2021,3,Emily Davis,31,Female,American,Villa,258.1,Train,29.8,57.2,23.7,7,375.8
+228,Ella,11/20/2021,11/30/2021,11,James Wilson,29,Male,British,Hotel,685.8,Bus,88,192.8,59.7,29,1055.3
+229,Galle,1/1/2022,1/8/2022,8,Fatima Ahmed,24,Female,Emirati,Villa,630.2,Cab,197.2,148.3,57.1,31.5,1064.3
+230,Ella,2/14/2022,2/20/2022,7,Liam Nguyen,26,Male,Vietnamese,Guesthouse,270.3,Bus,49.6,116.9,44,24.8,505.6
+231,Galle,3/10/2022,3/20/2022,11,Giulia Rossi,30,Female,Italian,Hostel,114.3,Train,102.6,188.9,58.1,41.1,505
+232,Nuwara Eliya,4/15/2022,4/25/2022,11,Putra Wijaya,33,Male,Indonesian,Guesthouse,387.8,Cab,268.6,208.5,85.5,34.7,985.1
+233,Nuwara Eliya,5/1/2022,5/10/2022,10,Kim Min-ji,27,Female,Korean,Hotel,610.8,Train,82,177.7,64.4,28.3,963.2
+234,Matara,6/15/2022,6/20/2022,5,John Smith,35,Male,USA,Guesthouse,150.4,Bus,46,93.9,37.6,19.4,347.3
+235,Anuradhapura,9/1/2022,9/10/2022,9,Emily Johnson,28,Female,Canada,Airbnb,221.4,Bus,57.5,135.8,67.8,24.6,507.1
+236,Galle,11/23/2022,12/2/2022,9,David Lee,45,Male,South Korea,Hotel,604.2,Train,87.3,136.4,64.7,27.3,919.9
+237,Ella,2/14/2023,2/19/2023,5,Sarah Brown,37,Female,UK,Villa,420.4,Train,54,92.7,30.8,14.9,612.8
+238,Galle,5/8/2023,5/14/2023,6,Michael Wong,50,Male,China,Airbnb,143.4,Train,66.3,98.7,47.6,23.4,379.4
+239,Kandy,8/20/2023,8/27/2023,7,Jessica Chen,31,Female,Taiwan,Hostel,59.3,Train,76.1,136.9,51.9,18.5,342.7
+240,Kandy,11/12/2023,11/20/2023,8,Ken Tanaka,42,Male,Japan,Hotel,471.4,Bus,78.6,133,53.8,31.5,768.3
+241,Mirissa,1/6/2024,1/14/2024,8,Maria Garcia,27,Female,Spain,Hotel,413.1,Bus,70.3,145,54.5,23,705.9
+242,Weligama,4/3/2024,4/10/2024,7,Rodrigo Oliveira,33,Male,Brazil,Hostel,81.8,Train,75,139.4,46.7,25.6,368.5
+243,Nuwara Eliya,7/22/2024,7/28/2024,6,Olivia Kim,29,Female,South Korea,Hostel,50.7,Bus,54.9,116.2,43.6,19.9,285.3
+244,Nuwara Eliya,10/10/2024,10/17/2024,7,Robert Mueller,41,Male,Germany,Hostel,58.6,Train,76.2,128.5,38,21.5,322.8
+245,Kandy,5/15/2022,5/20/2022,5,John Smith,35,Male,USA,Villa,410.5,Cab,98.2,79.7,27,18.2,633.6
+246,Ella,9/1/2022,9/10/2022,9,Sarah Lee,28,Female,South Korea,Hotel,616.2,Train,77.2,142.9,69.5,20.3,926.1
+247,Colombo,6/20/2022,6/25/2022,5,Michael Wong,42,Male,Hong Kong,Guesthouse,183.3,Bus,34.1,92.7,33.2,16.6,359.9
+248,Matara,8/12/2022,8/20/2022,8,Lisa Chen,30,Female,Taiwan,Guesthouse,282.3,Bus,68.5,132.9,59.8,26.6,570.1
+249,Kandy,7/1/2022,7/10/2022,9,David Kim,26,Male,Canada,Resort,744.1,Cab,148.4,170.5,60.9,21.2,1145.1
+250,Ella,6/10/2022,6/15/2022,5,Emily Wong,38,Female,United Kingdom,Resort,431.6,Cab,84.4,78.8,33.3,13,641.1
+251,Nuwara Eliya,9/5/2022,9/12/2022,7,Mark Tan,45,Male,Singapore,Villa,529.3,Cab,167.8,111.8,37.6,25.5,872
+252,Nuwara Eliya,5/1/2022,5/8/2022,7,Emma Lee,31,Female,Italy,Airbnb,172,Bus,67.3,120.8,35.6,25,420.7
+253,Ella,7/15/2022,7/22/2022,7,George Chen,27,Male,Greece,Villa,564.5,Cab,110.3,120.1,44.7,21.9,861.5
+254,Anuradhapura,8/25/2022,8/30/2022,5,Sophia Kim,29,Female,United Arab Emirates,Guesthouse,161.7,Cab,99.9,99,37.2,17.9,415.7
+255,Negombo,9/10/2022,9/15/2022,5,Alex Ng,33,Male,Cambodia,Guesthouse,180.9,Train,42.7,91.6,25.1,16.4,356.7
+256,Matara,2/5/2022,2/14/2022,2,Alice Smith,32,Female,American,Resort,180.9,Cab,47.7,32.2,14.9,4.9,280.6
+257,Negombo,3/15/2022,3/22/2022,2,Bob Johnson,47,Male,Canadian,Hotel,122.8,Train,16.9,31.3,11,4.2,186.2
+258,Anuradhapura,5/1/2022,5/12/2022,3,Cindy Chen,26,Female,Chinese,Airbnb,51.2,Cab,67.7,55.3,18.4,9.3,201.9
+259,Colombo,6/10/2022,6/17/2022,2,David Lee,38,Male,Korean,Hotel,121.3,Cab,39.9,36.4,13.5,5.3,216.4
+260,Kandy,7/20/2022,7/30/2022,2,Emily Kim,29,Female,Korean,Vacation rental,174.1,Train,23.2,36.1,10.3,6.5,250.2
+261,Colombo,8/8/2022,8/16/2022,2,Frank Li,41,Male,American,Airbnb,46.3,Cab,34.3,31.9,12.8,4,129.3
+262,Galle,9/20/2022,9/30/2022,6,Gina Lee,35,Female,Korean,Guesthouse,226.9,Train,65.8,111.3,42.4,19.1,465.5
+263,Nuwara Eliya,10/5/2022,10/13/2022,2,Henry Kim,24,Male,Korean,Hotel,130.6,Train,21,38,10.2,5,204.8
+264,Colombo,11/11/2022,11/21/2022,2,Isabella Chen,30,Female,Chinese,Hostel,16.3,Cab,38.9,31.9,12,4.1,103.2
+265,Weligama,12/24/2022,1/1/2023,2,Jack Smith,28,Male,American,Hotel,138.6,Train,18.3,33.7,12.6,7.6,210.8
+266,Galle,2/10/2023,2/18/2023,2,Katie Johnson,33,Female,Canadian,Hotel,135.9,Train,21.3,36.6,15.4,4.7,213.9
+267,Colombo,,,2,,,,,Hotel,102,Bus,14.2,35.2,10.5,6.1,168
+268,Galle,5/1/2023,5/7/2023,2,John Doe,35,Male,American,Resort,188.8,Cab,34.5,34.1,11.4,4.4,273.2
+269,Mirissa,5/15/2023,5/22/2023,2,Jane Smith,28,Female,British,Hotel,131.5,Train,18.6,37.1,15.5,6.3,209
+270,Colombo,6/1/2023,6/10/2023,2,Michael Johnson,45,Male,South African,Hotel,121.1,Bus,13.6,37,13,7.7,192.4
+271,Galle,6/15/2023,6/21/2023,2,Sarah Lee,31,Female,Australian,Guesthouse,68.7,Cab,33.9,34.6,12.6,4.7,154.5
+272,Weligama,7/1/2023,7/8/2023,2,David Kim,42,Male,Korean,Villa,151.6,Bus,14.7,33.9,13.8,4,218
+273,Galle,7/15/2023,7/22/2023,2,Emily Davis,27,Female,American,Hostel,16.6,Cab,36.6,30.4,15.6,6.6,105.8
+274,Colombo,8/1/2023,8/10/2023,2,Jose Perez,37,Male,Brazilian,Airbnb,30.4,Cab,30.9,36.4,12.7,5.6,116
+275,Galle,8/15/2023,8/21/2023,2,Emma Wilson,29,Female,Canadian,Resort,194.1,Cab,38.7,34.8,13.4,7.9,288.9
+276,Matara,9/1/2023,9/8/2023,7,Ryan Chen,34,Male,Chinese,Guesthouse,273.3,Cab,142.4,140,54.4,17.4,627.5
+277,Galle,9/15/2023,9/22/2023,7,Sofia Rodriguez,25,Female,Spanish,Resort,603.3,Train,82.6,132.7,54.2,26.7,899.5
+278,Nuwara Eliya,10/1/2023,10/8/2023,7,William Brown,39,Male,New Zealander,Hotel,426.9,Train,72.7,124,39.2,20.8,683.6
+279,Colombo,5/1/2023,5/8/2023,7,John Smith,35,Male,American,Villa,536.8,Bus,42.9,134.5,44.8,22.1,781.1
+280,Colombo,6/15/2023,6/20/2023,5,Jane Doe,28,Female,Canadian,Hostel,51.4,Cab,89.7,91.6,35.4,18.3,286.4
+281,Galle,7/1/2023,7/8/2023,7,David Lee,45,Male,Korean,Vacation rental,566.3,Bus,55.8,109,52.4,24.1,807.6
+282,Colombo,8/15/2023,8/29/2023,14,Sarah Johnson,29,Female,British,Hotel,947.5,Bus,89.9,220,109.1,48.5,1415
+283,Weligama,9/10/2023,9/17/2023,7,Kim Nguyen,26,Female,Vietnamese,Villa,507.6,Train,71.1,112.9,44.4,27.9,763.9
+284,Ella,10/5/2023,10/10/2023,5,Michael Brown,42,Male,American,Hotel,315.1,Train,59.5,81.9,26.9,10.2,493.6
+285,Ella,11/20/2023,11/30/2023,10,Emily Davis,33,Female,Australian,Hostel,91.9,Train,101.9,150.4,63.2,37.5,444.9
+286,Dambulla,1/5/2024,1/12/2024,7,Lucas Santos,25,Male,Brazilian,Airbnb,141.6,Bus,66.7,125.2,46.3,24.7,404.5
+287,Nuwara Eliya,2/14/2024,2/21/2024,7,Laura Janssen,31,Female,Dutch,Hostel,79.8,Train,56.9,109.9,47.6,20.7,314.9
+288,Ella,3/10/2024,3/17/2024,7,Mohammed Ali,39,Male,Emirati,Airbnb,122.7,Bus,45.3,135.9,38.1,22.5,364.5
+289,Kandy,4/1/2024,4/8/2024,7,Ana Hernandez,27,Female,Mexican,Resort,664.4,Bus,60.8,132.8,47,16.4,921.4
+290,Mirissa,5/15/2024,5/22/2024,7,Carlos Garcia,36,Male,Spanish,Resort,591.4,Bus,64.3,129.9,39.2,18.9,843.7
+291,Mirissa,6/10/2024,6/18/2024,8,Lily Wong,29,Female,Chinese,Vacation rental,696.2,Train,70.6,122.7,47.1,28.2,964.8
+292,Nuwara Eliya,7/1/2024,7/10/2024,9,Hans Mueller,48,Male,German,Villa,696.2,Cab,154.2,169.3,70.2,19.6,1109.5
+293,Galle,8/20/2024,8/27/2024,7,Fatima Khouri,26,Female,Moroccan,Hostel,81.4,Train,63.9,106.3,45.9,24.1,321.6
+294,Kandy,9/5/2024,9/12/2024,7,James MacKenzie,32,Male,Scottish,Vacation rental,575.4,Train,63.2,137.7,49.5,15,840.8
+295,Nuwara Eliya,9/1/2023,9/10/2023,9,Sarah Johnson,30,Female,American,Airbnb,202.5,Bus,59.6,147.8,58.5,20.5,488.9
+296,Colombo,8/15/2023,8/25/2023,10,Michael Chang,28,Male,Chinese,Airbnb,170.5,Train,108.5,174.7,54.4,21.4,529.5
+297,Ella,7/22/2023,7/28/2023,6,Olivia Rodriguez,35,Female,British,Villa,420.1,Train,60.9,95.3,43.1,19,638.4
+298,Mirissa,10/5/2023,10/15/2023,10,Kenji Nakamura,45,Male,Japanese,Vacation rental,878.9,Train,108.4,172.9,61.5,31.8,1253.5
+299,Negombo,11/20/2023,11/25/2023,5,Emily Lee,27,Female,American,Guesthouse,195.9,Train,40.3,75.8,32.3,17.9,362.2
+300,Colombo,12/5/2023,12/12/2023,7,James Wilson,32,Male,Australian,Hostel,74.1,Train,81,134.7,55.3,24.8,369.9
+301,Galle,11/1/2023,11/8/2023,7,Sofia Russo,29,Female,Italian,Resort,583,Cab,165.9,110.5,36.2,19.9,915.5
+302,Kandy,9/15/2023,9/23/2023,8,Raj Patel,40,Male,Indian,Hotel,548.4,Bus,49.4,153.8,60.1,17.2,828.9
+303,Colombo,12/22/2023,12/28/2023,6,Lily Nguyen,24,Female,Vietnamese,Hotel,326.7,Bus,53.7,98.8,38,22.9,540.1
+304,Ella,8/1/2023,8/10/2023,9,David Kim,34,Male,Korean,Hotel,474.4,Bus,80.9,161.2,65.2,31,812.7
+305,Nuwara Eliya,10/20/2023,10/28/2023,8,Maria Garcia,31,Female,Spanish,Villa,595.5,Cab,186.8,148,51.2,23,1004.5
+306,Negombo,5/10/2022,5/18/2022,8,Alice Smith,30,Female,American,Resort,760.3,Bus,53.9,122.2,55.4,30.2,1022
+307,Dambulla,6/15/2022,6/22/2022,7,Bob Johnson,45,Male,Canadian,Villa,595.4,Train,64.8,105.3,42,24.7,832.2
+308,Nuwara Eliya,7/2/2022,7/11/2022,9,Charlie Lee,25,Male,Korean,Hotel,581.6,Bus,67.9,146,49.1,22,866.6
+309,Galle,8/20/2022,9/2/2022,13,Emma Davis,28,Female,British,Vacation rental,913.7,Train,118.8,246.5,88.7,40.7,1408.4
+310,Nuwara Eliya,9/5/2022,9/14/2022,9,Olivia Martin,33,Female,Australian,Resort,775.7,Cab,193.4,176,70.5,34,1249.6
+311,Galle,10/12/2022,10/20/2022,8,Harry Wilson,20,Male,American,Resort,709.4,Cab,192.7,150.7,49,20.6,1122.4
+312,Galle,11/8/2022,11/15/2022,7,Sophia Lee,37,Female,Canadian,Vacation rental,623.8,Train,70.9,129.1,36.8,20.4,881
+313,Ella,1/5/2023,1/15/2023,10,James Brown,42,Male,British,Vacation rental,834.5,Train,117.6,163.9,79.6,31.9,1227.5
+314,Dambulla,2/14/2023,2/20/2023,6,Mia Johnson,31,Female,American,Airbnb,95.3,Bus,53.9,98.4,47.5,18.7,313.8
+315,Ella,3/23/2023,3/31/2023,8,William Davis,27,Male,Korean,Hotel,550.8,Cab,184.9,145.4,45.4,31.1,957.6
+316,Weligama,4/19/2023,4/26/2023,5,Amelia Brown,38,Female,Australian,Resort,472.5,Bus,32.8,97.5,28.3,17.2,648.3
+317,Weligama,6/12/2022,6/19/2022,7,Mia Johnson,25,Female,American,Villa,516.1,Cab,159.4,128.6,41.1,23.1,868.3
+318,Mirissa,1/2/2023,1/9/2023,7,Adam Lee,33,Male,Canadian,Airbnb,141,Train,61.9,131.7,35.7,21.8,392.1
+319,Weligama,12/10/2022,12/18/2022,8,Sarah Wong,28,Female,Chinese,Hostel,84.2,Cab,191,124.7,42.6,30.8,473.3
+320,Galle,7/1/2023,7/8/2023,7,John Smith,45,Male,American,Vacation rental,605.6,Bus,57.3,135.1,44.6,22.8,865.4
+321,Mirissa,11/20/2022,11/27/2022,7,Maria Silva,30,Female,Brazilian,Hostel,72.3,Cab,148.3,138,50.6,27.7,436.9
+322,Ella,3/5/2023,3/12/2023,2,Peter Brown,55,Male,British,Guesthouse,72.9,Cab,38.5,30.3,12.5,5.4,159.6
+323,Ella,8/18/2023,8/25/2023,2,Emma Garcia,27,Female,Spanish,Hotel,109.3,Bus,15.9,37.7,11.2,6.1,180.2
+324,Mirissa,9/15/2022,9/22/2022,2,Michael Davis,41,Male,American,Vacation rental,158.1,Bus,15.5,33.5,14.9,5.5,227.5
+325,Weligama,5/1/2023,5/7/2023,2,Nina Patel,29,Female,Indian,Hotel,134.5,Bus,18.3,33.5,12.6,6.8,205.7
+326,Ella,7/10/2022,7/17/2022,2,Kevin Kim,24,Male,Korean,Hotel,110.5,Train,16,33.6,14.1,6.2,180.4
+327,Galle,6/20/2023,6/28/2023,2,Laura van den Berg,31,Female,Dutch,Villa,151.7,Train,17.1,35.6,13.2,4.5,222.1
+328,Negombo,8/15/2023,8/22/2023,2,Jennifer Nguyen,31,Female,Canadian,Airbnb,47.3,Train,18.7,39.6,14.2,5.1,124.9
+329,Ella,10/10/2023,10/20/2023,2,David Kim,25,Male,American,Hotel,110.4,Cab,38.8,37.4,11.9,6,204.5
+330,Nuwara Eliya,11/5/2023,11/12/2023,2,Rachel Lee,27,Female,South Korean,Hotel,121.8,Bus,20,33.2,15,5,195
+331,Ella,12/24/2023,12/31/2023,2,Jessica Wong,28,Female,Canadian,Guesthouse,77.4,Bus,13.3,30,14.7,4.1,139.5
+332,Colombo,1/15/2024,1/24/2024,2,Felipe Almeida,30,Male,Brazilian,Vacation rental,158.9,Cab,38.6,34.4,11.7,6.1,249.7
+333,Ella,2/1/2024,2/9/2024,2,Nisa Patel,23,Female,Indian,Hostel,19.2,Cab,40.8,36.7,14.3,6.9,117.9
+334,Nuwara Eliya,3/15/2024,3/23/2024,2,Ben Smith,35,Male,British,Vacation rental,169.2,Train,22,34,14.2,7.9,247.3
+335,Galle,4/5/2024,4/13/2024,2,Laura Gomez,29,Female,Spanish,Guesthouse,75,Train,18.1,35.1,12.8,4.9,145.9
+336,Nuwara Eliya,5/10/2024,5/18/2024,8,Park Min Woo,27,Male,South Korean,Vacation rental,583,Cab,153.8,121.4,44.7,31.1,934
+337,Colombo,6/20/2024,6/27/2024,7,Michael Chen,26,Male,Chinese,Resort,694.5,Cab,137.8,120.5,35.5,23.4,1011.7
+338,Mirissa,7/15/2024,7/23/2024,8,Sofia Rossi,33,Female,Italian,Resort,732.8,Train,67.4,146.9,57.6,22.9,1027.6
+339,Colombo,7/12/2022,7/18/2022,6,Rachel Sanders,35,Female,American,Hostel,49,Train,71.8,90.6,45.1,19.6,276.1
+340,Habarana,9/3/2022,9/10/2022,7,Kenji Nakamura,28,Male,Japanese,Villa,538.8,Train,77.6,108.7,51,22.4,798.5
+341,Dambulla,1/7/2023,1/16/2023,9,Emily Watson,29,Female,British,Resort,797.8,Cab,138.7,176.7,54.7,23,1190.9
+342,Colombo,6/23/2023,6/29/2023,6,David Lee,43,Male,Australian,Airbnb,146.5,Train,58.2,116.8,41.5,20.4,383.4
+343,Galle,8/18/2023,8/25/2023,7,Ana Rodriguez,31,Female,Spanish,Vacation rental,497.1,Bus,57.9,121.3,49.6,17.7,743.6
+344,Galle,2/1/2024,2/8/2024,7,Tom Wilson,27,Male,American,Resort,589.6,Cab,157.1,124.1,36.2,15.2,922.2
+345,Weligama,5/6/2024,5/12/2024,6,Olivia Green,39,Female,French,Resort,536.2,Bus,36.8,111,40.7,19.9,744.6
+346,Mirissa,7/20/2024,7/26/2024,6,James Chen,25,Male,American,Resort,540.7,Bus,53.4,119.7,33.2,19.5,766.5
+347,Ella,9/8/2024,9/16/2024,8,Lila Patel,33,Female,Indian,Airbnb,151.1,Bus,50.6,142.4,42.6,21.3,408
+348,Mirissa,2/14/2025,2/20/2025,6,Marco Rossi,41,Male,Italian,Villa,469.7,Bus,54.7,110.8,39.2,15.5,689.9
+349,Mirissa,5/21/2025,5/29/2025,8,Sarah Brown,37,Female,British,Airbnb,166.7,Train,72.9,140.3,62.4,17,459.3
+350,Colombo,,,,,,,,Villa,,Cab,,,,,0
+351,Habarana,8/5/2022,8/12/2022,7,Sarah Lee,35,Female,South Korean,Guesthouse,246.1,Train,59.4,121.5,52.1,27.8,506.9
+352,Hambantota,1/1/2023,1/9/2023,8,Alex Kim,29,Male,American,Hostel,70.2,Train,73.3,131.1,55.1,27.2,356.9
+353,Kandy,4/15/2023,4/22/2023,7,Maria Hernandez,42,Female,Mexican,Villa,522.2,Cab,139.2,117,52.6,20.7,851.7
+354,Kandy,6/7/2023,6/14/2023,7,John Smith,46,Male,British,Hostel,61.1,Bus,48.4,122,46.2,27.9,305.6
+355,Colombo,9/1/2023,9/10/2023,9,Mark Johnson,31,Male,South African,Resort,787.7,Train,97.2,168.4,51.3,23.9,1128.5
+356,Kandy,11/12/2023,11/19/2023,7,Amanda Chen,25,Female,Taiwanese,Vacation rental,599.4,Cab,132.2,105.5,45.8,14.9,897.8
+357,Colombo,2/5/2024,2/12/2024,7,David Lee,38,Male,Australian,Vacation rental,617.2,Bus,65.1,113.7,42.9,23.7,862.6
+358,Matara,5/15/2024,5/22/2024,7,Nana Kwon,27,Female,Korean,Hotel,426.2,Cab,111.7,138.7,55.4,15,747
+359,Matara,8/20/2024,8/27/2024,7,Tom Hanks,60,Male,American,Resort,579.3,Cab,129.1,139,55,19.3,921.7
+360,Nuwara Eliya,1/1/2025,1/8/2025,7,Emma Watson,32,Female,British,Resort,605.3,Train,57,135.6,50.1,21.2,869.2
+361,Ella,4/15/2025,4/22/2025,7,James Kim,41,Male,American,Hostel,82.1,Cab,107.7,126.1,49.4,26.3,391.6
+362,Galle,6/15/2021,6/20/2021,6,John Smith,35,Male,American,Airbnb,147,Cab,127.7,100.8,44.4,13.9,433.8
+363,Kandy,7/1/2021,7/10/2021,10,Sarah Lee,28,Female,Korean,Guesthouse,314.7,Cab,183.2,179.9,57.2,23.6,758.6
+364,Kandy,8/10/2021,8/20/2021,11,Maria Garcia,42,Female,Spanish,Guesthouse,426.9,Cab,176.2,195.3,86.7,38.3,923.4
+365,Anuradhapura,9/1/2021,9/10/2021,9,David Lee,45,Male,Australian,Vacation rental,715.7,Train,97.5,159.2,68.9,32.1,1073.4
+366,Colombo,10/15/2021,10/20/2021,6,Emily Davis,31,Female,American,Guesthouse,214.3,Cab,129.6,94,39.6,15,492.5
+367,Ella,11/20/2021,11/30/2021,11,James Wilson,29,Male,British,Vacation rental,977.3,Bus,82.7,204.9,77.2,37.7,1379.8
+368,Galle,1/1/2022,1/8/2022,8,Fatima Ahmed,24,Female,Emirati,Hostel,85.1,Bus,49.2,147.2,47.1,29.1,357.7
+369,Ella,2/14/2022,2/20/2022,7,Liam Nguyen,26,Male,Vietnamese,Villa,546.3,Cab,128.4,113,38.2,27.6,853.5
+370,Galle,3/10/2022,3/20/2022,11,Giulia Rossi,30,Female,Italian,Villa,921.8,Bus,69.9,218.2,68.2,32.6,1310.7
+371,Nuwara Eliya,4/15/2022,4/25/2022,11,Putra Wijaya,33,Male,Indonesian,Vacation rental,795.4,Cab,235.3,206.3,70.8,23.6,1331.4
+372,Nuwara Eliya,5/1/2022,5/10/2022,10,Kim Min-ji,27,Female,Korean,Hostel,102.8,Train,99.3,171.3,53,20.6,447
+373,Matara,6/15/2022,6/20/2022,5,John Smith,35,Male,USA,Hotel,312,Bus,43.7,88.2,25.5,12.1,481.5
+374,Anuradhapura,9/1/2022,9/10/2022,9,Emily Johnson,28,Female,Canada,Villa,775.2,Train,91.8,166.1,59.2,32.9,1125.2
+375,Galle,11/23/2022,12/2/2022,9,David Lee,45,Male,South Korea,Villa,724.4,Train,97.1,141.9,60.5,29.3,1053.2
+376,Ella,2/14/2023,2/19/2023,5,Sarah Brown,37,Female,UK,Vacation rental,432.1,Train,55,87.6,30.2,17.1,622
+377,Galle,5/8/2023,5/14/2023,6,Michael Wong,50,Male,China,Vacation rental,425.1,Bus,50.5,92.5,44.7,15.4,628.2
+378,Kandy,8/20/2023,8/27/2023,7,Jessica Chen,31,Female,Taiwan,Airbnb,125.5,Train,72.7,122.3,45.4,15.8,381.7
+379,Kandy,11/12/2023,11/20/2023,8,Ken Tanaka,42,Male,Japan,Hostel,71.5,Cab,168.5,141.4,53.4,26.5,461.3
+380,Mirissa,1/6/2024,1/14/2024,8,Maria Garcia,27,Female,Spain,Airbnb,136.2,Bus,77.4,134.7,62.1,26.8,437.2
+381,Weligama,4/3/2024,4/10/2024,7,Rodrigo Oliveira,33,Male,Brazil,Resort,672.8,Bus,59.1,131.9,49.8,24.2,937.8
+382,Nuwara Eliya,7/22/2024,7/28/2024,6,Olivia Kim,29,Female,South Korea,Vacation rental,511.5,Train,59.4,109.9,43.4,13.5,737.7
+383,Nuwara Eliya,10/10/2024,10/17/2024,7,Robert Mueller,41,Male,Germany,Airbnb,156,Bus,50.7,134.5,45.8,21.4,408.4
+384,Kandy,5/15/2022,5/20/2022,5,John Smith,35,Male,USA,Guesthouse,152.4,Bus,33.6,85.1,30.1,17.4,318.6
+385,Ella,9/1/2022,9/10/2022,9,Sarah Lee,28,Female,South Korea,Hotel,522,Train,92.6,149.5,69.9,29.8,863.8
+386,Colombo,6/20/2022,6/25/2022,5,Michael Wong,42,Male,Hong Kong,Villa,389.9,Train,48.6,89.3,39.6,14.5,581.9
+387,Matara,8/12/2022,8/20/2022,8,Lisa Chen,30,Female,Taiwan,Hotel,542.2,Cab,120.2,127.6,59.5,28.1,877.6
+388,Kandy,7/1/2022,7/10/2022,9,David Kim,26,Male,Canada,Villa,806.8,Bus,62.3,168.2,47.6,18.4,1103.3
+389,Ella,6/10/2022,6/15/2022,5,Emily Wong,38,Female,United Kingdom,Villa,366.6,Train,42.1,93,27,18.8,547.5
+390,Nuwara Eliya,9/5/2022,9/12/2022,7,Mark Tan,45,Male,Singapore,Vacation rental,508.5,Cab,117.7,117.6,43.4,24.6,811.8
+391,Nuwara Eliya,5/1/2022,5/8/2022,7,Emma Lee,31,Female,Italy,Resort,698.3,Cab,128.7,116.9,36.4,20,1000.3
+392,Ella,7/15/2022,7/22/2022,7,George Chen,27,Male,Greece,Villa,582.6,Bus,61.1,109.2,52.2,19.2,824.3
+393,Anuradhapura,8/25/2022,8/30/2022,5,Sophia Kim,29,Female,United Arab Emirates,Hotel,325.8,Cab,84.3,89.5,38,19.8,557.4
+394,Negombo,9/10/2022,9/15/2022,5,Alex Ng,33,Male,Cambodia,Vacation rental,350.7,Cab,109.8,82.5,37.2,18.7,598.9
+395,Matara,2/5/2022,2/14/2022,9,Alice Smith,32,Female,American,Resort,766.5,Cab,145.5,160.4,51.5,19.2,1143.1
+396,Negombo,3/15/2022,3/22/2022,7,Bob Johnson,47,Male,Canadian,Hotel,432.4,Cab,172.3,126.8,47.9,23.5,802.9
+397,Anuradhapura,5/1/2022,5/12/2022,11,Cindy Chen,26,Female,Chinese,Resort,908.5,Bus,96.7,208.1,70.7,41.7,1325.7
+398,Colombo,6/10/2022,6/17/2022,7,David Lee,38,Male,Korean,Resort,614.6,Bus,63.3,114.9,39.2,26.3,858.3
+399,Kandy,7/20/2022,7/30/2022,10,Emily Kim,29,Female,Korean,Vacation rental,868.6,Cab,161.7,181.2,67.7,27.8,1307
+400,Colombo,8/8/2022,8/16/2022,8,Frank Li,41,Male,American,Airbnb,161.6,Train,69.5,156.1,56.7,18.6,462.5
+401,Galle,9/20/2022,9/30/2022,10,Gina Lee,35,Female,Korean,Villa,891.2,Cab,196.7,165.7,71.2,31.1,1355.9
+402,Nuwara Eliya,10/5/2022,10/13/2022,8,Henry Kim,24,Male,Korean,Villa,683,Train,86.8,157.9,54,17.6,999.3
+403,Colombo,11/11/2022,11/21/2022,10,Isabella Chen,30,Female,Chinese,Resort,924.6,Train,99.9,178.5,57.6,31.2,1291.8
+404,Weligama,12/24/2022,1/1/2023,8,Jack Smith,28,Male,American,Guesthouse,280.9,Train,76.8,142.2,51.2,29.4,580.5
+405,Galle,2/10/2023,2/18/2023,8,Katie Johnson,33,Female,Canadian,Vacation rental,590,Cab,125.8,125.8,48.7,23.7,914
+406,Colombo,,,,,,,,Airbnb,,Train,,,,,0
+407,Galle,5/1/2023,5/7/2023,6,John Doe,35,Male,American,Airbnb,126,Bus,36.6,96.6,37.4,22.2,318.8
+408,Mirissa,5/15/2023,5/22/2023,7,Jane Smith,28,Female,British,Vacation rental,537.2,Cab,132.5,130.2,42.6,18.1,860.6
+409,Colombo,6/1/2023,6/10/2023,9,Michael Johnson,45,Male,South African,Hostel,96.5,Bus,83.2,144.4,48.6,24.6,397.3
+410,Galle,6/15/2023,6/21/2023,6,Sarah Lee,31,Female,Australian,Vacation rental,421.6,Bus,57.7,97.7,30.8,14.1,621.9
+411,Weligama,7/1/2023,7/8/2023,7,David Kim,42,Male,Korean,Guesthouse,279.3,Train,64.7,123.2,48.8,22.5,538.5
+412,Galle,7/15/2023,7/22/2023,7,Emily Davis,27,Female,American,Guesthouse,250.4,Train,77.7,139.4,35.7,14.4,517.6
+413,Colombo,8/1/2023,8/10/2023,9,Jose Perez,37,Male,Brazilian,Resort,786.7,Cab,184.9,179,69,34.2,1253.8
+414,Galle,8/15/2023,8/21/2023,6,Emma Wilson,29,Female,Canadian,Villa,505.2,Cab,114.9,102,31,18.3,771.4
+415,Matara,9/1/2023,9/8/2023,7,Ryan Chen,34,Male,Chinese,Airbnb,109.8,Train,72.8,125.3,53.8,24.7,386.4
+416,Galle,9/15/2023,9/22/2023,7,Sofia Rodriguez,25,Female,Spanish,Resort,586.8,Bus,45.9,117.1,50,19.6,819.4
+417,Nuwara Eliya,10/1/2023,10/8/2023,7,William Brown,39,Male,New Zealander,Guesthouse,213.5,Train,83.5,106.4,45.9,21.9,471.2
+418,Colombo,5/1/2023,5/8/2023,3,John Smith,35,Male,American,Hotel,152.9,Cab,45.1,58,16.2,9.4,281.6
+419,Colombo,6/15/2023,6/20/2023,3,Jane Doe,28,Female,Canadian,Resort,259.9,Cab,54.4,47.4,23.6,7,392.3
+420,Galle,7/1/2023,7/8/2023,3,David Lee,45,Male,Korean,Villa,239.7,Cab,67.7,46,24,11.6,389
+421,Colombo,8/15/2023,8/29/2023,3,Sarah Johnson,29,Female,British,Villa,260.9,Bus,20.8,46.8,23,10.1,361.6
+422,Weligama,9/10/2023,9/17/2023,3,Kim Nguyen,26,Female,Vietnamese,Villa,238.4,Cab,73.2,45.4,17.5,8.4,382.9
+423,Ella,10/5/2023,10/10/2023,3,Michael Brown,42,Male,American,Airbnb,61.1,Bus,21.4,56.5,17.9,7.1,164
+424,Ella,11/20/2023,11/30/2023,3,Emily Davis,33,Female,Australian,Villa,246.7,Train,24.4,45.9,20.9,8.6,346.5
+425,Dambulla,1/5/2024,1/12/2024,3,Lucas Santos,25,Male,Brazilian,Guesthouse,116.8,Bus,27.3,55.7,21.5,6.6,227.9
+426,Nuwara Eliya,2/14/2024,2/21/2024,3,Laura Janssen,31,Female,Dutch,Hostel,25.4,Cab,46.1,51.4,21.8,10.4,155.1
+427,Ella,3/10/2024,3/17/2024,3,Mohammed Ali,39,Male,Emirati,Hostel,35.3,Bus,18.4,57.3,16.8,8.6,136.4
+428,Kandy,4/1/2024,4/8/2024,3,Ana Hernandez,27,Female,Mexican,Guesthouse,119,Train,25.2,49.4,22.3,11.3,227.2
+429,Mirissa,5/15/2024,5/22/2024,3,Carlos Garcia,36,Male,Spanish,Hotel,177.8,Cab,64.1,49.3,17,11.1,319.3
+430,Mirissa,6/10/2024,6/18/2024,3,Lily Wong,29,Female,Chinese,Guesthouse,118.4,Train,30,57.2,22.8,10.4,238.8
+431,Nuwara Eliya,7/1/2024,7/10/2024,3,Hans Mueller,48,Male,German,Villa,238,Train,24.9,59.5,15.4,8.1,345.9
+432,Galle,8/20/2024,8/27/2024,3,Fatima Khouri,26,Female,Moroccan,Hostel,34,Train,32.2,59.9,23.5,7.5,157.1
+433,Kandy,9/5/2024,9/12/2024,3,James MacKenzie,32,Male,Scottish,Hotel,150.9,Bus,23.2,46.6,18.7,10.5,249.9
+434,Nuwara Eliya,9/1/2023,9/10/2023,3,Sarah Johnson,30,Female,American,Vacation rental,219.4,Train,26.4,50.4,21.6,11.5,329.3
+435,Colombo,8/15/2023,8/25/2023,3,Michael Chang,28,Male,Chinese,Hostel,28.2,Train,34.4,55.2,23,10.9,151.7
+436,Ella,7/22/2023,7/28/2023,3,Olivia Rodriguez,35,Female,British,Hotel,160.7,Bus,21.9,55.2,19.2,6.9,263.9
+437,Mirissa,10/5/2023,10/15/2023,3,Kenji Nakamura,45,Male,Japanese,Airbnb,64.4,Train,28.4,56,21.3,10.5,180.6
+438,Negombo,11/20/2023,11/25/2023,3,Emily Lee,27,Female,American,Hotel,186.8,Train,33.9,49.1,22.6,7.2,299.6
+439,Colombo,12/5/2023,12/12/2023,3,James Wilson,32,Male,Australian,Villa,258.9,Train,35.9,50.9,19.7,8.7,374.1
+440,Galle,11/1/2023,11/8/2023,3,Sofia Russo,29,Female,Italian,Hostel,35.3,Bus,25,48.3,18.9,9.2,136.7
+441,Kandy,9/15/2023,9/23/2023,3,Raj Patel,40,Male,Indian,Villa,256.4,Bus,22.6,53.1,20.9,6,359
+442,Colombo,12/22/2023,12/28/2023,3,Lily Nguyen,24,Female,Vietnamese,Airbnb,72.1,Train,26.6,48.6,21.8,9.9,179
+443,Ella,8/1/2023,8/10/2023,3,David Kim,34,Male,Korean,Resort,270.3,Bus,19.8,52.8,19,9.9,371.8
+444,Nuwara Eliya,10/20/2023,10/28/2023,3,Maria Garcia,31,Female,Spanish,Hostel,27.2,Train,30.9,49.6,17.6,11.8,137.1
+445,Negombo,5/10/2022,5/18/2022,3,Alice Smith,30,Female,American,Airbnb,46.9,Bus,20,49.6,21,11,148.5
+446,Dambulla,6/15/2022,6/22/2022,3,Bob Johnson,45,Male,Canadian,Vacation rental,247.2,Cab,51.7,53,23,7.7,382.6
+447,Nuwara Eliya,7/2/2022,7/11/2022,3,Charlie Lee,25,Male,Korean,Resort,244,Bus,18.8,52.5,22.5,10.8,348.6
+448,Galle,8/20/2022,9/2/2022,3,Emma Davis,28,Female,British,Vacation rental,225,Cab,70.5,47.9,20.9,9.6,373.9
+449,Nuwara Eliya,9/5/2022,9/14/2022,3,Olivia Martin,33,Female,Australian,Hotel,177.3,Train,31.3,57.4,18.8,9,293.8
+450,Galle,10/12/2022,10/20/2022,1,Harry Wilson,20,Male,American,Resort,97,Cab,20.9,19.3,6.5,3.3,147
+451,Galle,11/8/2022,11/15/2022,1,Sophia Lee,37,Female,Canadian,Airbnb,24,Cab,19.8,16.1,5.5,3.7,69.1
+452,Ella,1/5/2023,1/15/2023,1,James Brown,42,Male,British,Hotel,68.5,Train,11.9,17.1,6.1,2.8,106.4
+453,Dambulla,2/14/2023,2/20/2023,1,Mia Johnson,31,Female,American,Guesthouse,36.7,Cab,16.2,18,6.6,2.1,79.6
+454,Ella,3/23/2023,3/31/2023,1,William Davis,27,Male,Korean,Hotel,69.7,Train,10.9,16.6,6.6,2.3,106.1
+455,Weligama,4/19/2023,4/26/2023,1,Amelia Brown,38,Female,Australian,Guesthouse,35.3,Cab,20.7,19.5,5.5,3.1,84.1
+456,Weligama,6/12/2022,6/19/2022,1,Mia Johnson,25,Female,American,Hotel,59.8,Bus,8.2,19.5,7.5,2.2,97.2
+457,Mirissa,1/2/2023,1/9/2023,1,Adam Lee,33,Male,Canadian,Villa,82.6,Train,11.1,16.2,5.6,2.8,118.3
+458,Weligama,12/10/2022,12/18/2022,1,Sarah Wong,28,Female,Chinese,Airbnb,17.2,Cab,23.1,17,5,2.2,64.5
+459,Galle,7/1/2023,7/8/2023,1,John Smith,45,Male,American,Resort,88.1,Bus,7.2,16.4,5.8,3.4,120.9
+460,Mirissa,11/20/2022,11/27/2022,1,Maria Silva,30,Female,Brazilian,Hotel,58,Cab,19.7,15.8,7.2,3,103.7
+461,Ella,3/5/2023,3/12/2023,1,Peter Brown,55,Male,British,Guesthouse,34.6,Cab,18.5,17.2,6.2,2.7,79.2
+462,Ella,8/18/2023,8/25/2023,1,Emma Garcia,27,Female,Spanish,Resort,88,Train,8.3,18.6,5.5,3.7,124.1
+463,Mirissa,9/15/2022,9/22/2022,1,Michael Davis,41,Male,American,Villa,79.1,Bus,9.4,16.9,5.9,3.4,114.7
+464,Weligama,5/1/2023,5/7/2023,1,Nina Patel,29,Female,Indian,Airbnb,25,Cab,18.1,18,5.4,2.9,69.4
+465,Ella,7/10/2022,7/17/2022,1,Kevin Kim,24,Male,Korean,Villa,73.2,Cab,18.4,15.6,5.3,2.5,115
+466,Galle,6/20/2023,6/28/2023,1,Laura van den Berg,31,Female,Dutch,Resort,91.7,Cab,21.7,17.7,7,3.3,141.4
+467,Negombo,8/15/2023,8/22/2023,1,Jennifer Nguyen,31,Female,Canadian,Guesthouse,35.4,Cab,18.5,18.5,6.5,3.9,82.8
+468,Ella,10/10/2023,10/20/2023,1,David Kim,25,Male,American,Hostel,9.6,Cab,20.2,15.5,7.8,3,56.1
+469,Nuwara Eliya,11/5/2023,11/12/2023,1,Rachel Lee,27,Female,South Korean,Hostel,9.2,Cab,23.8,15.6,5.9,3.3,57.8
+470,Ella,12/24/2023,12/31/2023,1,Jessica Wong,28,Female,Canadian,Vacation rental,84.1,Cab,23.4,15,7.8,2.3,132.6
+471,Colombo,1/15/2024,1/24/2024,2,Felipe Almeida,30,Male,Brazilian,Vacation rental,170.4,Cab,35.3,33.1,10.4,5.8,255
+472,Ella,2/1/2024,2/9/2024,2,Nisa Patel,23,Female,Indian,Vacation rental,152.3,Cab,40.8,32.4,13.6,4.9,244
+473,Nuwara Eliya,3/15/2024,3/23/2024,2,Ben Smith,35,Male,British,Guesthouse,73.6,Train,23.7,35.2,12.7,5.4,150.6
+474,Galle,4/5/2024,4/13/2024,2,Laura Gomez,29,Female,Spanish,Guesthouse,67.9,Train,18.2,32.3,12.1,4.7,135.2
+475,Nuwara Eliya,5/10/2024,5/18/2024,2,Park Min Woo,27,Male,South Korean,Guesthouse,72.9,Bus,12.7,38.9,16,6.6,147.1
+476,Colombo,6/20/2024,6/27/2024,2,Michael Chen,26,Male,Chinese,Vacation rental,151.5,Bus,18.1,32.4,12.3,4.6,218.9
+477,Mirissa,7/15/2024,7/23/2024,2,Sofia Rossi,33,Female,Italian,Hostel,23.9,Cab,44,39.6,10.6,4.9,123
+478,Colombo,7/12/2022,7/18/2022,2,Rachel Sanders,35,Female,American,Vacation rental,157.1,Cab,35.9,37.2,14.2,5,249.4
+479,Habarana,9/3/2022,9/10/2022,2,Kenji Nakamura,28,Male,Japanese,Hotel,120.4,Bus,19.3,32.9,12.9,8,193.5
+480,Dambulla,1/7/2023,1/16/2023,2,Emily Watson,29,Female,British,Villa,176.7,Train,23.2,37.1,10.1,6,253.1
+481,Colombo,6/23/2023,6/29/2023,2,David Lee,43,Male,Australian,Airbnb,31.7,Train,22.7,34,12.8,4.2,105.4
+482,Galle,8/18/2023,8/25/2023,2,Ana Rodriguez,31,Female,Spanish,Guesthouse,65.8,Train,18.5,39.5,10.6,5.9,140.3
+483,Galle,2/1/2024,2/8/2024,2,Tom Wilson,27,Male,American,Airbnb,41.5,Bus,18.5,40,10.2,6.7,116.9
+484,Weligama,5/6/2024,5/12/2024,2,Olivia Green,39,Female,French,Airbnb,46.1,Bus,17,36.8,15.5,7.6,123
+485,Mirissa,7/20/2024,7/26/2024,2,James Chen,25,Male,American,Airbnb,43,Bus,13.7,37.2,10.6,4.8,109.3
+486,Ella,9/8/2024,9/16/2024,2,Lila Patel,33,Female,Indian,Vacation rental,158.9,Bus,14.6,38,14.5,6.5,232.5
+487,Mirissa,2/14/2025,2/20/2025,2,Marco Rossi,41,Male,Italian,Hostel,16.2,Bus,14.9,31.4,11.6,5.8,79.9
+488,Mirissa,5/21/2025,5/29/2025,2,Sarah Brown,37,Female,British,Resort,199.9,Train,22.6,39.5,11.3,6.8,280.1
+489,Colombo,,,2,,,,,Hotel,133.9,Cab,46.9,32.2,14.2,6.4,233.6
+490,Habarana,8/5/2022,8/12/2022,2,Sarah Lee,35,Female,South Korean,Vacation rental,147.5,Train,19.4,38.5,13.7,7.3,226.4
+491,Hambantota,1/1/2023,1/9/2023,2,Alex Kim,29,Male,American,Vacation rental,141.7,Bus,19.3,33.1,10.1,4.8,209
+492,Kandy,4/15/2023,4/22/2023,2,Maria Hernandez,42,Female,Mexican,Guesthouse,64.6,Train,22,31.1,11.1,4.6,133.4
+493,Kandy,6/7/2023,6/14/2023,2,John Smith,46,Male,British,Hotel,118,Train,17.7,35.9,15.1,4.1,190.8
+494,Colombo,9/1/2023,9/10/2023,2,Mark Johnson,31,Male,South African,Airbnb,32.8,Train,18.2,39.9,12,6.4,109.3
+495,Kandy,11/12/2023,11/19/2023,2,Amanda Chen,25,Female,Taiwanese,Resort,165.7,Bus,15.2,37.8,14.7,5.9,239.3
+496,Colombo,2/5/2024,2/12/2024,2,David Lee,38,Male,Australian,Guesthouse,66.5,Bus,17.7,34.5,15.6,5.4,139.7
+497,Matara,5/15/2024,5/22/2024,2,Nana Kwon,27,Female,Korean,Resort,163,Train,22,36.8,14.5,6.6,242.9
+498,Matara,8/20/2024,8/27/2024,2,Tom Hanks,60,Male,American,Hostel,18.7,Cab,37.6,35.2,12,4.4,107.9
+499,Nuwara Eliya,1/1/2025,1/8/2025,2,Emma Watson,32,Female,British,Hostel,21.1,Train,19.8,39.2,13,5.8,98.9
+500,Ella,4/15/2025,4/22/2025,2,James Kim,41,Male,American,Airbnb,41.1,Train,22.4,35.8,10.9,7.8,118
+501,Galle,6/15/2021,6/20/2021,2,John Smith,35,Male,American,Guesthouse,63.1,Cab,43.6,31.7,11.8,7,157.2
+502,Kandy,7/1/2021,7/10/2021,2,Sarah Lee,28,Female,Korean,Villa,175,Train,19.7,30.2,13.5,5,243.4
+503,Kandy,8/10/2021,8/20/2021,2,Maria Garcia,42,Female,Spanish,Villa,172,Bus,14.5,32.5,11.1,4.9,235
+504,Anuradhapura,9/1/2021,9/10/2021,2,David Lee,45,Male,Australian,Villa,163.4,Bus,16.8,35.6,12.9,6.5,235.2
+505,Colombo,10/15/2021,10/20/2021,2,Emily Davis,31,Female,American,Villa,140.1,Cab,33.6,35.8,10.6,7.1,227.2
+506,Ella,11/20/2021,11/30/2021,2,James Wilson,29,Male,British,Hotel,112.6,Train,18.2,31.7,13.5,6.3,182.3
+507,Galle,1/1/2022,1/8/2022,2,Fatima Ahmed,24,Female,Emirati,Hostel,19.6,Bus,14.3,39.6,12.5,6.6,92.6
+508,Ella,2/14/2022,2/20/2022,2,Liam Nguyen,26,Male,Vietnamese,Guesthouse,60.9,Bus,18.5,35.6,13.6,4.3,132.9
+509,Galle,3/10/2022,3/20/2022,2,Giulia Rossi,30,Female,Italian,Vacation rental,154,Train,20.4,32.3,10.6,7.9,225.2
+510,Nuwara Eliya,4/15/2022,4/25/2022,2,Putra Wijaya,33,Male,Indonesian,Hostel,20.1,Cab,34.7,32.9,11.4,4.1,103.2
+511,Nuwara Eliya,5/1/2022,5/10/2022,2,Kim Min-ji,27,Female,Korean,Guesthouse,65.1,Train,22.8,34.8,10.5,7.2,140.4
+512,Matara,6/15/2022,6/20/2022,2,John Smith,35,Male,USA,Guesthouse,78,Cab,46.3,35,13.5,4.7,177.5
+513,Anuradhapura,9/1/2022,9/10/2022,2,Emily Johnson,28,Female,Canada,Vacation rental,161.7,Bus,18.9,31.3,12,4.9,228.8
+514,Galle,11/23/2022,12/2/2022,2,David Lee,45,Male,South Korea,Resort,195.4,Bus,12.4,38.1,11.5,5.7,263.1
+515,Ella,2/14/2023,2/19/2023,3,Sarah Brown,37,Female,UK,Hostel,27.9,Cab,73.6,52.7,22,9.8,186
+516,Galle,5/8/2023,5/14/2023,3,Michael Wong,50,Male,China,Hostel,35.6,Train,29.7,48.3,19,11.6,144.2
+517,Kandy,8/20/2023,8/27/2023,3,Jessica Chen,31,Female,Taiwan,Guesthouse,96.2,Cab,50.9,49.2,15.4,8.8,220.5
+518,Kandy,11/12/2023,11/20/2023,1,Ken Tanaka,42,Male,Japan,Hotel,53,Cab,17.3,19.7,6.6,2.7,99.3
+519,Mirissa,1/6/2024,1/14/2024,1,Maria Garcia,27,Female,Spain,Guesthouse,31.6,Bus,8.3,19.4,7.6,2.5,69.4
+520,Weligama,4/3/2024,4/10/2024,1,Rodrigo Oliveira,33,Male,Brazil,Airbnb,20.5,Cab,15.6,15.8,7.7,2.1,61.7
+521,Nuwara Eliya,7/22/2024,7/28/2024,1,Olivia Kim,29,Female,South Korea,Villa,74.5,Train,9.6,19.9,7.1,2.2,113.3
+522,Nuwara Eliya,10/10/2024,10/17/2024,1,Robert Mueller,41,Male,Germany,Vacation rental,88,Cab,23.4,19.6,5.5,2.3,138.8
+523,Kandy,5/15/2022,5/20/2022,1,John Smith,35,Male,USA,Hostel,10.9,Cab,17.6,19.5,5.8,3.8,57.6
+524,Ella,9/1/2022,9/10/2022,1,Sarah Lee,28,Female,South Korea,Guesthouse,36.6,Train,8.5,19.1,7.1,2.2,73.5
+525,Colombo,6/20/2022,6/25/2022,1,Michael Wong,42,Male,Hong Kong,Villa,87.7,Bus,9.9,18.9,5.1,2.4,124
+526,Matara,8/12/2022,8/20/2022,1,Lisa Chen,30,Female,Taiwan,Vacation rental,72.1,Cab,18.9,15.6,6.1,2.8,115.5
+527,Kandy,7/1/2022,7/10/2022,1,David Kim,26,Male,Canada,Hostel,10.9,Cab,23.1,16.5,7.6,3.8,61.9
+528,Ella,6/10/2022,6/15/2022,1,Emily Wong,38,Female,United Kingdom,Hotel,55,Bus,6.4,15.9,6,2.8,86.1
+529,Nuwara Eliya,9/5/2022,9/12/2022,1,Mark Tan,45,Male,Singapore,Guesthouse,30.2,Cab,20.5,17.9,5.8,2,76.4
+530,Nuwara Eliya,5/1/2022,5/8/2022,1,Emma Lee,31,Female,Italy,Villa,86.9,Train,9.2,16.4,5.8,3.2,121.5
+531,Ella,7/15/2022,7/22/2022,1,George Chen,27,Male,Greece,Vacation rental,86.4,Train,8.7,15.3,7.3,2.7,120.4
+532,Anuradhapura,8/25/2022,8/30/2022,1,Sophia Kim,29,Female,United Arab Emirates,Resort,93.2,Cab,20.9,15.4,5.5,2,137
+533,Negombo,9/10/2022,9/15/2022,1,Alex Ng,33,Male,Cambodia,Airbnb,23.5,Bus,6.3,19.2,6.6,3.4,59
+534,Matara,2/5/2022,2/14/2022,1,Alice Smith,32,Female,American,Hostel,9.5,Train,9,15.4,7,2.8,43.7
+535,Negombo,3/15/2022,3/22/2022,1,Bob Johnson,47,Male,Canadian,Resort,96.1,Bus,6.4,19,6.5,4,132
+536,Anuradhapura,5/1/2022,5/12/2022,1,Cindy Chen,26,Female,Chinese,Villa,86.2,Train,8.2,15.8,6.1,2.2,118.5
+537,Colombo,6/10/2022,6/17/2022,1,David Lee,38,Male,Korean,Vacation rental,80.7,Cab,17.5,19.6,6.3,2.7,126.8
+538,Kandy,7/20/2022,7/30/2022,1,Emily Kim,29,Female,Korean,Resort,91.3,Bus,8.7,16.5,6.1,3.5,126.1
+539,Colombo,8/8/2022,8/16/2022,1,Frank Li,41,Male,American,Hostel,8.5,Bus,7.3,19.5,7.6,2.8,45.7
+540,Galle,9/20/2022,9/30/2022,1,Gina Lee,35,Female,Korean,Resort,96.1,Train,8.6,17.9,5.1,3.4,131.1
+541,Nuwara Eliya,10/5/2022,10/13/2022,1,Henry Kim,24,Male,Korean,Hostel,9.1,Cab,24.8,19.5,7.5,3.1,64
+542,Colombo,11/11/2022,11/21/2022,1,Isabella Chen,30,Female,Chinese,Vacation rental,82.8,Bus,6.8,18.2,6.3,2.2,116.3
+543,Weligama,12/24/2022,1/1/2023,1,Jack Smith,28,Male,American,Hotel,55.2,Bus,9.3,17,5.1,2.1,88.7
+544,Galle,2/10/2023,2/18/2023,1,Katie Johnson,33,Female,Canadian,Villa,85.7,Bus,6.9,18.6,7.6,3.5,122.3
+545,Colombo,,,1,,,,,Guesthouse,36,Bus,9.5,18.7,5.7,3.9,73.8
+546,Galle,5/1/2023,5/7/2023,1,John Doe,35,Male,American,Hotel,58,Train,9.5,18.3,5.1,3.7,94.6
+547,Mirissa,5/15/2023,5/22/2023,1,Jane Smith,28,Female,British,Airbnb,23,Bus,8,19,6.6,2.6,59.2
+548,Colombo,6/1/2023,6/10/2023,1,Michael Johnson,45,Male,South African,Villa,73.2,Cab,21.7,18.1,5.4,2.5,120.9
+549,Galle,6/15/2023,6/21/2023,1,Sarah Lee,31,Female,Australian,Vacation rental,70.2,Train,9,16.8,6.3,2.5,104.8
+550,Weligama,7/1/2023,7/8/2023,1,David Kim,42,Male,Korean,Resort,84.8,Train,9.7,17.5,5.6,3.4,121
+551,Galle,7/15/2023,7/22/2023,1,Emily Davis,27,Female,American,Hotel,63.9,Bus,9.9,15.8,6.3,2.3,98.2
+552,Colombo,8/1/2023,8/10/2023,1,Jose Perez,37,Male,Brazilian,Villa,83,Cab,17.8,17.9,7.9,3.7,130.3
+553,Galle,8/15/2023,8/21/2023,1,Emma Wilson,29,Female,Canadian,Resort,94,Bus,7,16.4,6.1,3,126.5
+554,Matara,9/1/2023,9/8/2023,1,Ryan Chen,34,Male,Chinese,Guesthouse,36.6,Bus,7.5,16,6.6,2.3,69
+555,Galle,9/15/2023,9/22/2023,1,Sofia Rodriguez,25,Female,Spanish,Airbnb,17.6,Train,9.6,15.2,6.5,2.6,51.5
+556,Nuwara Eliya,10/1/2023,10/8/2023,1,William Brown,39,Male,New Zealander,Airbnb,18.3,Train,8.1,17.3,6.6,2.7,53
+557,Colombo,5/1/2023,5/8/2023,1,John Smith,35,Male,American,Guesthouse,30.9,Cab,16.7,15,5.5,3.9,72
+558,Colombo,6/15/2023,6/20/2023,1,Jane Doe,28,Female,Canadian,Villa,80.8,Train,11.4,17.5,6.4,3.9,120
+559,Galle,7/1/2023,7/8/2023,1,David Lee,45,Male,Korean,Hostel,11.3,Cab,16,19.3,5.7,3.7,56
+560,Colombo,8/15/2023,8/29/2023,1,Sarah Johnson,29,Female,British,Resort,99.2,Cab,21.5,15.5,7.8,2.4,146.4
+561,Weligama,9/10/2023,9/17/2023,1,Kim Nguyen,26,Female,Vietnamese,Villa,70.2,Bus,6,16.1,6.5,2.1,100.9
+562,Ella,10/5/2023,10/10/2023,1,Michael Brown,42,Male,American,Hostel,11.9,Train,10.7,17.8,5.1,3.6,49.1
+563,Ella,11/20/2023,11/30/2023,1,Emily Davis,33,Female,Australian,Resort,86.8,Bus,9.3,15.4,5.8,3.4,120.7
+564,Dambulla,1/5/2024,1/12/2024,1,Lucas Santos,25,Male,Brazilian,Villa,85.2,Train,9.1,19.1,7.4,2.1,122.9
+565,Nuwara Eliya,2/14/2024,2/21/2024,1,Laura Janssen,31,Female,Dutch,Hostel,8.9,Train,9.4,15.5,7.4,2.1,43.3
+566,Ella,3/10/2024,3/17/2024,1,Mohammed Ali,39,Male,Emirati,Vacation rental,83.1,Cab,20.7,17.5,7.4,3.7,132.4
+567,Kandy,4/1/2024,4/8/2024,1,Ana Hernandez,27,Female,Mexican,Airbnb,17.1,Cab,19.7,16.3,5.9,2.6,61.6
+568,Mirissa,5/15/2024,5/22/2024,1,Carlos Garcia,36,Male,Spanish,Hotel,60.8,Train,9.1,19.9,6.9,2.6,99.3
+569,Mirissa,6/10/2024,6/18/2024,1,Lily Wong,29,Female,Chinese,Hotel,53.4,Train,9.5,17.4,5.3,2.3,87.9
+570,Nuwara Eliya,7/1/2024,7/10/2024,1,Hans Mueller,48,Male,German,Vacation rental,83.5,Bus,9.6,19.9,6.6,2.5,122.1
+571,Galle,8/20/2024,8/27/2024,1,Fatima Khouri,26,Female,Moroccan,Villa,80.3,Bus,9.7,15.8,5.6,2.2,113.6
+572,Kandy,9/5/2024,9/12/2024,1,James MacKenzie,32,Male,Scottish,Airbnb,16.1,Train,10.7,18,5.6,2.1,52.5
+573,Nuwara Eliya,9/1/2023,9/10/2023,1,Sarah Johnson,30,Female,American,Hotel,69.7,Bus,9.2,17.7,7.3,3,106.9
+574,Colombo,8/15/2023,8/25/2023,1,Michael Chang,28,Male,Chinese,Vacation rental,84.9,Cab,19.3,16.5,7.8,3,131.5
+575,Ella,7/22/2023,7/28/2023,1,Olivia Rodriguez,35,Female,British,Villa,76.9,Cab,21.3,16,6.9,3.6,124.7
+576,Mirissa,10/5/2023,10/15/2023,1,Kenji Nakamura,45,Male,Japanese,Villa,70.3,Train,11,15.7,5.1,3.3,105.4
+577,Negombo,11/20/2023,11/25/2023,1,Emily Lee,27,Female,American,Guesthouse,39.5,Cab,18.5,15,6.4,2.7,82.1
+578,Colombo,12/5/2023,12/12/2023,1,James Wilson,32,Male,Australian,Guesthouse,35,Cab,16.4,16.4,7.1,2.7,77.6
+579,Galle,11/1/2023,11/8/2023,1,Sofia Russo,29,Female,Italian,Vacation rental,77.9,Cab,23.2,18.9,6,2.6,128.6
+580,Kandy,9/15/2023,9/23/2023,1,Raj Patel,40,Male,Indian,Hotel,57.6,Cab,24.6,18,7.4,3.9,111.5
+581,Colombo,12/22/2023,12/28/2023,1,Lily Nguyen,24,Female,Vietnamese,Guesthouse,34.7,Bus,8.5,16.4,7.6,2.6,69.8
+582,Ella,8/1/2023,8/10/2023,1,David Kim,34,Male,Korean,Airbnb,22.2,Train,10.4,19,5.2,2.4,59.2
+583,Nuwara Eliya,10/20/2023,10/28/2023,1,Maria Garcia,31,Female,Spanish,Airbnb,20.6,Bus,9.1,17.1,5.6,3.7,56.1
+584,Negombo,5/10/2022,5/18/2022,1,Alice Smith,30,Female,American,Airbnb,15.1,Bus,9.9,16.4,5.4,2.3,49.1
+585,Dambulla,6/15/2022,6/22/2022,1,Bob Johnson,45,Male,Canadian,Guesthouse,32.9,Bus,8.7,16,7.5,3.5,68.6
+586,Nuwara Eliya,7/2/2022,7/11/2022,1,Charlie Lee,25,Male,Korean,Vacation rental,80.9,Bus,8,15.3,6.9,3.7,114.8
+587,Galle,8/20/2022,9/2/2022,1,Emma Davis,28,Female,British,Hotel,54.8,Bus,8.2,18,5.1,2.8,88.9
+588,Nuwara Eliya,9/5/2022,9/14/2022,1,Olivia Martin,33,Female,Australian,Hostel,10.1,Train,11.7,17.5,7.7,3.1,50.1
+589,Galle,10/12/2022,10/20/2022,1,Harry Wilson,20,Male,American,Resort,96.7,Cab,18.8,17.8,5.8,3.8,142.9
+590,Galle,11/8/2022,11/15/2022,1,Sophia Lee,37,Female,Canadian,Hostel,11,Train,10.5,15.9,5.7,2.5,45.6
+591,Ella,1/5/2023,1/15/2023,1,James Brown,42,Male,British,Guesthouse,34.3,Bus,8.4,16.1,7.3,2.3,68.4
+592,Dambulla,2/14/2023,2/20/2023,1,Mia Johnson,31,Female,American,Guesthouse,31.7,Cab,16.6,19,7.6,3.2,78.1
+593,Ella,3/23/2023,3/31/2023,1,William Davis,27,Male,Korean,Resort,85.6,Cab,15.8,16,7.5,3.4,128.3
+594,Weligama,4/19/2023,4/26/2023,1,Amelia Brown,38,Female,Australian,Resort,94.8,Cab,22.2,18.9,7.1,3.5,146.5
+595,Weligama,6/12/2022,6/19/2022,1,Mia Johnson,25,Female,American,Guesthouse,32.8,Cab,17.6,17.4,6.6,2.1,76.5
+596,Mirissa,1/2/2023,1/9/2023,1,Adam Lee,33,Male,Canadian,Airbnb,20.8,Bus,6.8,19.9,5.8,2.2,55.5
+597,Weligama,12/10/2022,12/18/2022,1,Sarah Wong,28,Female,Chinese,Villa,81.8,Train,10.6,17.7,5.8,3.4,119.3
+598,Galle,7/1/2023,7/8/2023,1,John Smith,45,Male,American,Hotel,53.1,Bus,8.9,18.9,6.4,4,91.3
+599,Mirissa,11/20/2022,11/27/2022,1,Maria Silva,30,Female,Brazilian,Villa,83.3,Cab,19,19.5,5.8,2,129.6
+600,Ella,3/5/2023,3/12/2023,1,Peter Brown,55,Male,British,Villa,70.9,Bus,7.4,15.1,7.6,2.1,103.1
+601,Ella,8/18/2023,8/25/2023,1,Emma Garcia,27,Female,Spanish,Guesthouse,31.9,Bus,6.1,17.8,7.7,3,66.5
+602,Mirissa,9/15/2022,9/22/2022,1,Michael Davis,41,Male,American,Hostel,8.5,Train,8.5,16.3,6.7,3.9,43.9
+603,Weligama,5/1/2023,5/7/2023,1,Nina Patel,29,Female,Indian,Hostel,11.8,Train,9.5,16.9,6.1,3,47.3
+604,Ella,7/10/2022,7/17/2022,1,Kevin Kim,24,Male,Korean,Airbnb,15.5,Train,9,16.3,5.9,3.2,49.9
+605,Galle,6/20/2023,6/28/2023,1,Laura van den Berg,31,Female,Dutch,Hotel,61.7,Cab,23.4,16.7,5.8,2.6,110.2
+606,Negombo,8/15/2023,8/22/2023,1,Jennifer Nguyen,31,Female,Canadian,Hotel,67.6,Cab,21.8,16.4,6.6,3.8,116.2
+607,Ella,10/10/2023,10/20/2023,1,David Kim,25,Male,American,Airbnb,15.5,Bus,8.3,19.1,7.3,2.7,52.9
+608,Nuwara Eliya,11/5/2023,11/12/2023,1,Rachel Lee,27,Female,South Korean,Airbnb,20.4,Bus,8.3,18.9,5.4,3.5,56.5
+609,Ella,12/24/2023,12/31/2023,1,Jessica Wong,28,Female,Canadian,Resort,98.2,Train,9.3,19.2,5.1,3.2,135
+610,Colombo,1/15/2024,1/24/2024,1,Felipe Almeida,30,Male,Brazilian,Airbnb,15.3,Bus,6.3,17.1,5.7,3.7,48.1
+611,Ella,2/1/2024,2/9/2024,1,Nisa Patel,23,Female,Indian,Airbnb,15.1,Bus,7.2,17,6.1,3.1,48.5
+612,Nuwara Eliya,3/15/2024,3/23/2024,1,Ben Smith,35,Male,British,Vacation rental,82.6,Train,10.3,19.4,6,3.1,121.4
+613,Galle,4/5/2024,4/13/2024,1,Laura Gomez,29,Female,Spanish,Villa,88.9,Train,9.1,16.6,5.9,3.1,123.6
+614,Nuwara Eliya,5/10/2024,5/18/2024,1,Park Min Woo,27,Male,South Korean,Resort,80.4,Train,10.1,17.9,5.6,3.4,117.4
+615,Colombo,6/20/2024,6/27/2024,1,Michael Chen,26,Male,Chinese,Hostel,8.1,Cab,16.4,15.3,7.1,3.9,50.8
+616,Mirissa,7/15/2024,7/23/2024,1,Sofia Rossi,33,Female,Italian,Guesthouse,33.8,Train,9.8,17.3,6.2,2.2,69.3
+617,Colombo,7/12/2022,7/18/2022,1,Rachel Sanders,35,Female,American,Hostel,9.1,Train,11.5,18.2,6.5,3.9,49.2
+618,Habarana,9/3/2022,9/10/2022,1,Kenji Nakamura,28,Male,Japanese,Resort,85.5,Train,8.1,18,5.4,3.6,120.6
+619,Dambulla,1/7/2023,1/16/2023,1,Emily Watson,29,Female,British,Hostel,8.3,Bus,6.1,16,5,3.1,38.5
+620,Colombo,6/23/2023,6/29/2023,1,David Lee,43,Male,Australian,Guesthouse,34.2,Cab,24.7,19.6,5.5,3.5,87.5
+621,Galle,8/18/2023,8/25/2023,1,Ana Rodriguez,31,Female,Spanish,Guesthouse,34.2,Train,10.4,16.7,6.1,2.3,69.7
+622,Galle,2/1/2024,2/8/2024,1,Tom Wilson,27,Male,American,Villa,86.6,Train,10.4,16.1,6.2,2.3,121.6
+623,Weligama,5/6/2024,5/12/2024,1,Olivia Green,39,Female,French,Airbnb,19,Cab,21.7,19.7,5.6,2.1,68.1
+624,Mirissa,7/20/2024,7/26/2024,1,James Chen,25,Male,American,Guesthouse,33.2,Cab,24.7,16.2,5.7,2.2,82
+625,Ella,9/8/2024,9/16/2024,1,Lila Patel,33,Female,Indian,Guesthouse,33,Bus,6.7,19.2,7,3.6,69.5
+626,Mirissa,2/14/2025,2/20/2025,1,Marco Rossi,41,Male,Italian,Guesthouse,33.1,Cab,17.1,19.3,6.6,3.1,79.2
+627,Mirissa,5/21/2025,5/29/2025,1,Sarah Brown,37,Female,British,Resort,95.3,Cab,24.2,18.6,6.3,2.8,147.2
+628,Colombo,,,1,,,,,Resort,98.5,Cab,18.5,17.2,7.5,2.5,144.2
+629,Habarana,8/5/2022,8/12/2022,1,Sarah Lee,35,Female,South Korean,Resort,85.4,Train,10,18.2,6.2,3.9,123.7
+630,Hambantota,1/1/2023,1/9/2023,1,Alex Kim,29,Male,American,Hostel,10.8,Bus,8.9,18.5,7.2,2.8,48.2
+631,Kandy,4/15/2023,4/22/2023,1,Maria Hernandez,42,Female,Mexican,Hotel,56.7,Bus,8.2,19,5.9,2.6,92.4
+632,Kandy,6/7/2023,6/14/2023,1,John Smith,46,Male,British,Vacation rental,76.9,Train,8.6,18.6,5.6,3.4,113.1
+633,Colombo,9/1/2023,9/10/2023,1,Mark Johnson,31,Male,South African,Hostel,11.2,Cab,24.8,19.1,5.1,3.6,63.8
+634,Kandy,11/12/2023,11/19/2023,1,Amanda Chen,25,Female,Taiwanese,Airbnb,16.1,Train,10.8,15,7.2,3.1,52.2
+635,Colombo,2/5/2024,2/12/2024,1,David Lee,38,Male,Australian,Vacation rental,71,Train,8.8,18.9,6.5,2.6,107.8
+636,Matara,5/15/2024,5/22/2024,1,Nana Kwon,27,Female,Korean,Hotel,57.2,Train,10.6,16,6.4,3.9,94.1
+637,Matara,8/20/2024,8/27/2024,1,Tom Hanks,60,Male,American,Guesthouse,36.8,Cab,17.8,16.3,6.3,2.9,80.1
+638,Nuwara Eliya,1/1/2025,1/8/2025,1,Emma Watson,32,Female,British,Airbnb,20.1,Train,11,15.1,5.8,3.8,55.8
+639,Ella,4/15/2025,4/22/2025,1,James Kim,41,Male,American,Vacation rental,82.8,Cab,22.5,17,7.2,2,131.5
+640,Galle,6/15/2021,6/20/2021,1,John Smith,35,Male,American,Airbnb,21.8,Bus,6,18.7,8,2.3,56.8
+641,Kandy,7/1/2021,7/10/2021,1,Sarah Lee,28,Female,Korean,Resort,90.6,Cab,23.9,15.7,5.2,4,139.4
+642,Kandy,8/10/2021,8/20/2021,1,Maria Garcia,42,Female,Spanish,Airbnb,17.5,Bus,8.8,17.6,6.3,3.4,53.6
+643,Anuradhapura,9/1/2021,9/10/2021,1,David Lee,45,Male,Australian,Resort,94.8,Cab,23.2,17.6,7.8,3.4,146.8
+644,Colombo,10/15/2021,10/20/2021,1,Emily Davis,31,Female,American,Airbnb,17.7,Train,11.2,16.9,7.7,3.2,56.7
+645,Ella,11/20/2021,11/30/2021,1,James Wilson,29,Male,British,Villa,87,Train,9.9,19.2,6.7,2.6,125.4
+646,Galle,1/1/2022,1/8/2022,1,Fatima Ahmed,24,Female,Emirati,Airbnb,18.8,Cab,16.1,17.5,5.2,2.5,60.1
+647,Ella,2/14/2022,2/20/2022,1,Liam Nguyen,26,Male,Vietnamese,Guesthouse,31,Train,10.1,18.4,7.4,3.6,70.5
+648,Galle,3/10/2022,3/20/2022,1,Giulia Rossi,30,Female,Italian,Hotel,67.1,Train,12,15,7.1,3.2,104.4
+649,Nuwara Eliya,4/15/2022,4/25/2022,1,Putra Wijaya,33,Male,Indonesian,Resort,99.9,Train,11.2,16.6,6,3.7,137.4
+650,Nuwara Eliya,5/1/2022,5/10/2022,1,Kim Min-ji,27,Female,Korean,Vacation rental,88.1,Train,8.4,15.7,7.4,2.9,122.5
+651,Matara,6/15/2022,6/20/2022,1,John Smith,35,Male,USA,Guesthouse,37.2,Train,8.9,18.3,6.7,2.3,73.4
+652,Anuradhapura,9/1/2022,9/10/2022,1,Emily Johnson,28,Female,Canada,Airbnb,23.5,Train,11.3,18.2,5.9,3.6,62.5
+653,Galle,11/23/2022,12/2/2022,1,David Lee,45,Male,South Korea,Hostel,9.4,Train,10.9,17.8,7.5,3.6,49.2
+654,Ella,2/14/2023,2/19/2023,1,Sarah Brown,37,Female,UK,Guesthouse,32.5,Bus,8.8,19.6,5.8,2.9,69.6
+655,Galle,5/8/2023,5/14/2023,1,Michael Wong,50,Male,China,Airbnb,16.4,Cab,18.2,16,5.5,2.1,58.2
+656,Kandy,8/20/2023,8/27/2023,1,Jessica Chen,31,Female,Taiwan,Villa,73.2,Bus,7.3,19.7,5.7,3.1,109
+657,Kandy,11/12/2023,11/20/2023,1,Ken Tanaka,42,Male,Japan,Hotel,65.4,Cab,16.6,19.3,7.2,3.2,111.7
+658,Mirissa,1/6/2024,1/14/2024,1,Maria Garcia,27,Female,Spain,Hotel,65.5,Cab,24,19.6,6.1,2.8,118
+659,Weligama,4/3/2024,4/10/2024,1,Rodrigo Oliveira,33,Male,Brazil,Hotel,60.9,Train,10.4,16.8,7,2.8,97.9
+660,Nuwara Eliya,7/22/2024,7/28/2024,1,Olivia Kim,29,Female,South Korea,Airbnb,17.4,Cab,15.4,18.4,6.4,2.4,60
+661,Nuwara Eliya,10/10/2024,10/17/2024,1,Robert Mueller,41,Male,Germany,Resort,98.9,Bus,6.9,18.6,7.3,3.5,135.2
+662,Kandy,5/15/2022,5/20/2022,1,John Smith,35,Male,USA,Airbnb,15.4,Bus,8.9,18.5,7.1,3.9,53.8
+663,Ella,9/1/2022,9/10/2022,1,Sarah Lee,28,Female,South Korea,Villa,73,Train,11.7,18.7,5.5,2.3,111.2
+664,Colombo,6/20/2022,6/25/2022,1,Michael Wong,42,Male,Hong Kong,Hotel,63,Train,11.7,18.8,5.9,3.2,102.6
+665,Matara,8/12/2022,8/20/2022,1,Lisa Chen,30,Female,Taiwan,Guesthouse,36.4,Bus,6.8,18.2,6.6,2.2,70.2
+666,Kandy,7/1/2022,7/10/2022,1,David Kim,26,Male,Canada,Villa,85.6,Train,11,19.2,7.5,3,126.3
+667,Ella,6/10/2022,6/15/2022,1,Emily Wong,38,Female,United Kingdom,Hostel,10.8,Bus,8.9,19.6,6,2.5,47.8
+668,Nuwara Eliya,9/5/2022,9/12/2022,1,Mark Tan,45,Male,Singapore,Vacation rental,73.7,Cab,17.7,18.8,7.9,3.1,121.2
+669,Nuwara Eliya,5/1/2022,5/8/2022,1,Emma Lee,31,Female,Italy,Resort,98.1,Train,10.7,15.5,6.8,3,134.1
+670,Ella,7/15/2022,7/22/2022,1,George Chen,27,Male,Greece,Hotel,53.9,Cab,24.8,17.1,5.9,3.3,105
+671,Anuradhapura,8/25/2022,8/30/2022,1,Sophia Kim,29,Female,United Arab Emirates,Resort,86.3,Train,8.5,17.8,6.3,3.1,122
+672,Negombo,9/10/2022,9/15/2022,1,Alex Ng,33,Male,Cambodia,Villa,89.4,Cab,24.7,17,5.1,2.2,138.4
+673,Matara,2/5/2022,2/14/2022,1,Alice Smith,32,Female,American,Guesthouse,33.4,Bus,9.9,17.8,5.9,3.5,70.5
+674,Negombo,3/15/2022,3/22/2022,1,Bob Johnson,47,Male,Canadian,Villa,76.7,Train,8.4,19.5,5.3,3.6,113.5
+675,Anuradhapura,5/1/2022,5/12/2022,1,Cindy Chen,26,Female,Chinese,Guesthouse,34.9,Train,11.6,18.2,6.4,2.9,74
+676,Colombo,6/10/2022,6/17/2022,1,David Lee,38,Male,Korean,Hostel,10.4,Bus,8.4,18.2,7.7,2.2,46.9
+677,Kandy,7/20/2022,7/30/2022,1,Emily Kim,29,Female,Korean,Hotel,57.5,Cab,20.7,17.4,6.8,3.7,106.1
+678,Colombo,8/8/2022,8/16/2022,1,Frank Li,41,Male,American,Hostel,8.7,Cab,18.7,15.9,6.3,2.7,52.3
+679,Galle,9/20/2022,9/30/2022,1,Gina Lee,35,Female,Korean,Hostel,11.2,Train,8.3,16.2,7.7,3.7,47.1
+680,Nuwara Eliya,10/5/2022,10/13/2022,1,Henry Kim,24,Male,Korean,Airbnb,20.2,Bus,6.5,15.7,5.5,3.5,51.4
+681,Colombo,11/11/2022,11/21/2022,1,Isabella Chen,30,Female,Chinese,Guesthouse,32,Cab,16.8,16.6,5.3,2.8,73.5
+682,Weligama,12/24/2022,1/1/2023,1,Jack Smith,28,Male,American,Villa,72.9,Cab,21.4,15,6.9,2.7,118.9
+683,Galle,2/10/2023,2/18/2023,1,Katie Johnson,33,Female,Canadian,Resort,91.3,Cab,19.7,17,6.5,2.8,137.3
+684,Colombo,,,1,,,,,Hostel,10.4,Cab,17.8,18.7,5.8,2.3,55
+685,Galle,5/1/2023,5/7/2023,1,John Doe,35,Male,American,Vacation rental,72.5,Bus,9.1,18.7,7.6,2.6,110.5
+686,Mirissa,5/15/2023,5/22/2023,1,Jane Smith,28,Female,British,Airbnb,21.4,Bus,7.1,19.8,6.9,3,58.2
+687,Colombo,6/1/2023,6/10/2023,1,Michael Johnson,45,Male,South African,Resort,90.4,Bus,6.4,15.2,5.7,3,120.7
+688,Galle,6/15/2023,6/21/2023,1,Sarah Lee,31,Female,Australian,Resort,96.5,Train,10.1,17.2,7.1,3.8,134.7
+689,Weligama,7/1/2023,7/8/2023,1,David Kim,42,Male,Korean,Hotel,58.7,Train,11.8,16.2,6.3,2.4,95.4
+690,Galle,7/15/2023,7/22/2023,1,Emily Davis,27,Female,American,Guesthouse,31.4,Cab,22.4,16.6,7.6,4,82
+691,Colombo,8/1/2023,8/10/2023,1,Jose Perez,37,Male,Brazilian,Vacation rental,88.3,Train,11.9,19.8,7.7,3.7,131.4
+692,Galle,8/15/2023,8/21/2023,1,Emma Wilson,29,Female,Canadian,Hotel,55.6,Cab,16.4,17.6,7.7,3,100.3
+693,Matara,9/1/2023,9/8/2023,1,Ryan Chen,34,Male,Chinese,Hostel,10.9,Cab,20.8,15.8,7.7,2.5,57.7
+694,Galle,9/15/2023,9/22/2023,1,Sofia Rodriguez,25,Female,Spanish,Hotel,55.9,Bus,8.6,15.6,7.8,3.2,91.1
+695,Nuwara Eliya,10/1/2023,10/8/2023,1,William Brown,39,Male,New Zealander,Vacation rental,81.2,Train,9.9,17.1,5,2.8,116
+696,Colombo,5/1/2023,5/8/2023,1,John Smith,35,Male,American,Airbnb,23.2,Bus,7,18.9,7.2,2.5,58.8
+697,Colombo,6/15/2023,6/20/2023,1,Jane Doe,28,Female,Canadian,Hostel,9.5,Train,8.6,15.1,7.6,2.6,43.4
+698,Galle,7/1/2023,7/8/2023,1,David Lee,45,Male,Korean,Hostel,11.7,Bus,7.2,19.5,5.2,2.1,45.7
+699,Colombo,8/15/2023,8/29/2023,1,Sarah Johnson,29,Female,British,Resort,88.1,Train,9.9,16.2,7.1,3.9,125.2
+700,Weligama,9/10/2023,9/17/2023,1,Kim Nguyen,26,Female,Vietnamese,Hotel,60.1,Cab,20.4,16.2,7.5,3.2,107.4
+701,Ella,10/5/2023,10/10/2023,1,Michael Brown,42,Male,American,Hotel,52,Bus,8.4,16.6,6.6,3.7,87.3
+702,Ella,11/20/2023,11/30/2023,1,Emily Davis,33,Female,Australian,Resort,93.5,Bus,7,17.6,6.5,2.9,127.5
+703,Dambulla,1/5/2024,1/12/2024,1,Lucas Santos,25,Male,Brazilian,Vacation rental,84.7,Train,9.8,19.5,7.4,2.2,123.6
+704,Nuwara Eliya,2/14/2024,2/21/2024,1,Laura Janssen,31,Female,Dutch,Villa,83,Cab,20.8,15.8,7.2,3.1,129.9
+705,Ella,3/10/2024,3/17/2024,1,Mohammed Ali,39,Male,Emirati,Villa,85.7,Cab,21.1,16,6.4,2.2,131.4
+706,Kandy,4/1/2024,4/8/2024,1,Ana Hernandez,27,Female,Mexican,Airbnb,16.1,Train,11.3,15.1,7.3,3.1,52.9
+707,Mirissa,5/15/2024,5/22/2024,1,Carlos Garcia,36,Male,Spanish,Guesthouse,34.5,Cab,25,17.3,6.7,3.9,87.4
+708,Mirissa,6/10/2024,6/18/2024,1,Lily Wong,29,Female,Chinese,Airbnb,24.4,Cab,16.2,19.1,5.2,2.7,67.6
+709,Nuwara Eliya,7/1/2024,7/10/2024,1,Hans Mueller,48,Male,German,Airbnb,24.9,Cab,17.2,19.8,6.4,3.7,72
+710,Galle,8/20/2024,8/27/2024,1,Fatima Khouri,26,Female,Moroccan,Hotel,66,Train,8.5,15.2,6.7,2.9,99.3
+711,Kandy,9/5/2024,9/12/2024,1,James MacKenzie,32,Male,Scottish,Airbnb,20.7,Cab,18.5,19.7,7.6,2.3,68.8
+712,Nuwara Eliya,9/1/2023,9/10/2023,1,Sarah Johnson,30,Female,American,Guesthouse,32.9,Bus,9.1,18.6,8,3.1,71.7
+713,Colombo,8/15/2023,8/25/2023,1,Michael Chang,28,Male,Chinese,Hostel,11.4,Cab,23.1,15.4,7.9,3.6,61.4
+714,Ella,7/22/2023,7/28/2023,1,Olivia Rodriguez,35,Female,British,Airbnb,18.2,Train,9.5,19.9,5.1,2.7,55.4
+715,Mirissa,10/5/2023,10/15/2023,1,Kenji Nakamura,45,Male,Japanese,Hotel,55.6,Train,11,16.4,7.4,2.7,93.1
+716,Negombo,11/20/2023,11/25/2023,1,Emily Lee,27,Female,American,Hotel,68.3,Bus,6.2,17.1,6.8,3.1,101.5
+717,Colombo,12/5/2023,12/12/2023,1,James Wilson,32,Male,Australian,Villa,74.3,Cab,17.8,18.3,6,2.7,119.1
+718,Galle,11/1/2023,11/8/2023,1,Sofia Russo,29,Female,Italian,Vacation rental,74.6,Bus,9.3,18.7,6.7,2.9,112.2
+719,Kandy,9/15/2023,9/23/2023,1,Raj Patel,40,Male,Indian,Guesthouse,30.6,Train,10.4,17.2,8,2.2,68.4
+720,Colombo,12/22/2023,12/28/2023,1,Lily Nguyen,24,Female,Vietnamese,Guesthouse,31.8,Cab,17.6,15.7,6.9,2.1,74.1
+721,Ella,8/1/2023,8/10/2023,1,David Kim,34,Male,Korean,Hotel,57.6,Train,11.2,15.1,6,2.3,92.2
+722,Nuwara Eliya,10/20/2023,10/28/2023,1,Maria Garcia,31,Female,Spanish,Hotel,53.6,Cab,21.8,19.3,7.7,3,105.4
+723,Negombo,5/10/2022,5/18/2022,1,Alice Smith,30,Female,American,Hotel,54.3,Bus,9.3,15.8,7.9,2.4,89.7
+724,Dambulla,6/15/2022,6/22/2022,1,Bob Johnson,45,Male,Canadian,Resort,91.4,Bus,8.2,18.7,7.8,3.6,129.7
+725,Nuwara Eliya,7/2/2022,7/11/2022,1,Charlie Lee,25,Male,Korean,Resort,80.1,Train,8.5,17.3,5.4,2.1,113.4
+726,Galle,8/20/2022,9/2/2022,1,Emma Davis,28,Female,British,Hotel,62.6,Bus,8,16.6,6.5,2.7,96.4
+727,Nuwara Eliya,9/5/2022,9/14/2022,1,Olivia Martin,33,Female,Australian,Resort,97.4,Cab,22.5,19.8,7.7,3.2,150.6
+728,Galle,10/12/2022,10/20/2022,1,Harry Wilson,20,Male,American,Resort,92.6,Cab,22.9,15.9,5.1,2.1,138.6
+729,Galle,11/8/2022,11/15/2022,1,Sophia Lee,37,Female,Canadian,Hotel,60.7,Train,8.4,17.6,7,3.6,97.3
+730,Ella,1/5/2023,1/15/2023,1,James Brown,42,Male,British,Hotel,65.5,Cab,21.1,17.5,6,2.8,112.9
+731,Dambulla,2/14/2023,2/20/2023,1,Mia Johnson,31,Female,American,Guesthouse,38.2,Cab,22.1,18.9,7.1,2.4,88.7
+732,Ella,3/23/2023,3/31/2023,1,William Davis,27,Male,Korean,Hotel,53.5,Train,8.8,18.5,7,3.9,91.7
+733,Weligama,4/19/2023,4/26/2023,1,Amelia Brown,38,Female,Australian,Vacation rental,76.1,Bus,7.7,17.8,7.8,4,113.4
+734,Weligama,6/12/2022,6/19/2022,1,Mia Johnson,25,Female,American,Villa,73,Train,11.1,18.7,6.3,3.9,113
+735,Mirissa,1/2/2023,1/9/2023,1,Adam Lee,33,Male,Canadian,Hostel,10,Cab,18.6,15.7,7.9,3.4,55.6
+736,Weligama,12/10/2022,12/18/2022,1,Sarah Wong,28,Female,Chinese,Resort,98.6,Train,8.2,15.1,7.3,3.8,133
+737,Galle,7/1/2023,7/8/2023,1,John Smith,45,Male,American,Airbnb,23.7,Train,9.7,18.5,7.2,3.8,62.9
+738,Mirissa,11/20/2022,11/27/2022,1,Maria Silva,30,Female,Brazilian,Airbnb,22.8,Train,10.3,19.1,5.5,3.2,60.9
+739,Ella,3/5/2023,3/12/2023,1,Peter Brown,55,Male,British,Airbnb,20.3,Cab,15.1,17.4,6.6,3,62.4
+740,Ella,8/18/2023,8/25/2023,1,Emma Garcia,27,Female,Spanish,Hotel,67.2,Cab,17,17,6.2,3.5,110.9
+741,Mirissa,9/15/2022,9/22/2022,1,Michael Davis,41,Male,American,Guesthouse,38.6,Bus,7.5,18.9,6.8,3.2,75
+742,Weligama,5/1/2023,5/7/2023,1,Nina Patel,29,Female,Indian,Resort,99.7,Train,11.6,17.3,7.6,3,139.2
+743,Ella,7/10/2022,7/17/2022,1,Kevin Kim,24,Male,Korean,Villa,75.6,Train,10.4,15.2,5.7,2.2,109.1
+744,Galle,6/20/2023,6/28/2023,1,Laura van den Berg,31,Female,Dutch,Vacation rental,76.6,Train,9.3,18.4,7,2.5,113.8
+745,Negombo,8/15/2023,8/22/2023,1,Jennifer Nguyen,31,Female,Canadian,Resort,87.8,Cab,19.1,17.6,7.3,2.9,134.7
+746,Ella,10/10/2023,10/20/2023,1,David Kim,25,Male,American,Guesthouse,31.7,Bus,7.7,16.5,7.8,2,65.7
+747,Nuwara Eliya,11/5/2023,11/12/2023,1,Rachel Lee,27,Female,South Korean,Guesthouse,36.2,Bus,7.7,19,7.2,2.6,72.7
+748,Ella,12/24/2023,12/31/2023,1,Jessica Wong,28,Female,Canadian,Guesthouse,37.1,Cab,21.7,16.1,5.7,3.3,83.9
+749,Colombo,1/15/2024,1/24/2024,1,Felipe Almeida,30,Male,Brazilian,Resort,82.2,Cab,23.7,17.2,5.4,3.6,132.1
+750,Ella,2/1/2024,2/9/2024,1,Nisa Patel,23,Female,Indian,Hotel,65.9,Cab,21.9,15.5,5.6,4,112.9
+751,Nuwara Eliya,3/15/2024,3/23/2024,1,Ben Smith,35,Male,British,Villa,86.2,Cab,15.1,17.7,7.7,2.8,129.5
+752,Galle,4/5/2024,4/13/2024,1,Laura Gomez,29,Female,Spanish,Airbnb,16.6,Bus,9.5,18.6,5.5,2.8,53
+753,Nuwara Eliya,5/10/2024,5/18/2024,1,Park Min Woo,27,Male,South Korean,Resort,82.1,Cab,23.2,18.4,7.1,2.2,133
+754,Colombo,6/20/2024,6/27/2024,1,Michael Chen,26,Male,Chinese,Hostel,10.4,Cab,19.4,15.8,7.3,3.8,56.7
+755,Mirissa,7/15/2024,7/23/2024,1,Sofia Rossi,33,Female,Italian,Villa,80.8,Train,8.3,19.7,6.5,3.1,118.4
+756,Colombo,7/12/2022,7/18/2022,1,Rachel Sanders,35,Female,American,Hotel,60.1,Bus,8.3,17.6,5.9,2.9,94.8
+757,Habarana,9/3/2022,9/10/2022,1,Kenji Nakamura,28,Male,Japanese,Hostel,9.1,Bus,6.3,19.5,8,3.2,46.1
+758,Dambulla,1/7/2023,1/16/2023,1,Emily Watson,29,Female,British,Resort,83.1,Bus,6.5,18.3,6.3,3.2,117.4
+759,Colombo,6/23/2023,6/29/2023,1,David Lee,43,Male,Australian,Resort,95.5,Cab,23.1,16.6,6.4,3.4,145
+760,Galle,8/18/2023,8/25/2023,1,Ana Rodriguez,31,Female,Spanish,Guesthouse,35.6,Train,9.9,17.7,6.3,2.8,72.3
+761,Galle,2/1/2024,2/8/2024,1,Tom Wilson,27,Male,American,Hotel,53.7,Bus,9.4,19.8,7.6,2.7,93.2
+762,Weligama,5/6/2024,5/12/2024,1,Olivia Green,39,Female,French,Resort,87.3,Train,9.9,17.7,5.6,3.9,124.4
+763,Mirissa,7/20/2024,7/26/2024,1,James Chen,25,Male,American,Hostel,8.6,Bus,9.4,17.6,5.2,2.3,43.1
+764,Ella,9/8/2024,9/16/2024,1,Lila Patel,33,Female,Indian,Airbnb,22.8,Cab,22.4,17.7,5.7,3.4,72
+765,Mirissa,2/14/2025,2/20/2025,1,Marco Rossi,41,Male,Italian,Villa,85.4,Bus,7.4,16,5.8,3.6,118.2
+766,Mirissa,5/21/2025,5/29/2025,1,Sarah Brown,37,Female,British,Hotel,52.4,Cab,15.3,15.8,5.5,2.3,91.3
+767,Colombo,,,1,,,,,Resort,85.8,Train,12,16.2,6.6,3.8,124.4
+768,Habarana,8/5/2022,8/12/2022,1,Sarah Lee,35,Female,South Korean,Resort,92.5,Train,8.5,17.7,6.4,3,128.1
+769,Hambantota,1/1/2023,1/9/2023,1,Alex Kim,29,Male,American,Vacation rental,89.4,Bus,6.6,17.4,7.7,2.8,123.9
+770,Kandy,4/15/2023,4/22/2023,1,Maria Hernandez,42,Female,Mexican,Airbnb,17.9,Bus,7.6,19.5,7.5,3.3,55.8
+771,Kandy,6/7/2023,6/14/2023,1,John Smith,46,Male,British,Hostel,11.3,Bus,7.1,15.3,6.4,2.9,43
+772,Colombo,9/1/2023,9/10/2023,1,Mark Johnson,31,Male,South African,Airbnb,15.3,Bus,8.9,17,7.8,3,52
+773,Kandy,11/12/2023,11/19/2023,1,Amanda Chen,25,Female,Taiwanese,Guesthouse,31.5,Train,11,18.8,5,3.5,69.8
+774,Colombo,2/5/2024,2/12/2024,1,David Lee,38,Male,Australian,Hotel,67.2,Bus,7.9,19.9,7.1,2.5,104.6
+775,Matara,5/15/2024,5/22/2024,1,Nana Kwon,27,Female,Korean,Guesthouse,37.8,Bus,7.8,18,5.4,3.6,72.6
+776,Matara,8/20/2024,8/27/2024,1,Tom Hanks,60,Male,American,Airbnb,24.1,Cab,21.7,17.7,7.3,2.7,73.5
+777,Nuwara Eliya,1/1/2025,1/8/2025,1,Emma Watson,32,Female,British,Villa,87.5,Bus,10,17.7,6.9,3.3,125.4
+778,Ella,4/15/2025,4/22/2025,1,James Kim,41,Male,American,Villa,89.7,Train,8.5,15.2,7.4,3.1,123.9
+779,Galle,6/15/2021,6/20/2021,1,John Smith,35,Male,American,Airbnb,24.7,Train,8.3,16.3,6.2,3,58.5
+780,Kandy,7/1/2021,7/10/2021,10,Sarah Lee,28,Female,Korean,Resort,853.2,Train,99.1,198.5,74.2,24.5,1249.5
+781,Kandy,8/10/2021,8/20/2021,11,Maria Garcia,42,Female,Spanish,Airbnb,232.5,Bus,86.7,174.6,82.1,31.6,607.5
+782,Anuradhapura,9/1/2021,9/10/2021,9,David Lee,45,Male,Australian,Hotel,590.2,Cab,171.5,138,54.4,21.5,975.6
+783,Colombo,10/15/2021,10/20/2021,6,Emily Davis,31,Female,American,Hostel,67.1,Cab,107.2,112.4,36.6,19.2,342.5
+784,Ella,11/20/2021,11/30/2021,11,James Wilson,29,Male,British,Hotel,723,Train,121.1,182.3,76.3,29.7,1132.4
+785,Galle,1/1/2022,1/8/2022,8,Fatima Ahmed,24,Female,Emirati,Hotel,486.8,Bus,57.9,132.1,46,18.5,741.3
+786,Ella,2/14/2022,2/20/2022,7,Liam Nguyen,26,Male,Vietnamese,Guesthouse,248,Cab,109.2,115.1,39.3,25.3,536.9
+787,Galle,3/10/2022,3/20/2022,11,Giulia Rossi,30,Female,Italian,Resort,944.1,Bus,104.3,175.2,77.1,26.2,1326.9
+788,Nuwara Eliya,4/15/2022,4/25/2022,11,Putra Wijaya,33,Male,Indonesian,Hostel,130.2,Cab,187.8,168.9,79.9,37.7,604.5
+789,Nuwara Eliya,5/1/2022,5/10/2022,10,Kim Min-ji,27,Female,Korean,Hostel,95.7,Train,118.8,199.2,55,29.9,498.6
+790,Matara,6/15/2022,6/20/2022,5,John Smith,35,Male,USA,Hostel,58.2,Train,52.7,98.9,31.4,16.2,257.4
+791,Anuradhapura,9/1/2022,9/10/2022,9,Emily Johnson,28,Female,Canada,Hostel,98.4,Train,91.4,155,53.2,18.8,416.8
+792,Galle,11/23/2022,12/2/2022,9,David Lee,45,Male,South Korea,Resort,885.2,Cab,178.9,152.8,66.2,27.4,1310.5
+793,Ella,2/14/2023,2/19/2023,5,Sarah Brown,37,Female,UK,Hostel,44.7,Cab,112.3,82.3,26,14.3,279.6
+794,Galle,5/8/2023,5/14/2023,6,Michael Wong,50,Male,China,Villa,459.3,Train,48.4,104.3,41.6,12.8,666.4
+795,Kandy,8/20/2023,8/27/2023,7,Jessica Chen,31,Female,Taiwan,Vacation rental,515.6,Cab,112,106.5,50.2,25,809.3
+796,Kandy,11/12/2023,11/20/2023,5,Ken Tanaka,42,Male,Japan,Hotel,340.2,Train,55.9,77.5,32.7,19.6,525.9
+797,Mirissa,1/6/2024,1/14/2024,5,Maria Garcia,27,Female,Spain,Resort,478.6,Cab,118.7,85.1,39,16.3,737.7
+798,Weligama,4/3/2024,4/10/2024,5,Rodrigo Oliveira,33,Male,Brazil,Hostel,47,Bus,41.9,90.9,37,11.3,228.1
+799,Nuwara Eliya,7/22/2024,7/28/2024,5,Olivia Kim,29,Female,South Korea,Airbnb,118.3,Bus,48.3,89.9,35.5,10.5,302.5
+800,Nuwara Eliya,10/10/2024,10/17/2024,5,Robert Mueller,41,Male,Germany,Hostel,47.4,Train,47.5,98.2,27.4,19.7,240.2
+801,Kandy,5/15/2022,5/20/2022,5,John Smith,35,Male,USA,Resort,443.2,Train,50.7,98.8,31.1,16.8,640.6
+802,Ella,9/1/2022,9/10/2022,5,Sarah Lee,28,Female,South Korea,Vacation rental,423.2,Cab,83.6,98.6,39.6,18.1,663.1
+803,Colombo,6/20/2022,6/25/2022,5,Michael Wong,42,Male,Hong Kong,Guesthouse,193.1,Bus,44.9,77.9,35.6,15,366.5
+804,Matara,8/12/2022,8/20/2022,5,Lisa Chen,30,Female,Taiwan,Vacation rental,356.4,Cab,110,81.8,29.5,16.8,594.5
+805,Kandy,7/1/2022,7/10/2022,5,David Kim,26,Male,Canada,Guesthouse,189.5,Train,49.8,84.8,33.5,13.5,371.1
+806,Ella,6/10/2022,6/15/2022,5,Emily Wong,38,Female,United Kingdom,Hotel,274,Bus,43.5,97.4,27,11.9,453.8
+807,Nuwara Eliya,9/5/2022,9/12/2022,5,Mark Tan,45,Male,Singapore,Villa,415.5,Cab,106.2,97.8,25.5,17,662
+808,Nuwara Eliya,5/1/2022,5/8/2022,5,Emma Lee,31,Female,Italy,Hostel,45.3,Cab,90.1,81.9,36.8,15.7,269.8
+809,Ella,7/15/2022,7/22/2022,5,George Chen,27,Male,Greece,Vacation rental,362.3,Bus,37.2,81.6,39.8,18.5,539.4
+810,Anuradhapura,8/25/2022,8/30/2022,5,Sophia Kim,29,Female,United Arab Emirates,Hostel,47.8,Bus,33.4,87.1,37,16.3,221.6
+811,Negombo,9/10/2022,9/15/2022,5,Alex Ng,33,Male,Cambodia,Airbnb,86.7,Bus,46,77.1,33.9,14,257.7
+812,Matara,2/5/2022,2/14/2022,5,Alice Smith,32,Female,American,Vacation rental,446,Bus,30.1,95.9,38.4,12.8,623.2
+813,Negombo,3/15/2022,3/22/2022,5,Bob Johnson,47,Male,Canadian,Resort,444.3,Cab,105.4,96.6,39.6,13.9,699.8
+814,Anuradhapura,5/1/2022,5/12/2022,5,Cindy Chen,26,Female,Chinese,Vacation rental,365,Cab,97.2,90.6,33.1,11.1,597
+815,Colombo,6/10/2022,6/17/2022,5,David Lee,38,Male,Korean,Resort,430.8,Bus,47.3,76.5,27.3,17.1,599
+816,Kandy,7/20/2022,7/30/2022,5,Emily Kim,29,Female,Korean,Airbnb,84.3,Cab,119.5,84.3,36.5,15.1,339.7
+817,Colombo,8/8/2022,8/16/2022,5,Frank Li,41,Male,American,Villa,372,Bus,36,86.1,33.6,10,537.7
+818,Galle,9/20/2022,9/30/2022,5,Gina Lee,35,Female,Korean,Airbnb,103.4,Train,42.2,78.8,33,10.6,268
+819,Nuwara Eliya,10/5/2022,10/13/2022,5,Henry Kim,24,Male,Korean,Villa,352.2,Cab,124.1,80.6,36.3,15.2,608.4
+820,Colombo,11/11/2022,11/21/2022,5,Isabella Chen,30,Female,Chinese,Airbnb,83.8,Train,50.6,92.8,28.7,14,269.9
+821,Weligama,12/24/2022,1/1/2023,5,Jack Smith,28,Male,American,Airbnb,92,Bus,46.4,77.7,38.5,13.6,268.2
+822,Galle,2/10/2023,2/18/2023,5,Katie Johnson,33,Female,Canadian,Vacation rental,359.8,Train,46.5,88.2,35.2,17.7,547.4
+823,Colombo,,,5,,,,,Resort,460.8,Cab,82.9,96.4,34.1,10.5,684.7
+824,Galle,5/1/2023,5/7/2023,5,John Doe,35,Male,American,Vacation rental,430.4,Cab,94,76.6,38.8,10.7,650.5
+825,Mirissa,5/15/2023,5/22/2023,5,Jane Smith,28,Female,British,Villa,358.7,Bus,34.7,88.9,38.1,19.2,539.6
+826,Colombo,6/1/2023,6/10/2023,5,Michael Johnson,45,Male,South African,Hotel,348.7,Bus,37.4,92.9,27.4,18.9,525.3
+827,Galle,6/15/2023,6/21/2023,5,Sarah Lee,31,Female,Australian,Hostel,56.4,Cab,94.4,96.5,29.3,19.2,295.8
+828,Weligama,7/1/2023,7/8/2023,5,David Kim,42,Male,Korean,Vacation rental,430.7,Bus,34.9,81.7,27.3,17.7,592.3
+829,Galle,7/15/2023,7/22/2023,5,Emily Davis,27,Female,American,Hotel,273.7,Train,47.7,94.1,35.9,12.8,464.2
+830,Colombo,8/1/2023,8/10/2023,5,Jose Perez,37,Male,Brazilian,Hostel,45.4,Bus,43.6,79.6,37.2,14.2,220
+831,Galle,8/15/2023,8/21/2023,5,Emma Wilson,29,Female,Canadian,Resort,462.8,Cab,97.2,81.1,33.6,12.7,687.4
+832,Matara,9/1/2023,9/8/2023,5,Ryan Chen,34,Male,Chinese,Guesthouse,172.5,Cab,95.4,90.6,34.4,13.4,406.3
+833,Galle,9/15/2023,9/22/2023,5,Sofia Rodriguez,25,Female,Spanish,Airbnb,88.6,Cab,118.1,83.8,30.9,14.3,335.7
+834,Nuwara Eliya,10/1/2023,10/8/2023,5,William Brown,39,Male,New Zealander,Villa,413.2,Bus,45.5,89.4,27.8,14.6,590.5
+835,Weligama,4/3/2024,4/10/2024,4,Rodrigo Oliveira,33,Male,Brazil,Airbnb,88.2,Bus,32.3,66.7,20.5,13.5,221.2
+836,Nuwara Eliya,7/22/2024,7/28/2024,4,Olivia Kim,29,Female,South Korea,Guesthouse,148,Cab,97,78,22.3,13.9,359.2
+837,Nuwara Eliya,10/10/2024,10/17/2024,4,Robert Mueller,41,Male,Germany,Hostel,41.4,Train,43.8,64,26.1,13.6,188.9
+838,Kandy,5/15/2022,5/20/2022,4,John Smith,35,Male,USA,Hotel,250.3,Bus,32.9,75.3,27.9,14.1,400.5
+839,Ella,9/1/2022,9/10/2022,4,Sarah Lee,28,Female,South Korea,Guesthouse,156.6,Bus,28.8,79.7,26.5,12.4,304
+840,Colombo,6/20/2022,6/25/2022,4,Michael Wong,42,Male,Hong Kong,Hostel,42.6,Bus,29.2,73.9,20.8,11,177.5
+841,Matara,8/12/2022,8/20/2022,4,Lisa Chen,30,Female,Taiwan,Resort,387.9,Train,40.8,73.8,23.1,14.6,540.2
+842,Kandy,7/1/2022,7/10/2022,4,David Kim,26,Male,Canada,Villa,355.9,Cab,89,65.5,26,9.9,546.3
+843,Ella,6/10/2022,6/15/2022,4,Emily Wong,38,Female,United Kingdom,Vacation rental,332.8,Cab,70.1,63.1,21.5,12.7,500.2
+844,Nuwara Eliya,9/5/2022,9/12/2022,4,Mark Tan,45,Male,Singapore,Guesthouse,158,Cab,62.2,78.4,23.5,15.7,337.8
+845,Nuwara Eliya,5/1/2022,5/8/2022,4,Emma Lee,31,Female,Italy,Resort,394.3,Cab,90.9,78.5,26.7,10.1,600.5
+846,Ella,7/15/2022,7/22/2022,4,George Chen,27,Male,Greece,Hotel,217.5,Cab,76.9,76.3,28,14.6,413.3
+847,Anuradhapura,8/25/2022,8/30/2022,4,Sophia Kim,29,Female,United Arab Emirates,Villa,308.3,Cab,62.7,63,26.5,14.5,475
+848,Negombo,9/10/2022,9/15/2022,4,Alex Ng,33,Male,Cambodia,Hostel,34.5,Bus,25.8,63.5,21,12.3,157.1
+849,Matara,2/5/2022,2/14/2022,5,Alice Smith,32,Female,American,Airbnb,108.4,Bus,42.5,84.3,36.3,19.1,290.6
+850,Negombo,3/15/2022,3/22/2022,5,Bob Johnson,47,Male,Canadian,Resort,459.8,Train,56.3,88.5,38.6,19.5,662.7
+851,Anuradhapura,5/1/2022,5/12/2022,5,Cindy Chen,26,Female,Chinese,Hotel,251.8,Cab,101.7,84.7,31.9,11,481.1
+852,Colombo,6/10/2022,6/17/2022,5,David Lee,38,Male,Korean,Villa,366.3,Train,54.3,99.2,30.7,18.4,568.9
+853,Kandy,7/20/2022,7/30/2022,5,Emily Kim,29,Female,Korean,Airbnb,109.4,Train,48.8,76.8,27.2,10.4,272.6
+854,Colombo,8/8/2022,8/16/2022,5,Frank Li,41,Male,American,Vacation rental,435.8,Cab,97.8,88.4,39,15,676
+855,Galle,9/20/2022,9/30/2022,2,Gina Lee,35,Female,Korean,Airbnb,47.2,Train,21.1,33.8,14.6,4.1,120.8
+856,Nuwara Eliya,10/5/2022,10/13/2022,2,Henry Kim,24,Male,Korean,Guesthouse,61.3,Train,23,30.2,13.2,7.1,134.8
+857,Colombo,11/11/2022,11/21/2022,2,Isabella Chen,30,Female,Chinese,Resort,177,Cab,32.1,34.6,14.8,5.2,263.7
+858,Weligama,12/24/2022,1/1/2023,2,Jack Smith,28,Male,American,Resort,171.3,Train,17.8,37,12.9,6.5,245.5
+859,Galle,2/10/2023,2/18/2023,2,Katie Johnson,33,Female,Canadian,Guesthouse,75.3,Cab,37.2,31.2,16,4.8,164.5
+860,Colombo,,,2,,,,,Resort,192.9,Cab,39.7,37.5,15,4.1,289.2
+861,Galle,5/1/2023,5/7/2023,2,John Doe,35,Male,American,Hostel,16.3,Cab,45.3,37.2,11.8,5.7,116.3
+862,Mirissa,5/15/2023,5/22/2023,2,Jane Smith,28,Female,British,Vacation rental,154.2,Train,16.8,35,15.9,7.3,229.2
+863,Colombo,6/1/2023,6/10/2023,2,Michael Johnson,45,Male,South African,Villa,149.8,Cab,47.3,38,10.9,4.7,250.7
+864,Galle,6/15/2023,6/21/2023,2,Sarah Lee,31,Female,Australian,Hotel,103.8,Bus,13.8,30.5,15.6,7.7,171.4
+865,Weligama,7/1/2023,7/8/2023,2,David Kim,42,Male,Korean,Resort,192.5,Bus,16.6,35.9,10.5,7.7,263.2
+866,Galle,7/15/2023,7/22/2023,2,Emily Davis,27,Female,American,Hotel,115.2,Bus,17,38.7,14.1,4.4,189.4
+867,Colombo,8/1/2023,8/10/2023,2,Jose Perez,37,Male,Brazilian,Villa,168.5,Cab,49.8,35.5,14.7,7.6,276.1
+868,Galle,8/15/2023,8/21/2023,2,Emma Wilson,29,Female,Canadian,Airbnb,47.9,Cab,49.6,39.2,13.7,5.1,155.5
+869,Matara,9/1/2023,9/8/2023,2,Ryan Chen,34,Male,Chinese,Villa,147.8,Cab,47.6,30.4,11.8,6.6,244.2
+870,Galle,9/15/2023,9/22/2023,2,Sofia Rodriguez,25,Female,Spanish,Airbnb,49.3,Bus,14.2,39.1,10.9,5.1,118.6
+871,Nuwara Eliya,10/1/2023,10/8/2023,5,William Brown,39,Male,New Zealander,Hostel,56.9,Bus,48.1,79.1,28.2,16.7,229
