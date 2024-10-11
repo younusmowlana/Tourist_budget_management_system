@@ -30,6 +30,15 @@ const addPrediction = asyncHandler(async (req, res) => {
     });
   }
 
+  const minBudgetPerVisitor = 50;  // Set a minimum realistic value
+  const totalMinimumBudget = minBudgetPerVisitor * visitor_count;
+
+  if (budget < totalMinimumBudget) {
+    return res.status(400).json({
+      error: `The budget is too low for ${visitor_count} visitors. The minimum required budget for ${visitor_count} visitor(s) is ${totalMinimumBudget}.`,
+    });
+  }
+
   console.log("budget " + budget);
   console.log("destination " + destination);
   console.log("number_of_days " + number_of_days);
@@ -50,19 +59,26 @@ const addPrediction = asyncHandler(async (req, res) => {
       visitor_count,
     });
 
-    console.log(response.data); // Logging Flask response
+    console.log(response.data);
     res.status(200).json({
       message: "Prediction added and processed successfully!",
       predictionResponse: response.data,
     });
   } catch (error) {
-    console.error("Error calling Flask API: ", error);
+    console.log(error);
+    
+    if (error.response && error.response.status === 400) {
+      return res.status(400).json({
+        error:
+          error.response.data.message || "Invalid input provided to Flask API.",
+      });
+    }
+
     res.status(500).json({
       error: "Failed to process prediction",
     });
   }
 });
-
 module.exports = {
   addPrediction,
 };
