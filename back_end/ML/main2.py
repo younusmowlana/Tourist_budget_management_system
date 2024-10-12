@@ -6,7 +6,7 @@ app = Flask(__name__)
 
 save_path = r"C:\Users\Younus\Desktop\Research\Tourist_budget_management_system\back_end\ML"  
 
-minimum_accommodation_cost_per_person = 30
+minimum_accommodation_cost_per_person = 25
 
 # Load the models from the saved .pkl files
 model_accommodation = joblib.load(save_path + r'\model_accommodation.pkl')
@@ -55,11 +55,11 @@ def predict():
     others_cost_per_person = model_others.predict(user_df)[0] / visitor_count
 
     # Check if accommodation cost per person is below the minimum allowed value
-    if accommodation_cost_per_person < minimum_accommodation_cost_per_person:
-        return jsonify({
-            "status": "error",
-            "message": f"The accommodation cost per person is below the minimum allowed value of {minimum_accommodation_cost_per_person}."
-        }), 400
+    # if accommodation_cost_per_person < minimum_accommodation_cost_per_person:
+    #     return jsonify({
+    #         "status": "error",
+    #         "message": f"The accommodation cost per person is below the minimum allowed value of {minimum_accommodation_cost_per_person}."
+    #     }), 400
 
     total_cost_per_person = (accommodation_cost_per_person + transportation_cost_per_person +
                              food_cost_per_person + activities_cost_per_person + others_cost_per_person)
