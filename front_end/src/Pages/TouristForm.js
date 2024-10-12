@@ -72,7 +72,7 @@ const TouristForm = () => {
             options={areaOptions}
             onInputChange={setSearchTerm}
             placeholder="Select an Destination"
-            isLoading={areaOptions.length === 0}
+            isLoading={areaOptions?.length === 0}
           />
         </div>
 

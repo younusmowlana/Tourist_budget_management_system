@@ -4,11 +4,10 @@ import LandingPage from './Pages/LandingPage';
 import TouristForm from './Pages/TouristForm';
 
 function App() {
-
   const globalStyle = {
     fontFamily: "'Poppins', sans-serif",
   };
-  
+
   return (
     <div style={globalStyle}>
       <Router>

@@ -1,9 +1,14 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import "./Tourist.css";
-import Link from '@mui/material/Link';
-
 
 const LandingPage = () => {
+  const navigate = useNavigate();
+
+  const handleGetStarted = () => {
+    navigate('/touristform');
+  };
+
   return (
     <div className="background-container">
       <nav className="navbar">
@@ -18,17 +23,14 @@ const LandingPage = () => {
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi lobortis maximus nunc,
               ac rhoncus odio congue quis. Sed ac semper orci, eu porttitor lacus.
             </div>
-            <button className="landButton">
-              <a href="/touristform" style={{ color: 'white', textDecoration: 'none' }}>
-                Get Started
-              </a>
+            <button className="landButton" onClick={handleGetStarted}>
+              Get Started
             </button>
           </div>
           <div className='LandBtmSection'>
             © 2024 ALL RIGHTS RESERVED
           </div>
         </div>
-
       </div>
     </div>
   );
