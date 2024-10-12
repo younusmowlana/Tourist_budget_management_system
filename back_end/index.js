@@ -4,6 +4,7 @@ const mongoose = require("mongoose");
 const dotenv = require("dotenv");
 const destinationRoute = require("./routes/destination");
 const prediction = require("./routes/prediction");
+const travelPlan = require("./routes/treavelPlan");
 const cors = require('cors');
 app.use(cors())
 
@@ -18,6 +19,7 @@ mongoose.connect(process.env.MONGO_URL)
 app.use(express.json());
 app.use("/api/destination",destinationRoute);
 app.use("/api/prediction", prediction);
+app.use("/api/travelplans", travelPlan)
 
 app.listen(process.env.PORT || 5005, () =>{
     console.log("Backend server is running!");

@@ -11,7 +11,6 @@ const TouristForm = () => {
   const [visitorCount, setVisitorCount] = useState("");
   const [timeStay, setTimeStay] = useState("");
   const [otherInfo, setOtherInfo] = useState("");
-  const currency = "$";
 
   useEffect(() => {
     const loadDestinations = async () => {
@@ -35,7 +34,6 @@ const TouristForm = () => {
       visitorCount,
       timeStay,
       otherInfo,
-      currency,
     });
   };
 

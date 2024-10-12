@@ -17,7 +17,7 @@ model_others = joblib.load(save_path + r'\model_others.pkl')
 
 
 mid_range_multiplier = 1.5
-high_end_multiplier = 2.5
+high_end_multiplier = 4.5
 
 @app.route('/', methods=['POST'])
 def predict():
@@ -54,7 +54,7 @@ def predict():
     activities_cost_per_person = model_activities.predict(user_df)[0] / visitor_count
     others_cost_per_person = model_others.predict(user_df)[0] / visitor_count
 
-    # Check if accommodation cost per person is below the minimum allowed value
+   
     # if accommodation_cost_per_person < minimum_accommodation_cost_per_person:
     #     return jsonify({
     #         "status": "error",
@@ -64,10 +64,9 @@ def predict():
     total_cost_per_person = (accommodation_cost_per_person + transportation_cost_per_person +
                              food_cost_per_person + activities_cost_per_person + others_cost_per_person)
 
-    # Calculate total cost for all visitors
+    
     total_cost = total_cost_per_person * visitor_count
 
-    # Ensure it doesn't exceed the budget
     if total_cost > budget:
         return jsonify({
             "status": "error",
