@@ -60,7 +60,7 @@ Trip ID,Destination,Start date,End date,Duration (days),Traveler name,Traveler a
 59,Colombo,6/20/2024,6/27/2024,7,Michael Chen,26,Male,Chinese,Hostel,60.4,Cab,151,130.5,50.3,27.2,419.4
 60,Mirissa,7/15/2024,7/23/2024,8,Sofia Rossi,33,Female,Italian,Villa,691.4,Cab,191.9,141.1,46.7,19.8,1090.9
 61,Colombo,7/12/2022,7/18/2022,6,Rachel Sanders,35,Female,American,Resort,531.5,Train,71.1,93.1,38.2,18.5,752.4
-62,Habarana,9/3/2022,9/10/2022,7,Kenji Nakamura,28,Male,Japanese,Airbnb,168,Train,69.6,109.2,51.1,26,423.9
+62,Hikkaduwa,9/3/2022,9/10/2022,7,Kenji Nakamura,28,Male,Japanese,Airbnb,168,Train,69.6,109.2,51.1,26,423.9
 63,Dambulla,1/7/2023,1/16/2023,9,Emily Watson,29,Female,British,Villa,764.3,Train,92.4,167.6,48.1,26.8,1099.2
 64,Colombo,6/23/2023,6/29/2023,6,David Lee,43,Male,Australian,Hotel,315.2,Train,48.7,112.3,30,17.1,523.3
 65,Galle,8/18/2023,8/25/2023,7,Ana Rodriguez,31,Female,Spanish,Guesthouse,242.1,Cab,134.5,134.5,51,25.1,587.2
@@ -71,7 +71,7 @@ Trip ID,Destination,Start date,End date,Duration (days),Traveler name,Traveler a
 70,Mirissa,2/14/2025,2/20/2025,6,Marco Rossi,41,Male,Italian,Airbnb,147.2,Train,64.1,111.1,43.6,14.6,380.6
 71,Mirissa,5/21/2025,5/29/2025,8,Sarah Brown,37,Female,British,Airbnb,135.9,Cab,183.8,145.8,49.1,29.2,543.8
 72,Colombo,,,,,,,,Villa,,Train,,,,,0
-73,Habarana,8/5/2022,8/12/2022,7,Sarah Lee,35,Female,South Korean,Vacation rental,539.2,Train,71,118.2,47.7,15.1,791.2
+73,Hikkaduwa,8/5/2022,8/12/2022,7,Sarah Lee,35,Female,South Korean,Vacation rental,539.2,Train,71,118.2,47.7,15.1,791.2
 74,Hambantota,1/1/2023,1/9/2023,8,Alex Kim,29,Male,American,Guesthouse,266.4,Cab,154.3,154,52.5,18.9,646.1
 75,Kandy,4/15/2023,4/22/2023,7,Maria Hernandez,42,Female,Mexican,Airbnb,127.9,Train,82.5,120.5,49.4,21.6,401.9
 76,Kandy,6/7/2023,6/14/2023,7,John Smith,46,Male,British,Hostel,56.2,Bus,49.7,106.3,50.1,26.2,288.5
@@ -199,7 +199,7 @@ Trip ID,Destination,Start date,End date,Duration (days),Traveler name,Traveler a
 198,Colombo,6/20/2024,6/27/2024,7,Michael Chen,26,Male,Chinese,Resort,623.6,Bus,49.9,124.3,42.8,18.7,859.3
 199,Mirissa,7/15/2024,7/23/2024,8,Sofia Rossi,33,Female,Italian,Guesthouse,290.6,Bus,76.4,141.8,43.1,25.6,577.5
 200,Colombo,7/12/2022,7/18/2022,6,Rachel Sanders,35,Female,American,Airbnb,101.6,Cab,109.1,104.1,42.1,12.4,369.3
-201,Habarana,9/3/2022,9/10/2022,7,Kenji Nakamura,28,Male,Japanese,Guesthouse,232.7,Bus,58.3,124.4,51,16.3,482.7
+201,Hikkaduwa,9/3/2022,9/10/2022,7,Kenji Nakamura,28,Male,Japanese,Guesthouse,232.7,Bus,58.3,124.4,51,16.3,482.7
 202,Dambulla,1/7/2023,1/16/2023,9,Emily Watson,29,Female,British,Vacation rental,795,Bus,79.5,172.5,69.3,19.5,1135.8
 203,Colombo,6/23/2023,6/29/2023,6,David Lee,43,Male,Australian,Hostel,48.5,Cab,105.6,91.2,44.6,21.3,311.2
 204,Galle,8/18/2023,8/25/2023,7,Ana Rodriguez,31,Female,Spanish,Villa,547.6,Train,65.6,115.7,52.3,19.1,800.3
@@ -210,7 +210,7 @@ Trip ID,Destination,Start date,End date,Duration (days),Traveler name,Traveler a
 209,Mirissa,2/14/2025,2/20/2025,3,Marco Rossi,41,Male,Italian,Villa,232.6,Train,34.5,47.3,15,8.9,338.3
 210,Mirissa,5/21/2025,5/29/2025,3,Sarah Brown,37,Female,British,Hotel,152.8,Bus,20.3,58.3,15.8,6.4,253.6
 211,Colombo,,,3,,,,,Vacation rental,263.8,Cab,57.7,55,21.8,8.9,407.2
-212,Habarana,8/5/2022,8/12/2022,3,Sarah Lee,35,Female,South Korean,Guesthouse,116.3,Bus,23.2,45.7,23.1,9.5,217.8
+212,Hikkaduwa,8/5/2022,8/12/2022,3,Sarah Lee,35,Female,South Korean,Guesthouse,116.3,Bus,23.2,45.7,23.1,9.5,217.8
 213,Hambantota,1/1/2023,1/9/2023,3,Alex Kim,29,Male,American,Guesthouse,102,Cab,47.3,54.1,21.5,11.1,236
 214,Kandy,4/15/2023,4/22/2023,3,Maria Hernandez,42,Female,Mexican,Guesthouse,96,Train,30.3,51.8,23.5,8.5,210.1
 215,Kandy,6/7/2023,6/14/2023,3,John Smith,46,Male,British,Hotel,157.6,Train,26.5,52.2,23.9,6.5,266.7
@@ -338,7 +338,7 @@ Trip ID,Destination,Start date,End date,Duration (days),Traveler name,Traveler a
 337,Colombo,6/20/2024,6/27/2024,7,Michael Chen,26,Male,Chinese,Resort,694.5,Cab,137.8,120.5,35.5,23.4,1011.7
 338,Mirissa,7/15/2024,7/23/2024,8,Sofia Rossi,33,Female,Italian,Resort,732.8,Train,67.4,146.9,57.6,22.9,1027.6
 339,Colombo,7/12/2022,7/18/2022,6,Rachel Sanders,35,Female,American,Hostel,49,Train,71.8,90.6,45.1,19.6,276.1
-340,Habarana,9/3/2022,9/10/2022,7,Kenji Nakamura,28,Male,Japanese,Villa,538.8,Train,77.6,108.7,51,22.4,798.5
+340,Hikkaduwa,9/3/2022,9/10/2022,7,Kenji Nakamura,28,Male,Japanese,Villa,538.8,Train,77.6,108.7,51,22.4,798.5
 341,Dambulla,1/7/2023,1/16/2023,9,Emily Watson,29,Female,British,Resort,797.8,Cab,138.7,176.7,54.7,23,1190.9
 342,Colombo,6/23/2023,6/29/2023,6,David Lee,43,Male,Australian,Airbnb,146.5,Train,58.2,116.8,41.5,20.4,383.4
 343,Galle,8/18/2023,8/25/2023,7,Ana Rodriguez,31,Female,Spanish,Vacation rental,497.1,Bus,57.9,121.3,49.6,17.7,743.6
@@ -349,7 +349,7 @@ Trip ID,Destination,Start date,End date,Duration (days),Traveler name,Traveler a
 348,Mirissa,2/14/2025,2/20/2025,6,Marco Rossi,41,Male,Italian,Villa,469.7,Bus,54.7,110.8,39.2,15.5,689.9
 349,Mirissa,5/21/2025,5/29/2025,8,Sarah Brown,37,Female,British,Airbnb,166.7,Train,72.9,140.3,62.4,17,459.3
 350,Colombo,,,,,,,,Villa,,Cab,,,,,0
-351,Habarana,8/5/2022,8/12/2022,7,Sarah Lee,35,Female,South Korean,Guesthouse,246.1,Train,59.4,121.5,52.1,27.8,506.9
+351,Hikkaduwa,8/5/2022,8/12/2022,7,Sarah Lee,35,Female,South Korean,Guesthouse,246.1,Train,59.4,121.5,52.1,27.8,506.9
 352,Hambantota,1/1/2023,1/9/2023,8,Alex Kim,29,Male,American,Hostel,70.2,Train,73.3,131.1,55.1,27.2,356.9
 353,Kandy,4/15/2023,4/22/2023,7,Maria Hernandez,42,Female,Mexican,Villa,522.2,Cab,139.2,117,52.6,20.7,851.7
 354,Kandy,6/7/2023,6/14/2023,7,John Smith,46,Male,British,Hostel,61.1,Bus,48.4,122,46.2,27.9,305.6
@@ -477,7 +477,7 @@ Trip ID,Destination,Start date,End date,Duration (days),Traveler name,Traveler a
 476,Colombo,6/20/2024,6/27/2024,2,Michael Chen,26,Male,Chinese,Vacation rental,151.5,Bus,18.1,32.4,12.3,4.6,218.9
 477,Mirissa,7/15/2024,7/23/2024,2,Sofia Rossi,33,Female,Italian,Hostel,23.9,Cab,44,39.6,10.6,4.9,123
 478,Colombo,7/12/2022,7/18/2022,2,Rachel Sanders,35,Female,American,Vacation rental,157.1,Cab,35.9,37.2,14.2,5,249.4
-479,Habarana,9/3/2022,9/10/2022,2,Kenji Nakamura,28,Male,Japanese,Hotel,120.4,Bus,19.3,32.9,12.9,8,193.5
+479,Hikkaduwa,9/3/2022,9/10/2022,2,Kenji Nakamura,28,Male,Japanese,Hotel,120.4,Bus,19.3,32.9,12.9,8,193.5
 480,Dambulla,1/7/2023,1/16/2023,2,Emily Watson,29,Female,British,Villa,176.7,Train,23.2,37.1,10.1,6,253.1
 481,Colombo,6/23/2023,6/29/2023,2,David Lee,43,Male,Australian,Airbnb,31.7,Train,22.7,34,12.8,4.2,105.4
 482,Galle,8/18/2023,8/25/2023,2,Ana Rodriguez,31,Female,Spanish,Guesthouse,65.8,Train,18.5,39.5,10.6,5.9,140.3
@@ -488,7 +488,7 @@ Trip ID,Destination,Start date,End date,Duration (days),Traveler name,Traveler a
 487,Mirissa,2/14/2025,2/20/2025,2,Marco Rossi,41,Male,Italian,Hostel,16.2,Bus,14.9,31.4,11.6,5.8,79.9
 488,Mirissa,5/21/2025,5/29/2025,2,Sarah Brown,37,Female,British,Resort,199.9,Train,22.6,39.5,11.3,6.8,280.1
 489,Colombo,,,2,,,,,Hotel,133.9,Cab,46.9,32.2,14.2,6.4,233.6
-490,Habarana,8/5/2022,8/12/2022,2,Sarah Lee,35,Female,South Korean,Vacation rental,147.5,Train,19.4,38.5,13.7,7.3,226.4
+490,Hikkaduwa,8/5/2022,8/12/2022,2,Sarah Lee,35,Female,South Korean,Vacation rental,147.5,Train,19.4,38.5,13.7,7.3,226.4
 491,Hambantota,1/1/2023,1/9/2023,2,Alex Kim,29,Male,American,Vacation rental,141.7,Bus,19.3,33.1,10.1,4.8,209
 492,Kandy,4/15/2023,4/22/2023,2,Maria Hernandez,42,Female,Mexican,Guesthouse,64.6,Train,22,31.1,11.1,4.6,133.4
 493,Kandy,6/7/2023,6/14/2023,2,John Smith,46,Male,British,Hotel,118,Train,17.7,35.9,15.1,4.1,190.8
@@ -616,7 +616,7 @@ Trip ID,Destination,Start date,End date,Duration (days),Traveler name,Traveler a
 615,Colombo,6/20/2024,6/27/2024,1,Michael Chen,26,Male,Chinese,Hostel,8.1,Cab,16.4,15.3,7.1,3.9,50.8
 616,Mirissa,7/15/2024,7/23/2024,1,Sofia Rossi,33,Female,Italian,Guesthouse,33.8,Train,9.8,17.3,6.2,2.2,69.3
 617,Colombo,7/12/2022,7/18/2022,1,Rachel Sanders,35,Female,American,Hostel,9.1,Train,11.5,18.2,6.5,3.9,49.2
-618,Habarana,9/3/2022,9/10/2022,1,Kenji Nakamura,28,Male,Japanese,Resort,85.5,Train,8.1,18,5.4,3.6,120.6
+618,Hikkaduwa,9/3/2022,9/10/2022,1,Kenji Nakamura,28,Male,Japanese,Resort,85.5,Train,8.1,18,5.4,3.6,120.6
 619,Dambulla,1/7/2023,1/16/2023,1,Emily Watson,29,Female,British,Hostel,8.3,Bus,6.1,16,5,3.1,38.5
 620,Colombo,6/23/2023,6/29/2023,1,David Lee,43,Male,Australian,Guesthouse,34.2,Cab,24.7,19.6,5.5,3.5,87.5
 621,Galle,8/18/2023,8/25/2023,1,Ana Rodriguez,31,Female,Spanish,Guesthouse,34.2,Train,10.4,16.7,6.1,2.3,69.7
@@ -627,7 +627,7 @@ Trip ID,Destination,Start date,End date,Duration (days),Traveler name,Traveler a
 626,Mirissa,2/14/2025,2/20/2025,1,Marco Rossi,41,Male,Italian,Guesthouse,33.1,Cab,17.1,19.3,6.6,3.1,79.2
 627,Mirissa,5/21/2025,5/29/2025,1,Sarah Brown,37,Female,British,Resort,95.3,Cab,24.2,18.6,6.3,2.8,147.2
 628,Colombo,,,1,,,,,Resort,98.5,Cab,18.5,17.2,7.5,2.5,144.2
-629,Habarana,8/5/2022,8/12/2022,1,Sarah Lee,35,Female,South Korean,Resort,85.4,Train,10,18.2,6.2,3.9,123.7
+629,Hikkaduwa,8/5/2022,8/12/2022,1,Sarah Lee,35,Female,South Korean,Resort,85.4,Train,10,18.2,6.2,3.9,123.7
 630,Hambantota,1/1/2023,1/9/2023,1,Alex Kim,29,Male,American,Hostel,10.8,Bus,8.9,18.5,7.2,2.8,48.2
 631,Kandy,4/15/2023,4/22/2023,1,Maria Hernandez,42,Female,Mexican,Hotel,56.7,Bus,8.2,19,5.9,2.6,92.4
 632,Kandy,6/7/2023,6/14/2023,1,John Smith,46,Male,British,Vacation rental,76.9,Train,8.6,18.6,5.6,3.4,113.1
@@ -755,7 +755,7 @@ Trip ID,Destination,Start date,End date,Duration (days),Traveler name,Traveler a
 754,Colombo,6/20/2024,6/27/2024,1,Michael Chen,26,Male,Chinese,Hostel,10.4,Cab,19.4,15.8,7.3,3.8,56.7
 755,Mirissa,7/15/2024,7/23/2024,1,Sofia Rossi,33,Female,Italian,Villa,80.8,Train,8.3,19.7,6.5,3.1,118.4
 756,Colombo,7/12/2022,7/18/2022,1,Rachel Sanders,35,Female,American,Hotel,60.1,Bus,8.3,17.6,5.9,2.9,94.8
-757,Habarana,9/3/2022,9/10/2022,1,Kenji Nakamura,28,Male,Japanese,Hostel,9.1,Bus,6.3,19.5,8,3.2,46.1
+757,Hikkaduwa,9/3/2022,9/10/2022,1,Kenji Nakamura,28,Male,Japanese,Hostel,9.1,Bus,6.3,19.5,8,3.2,46.1
 758,Dambulla,1/7/2023,1/16/2023,1,Emily Watson,29,Female,British,Resort,83.1,Bus,6.5,18.3,6.3,3.2,117.4
 759,Colombo,6/23/2023,6/29/2023,1,David Lee,43,Male,Australian,Resort,95.5,Cab,23.1,16.6,6.4,3.4,145
 760,Galle,8/18/2023,8/25/2023,1,Ana Rodriguez,31,Female,Spanish,Guesthouse,35.6,Train,9.9,17.7,6.3,2.8,72.3
@@ -766,7 +766,7 @@ Trip ID,Destination,Start date,End date,Duration (days),Traveler name,Traveler a
 765,Mirissa,2/14/2025,2/20/2025,1,Marco Rossi,41,Male,Italian,Villa,85.4,Bus,7.4,16,5.8,3.6,118.2
 766,Mirissa,5/21/2025,5/29/2025,1,Sarah Brown,37,Female,British,Hotel,52.4,Cab,15.3,15.8,5.5,2.3,91.3
 767,Colombo,,,1,,,,,Resort,85.8,Train,12,16.2,6.6,3.8,124.4
-768,Habarana,8/5/2022,8/12/2022,1,Sarah Lee,35,Female,South Korean,Resort,92.5,Train,8.5,17.7,6.4,3,128.1
+768,Hikkaduwa,8/5/2022,8/12/2022,1,Sarah Lee,35,Female,South Korean,Resort,92.5,Train,8.5,17.7,6.4,3,128.1
 769,Hambantota,1/1/2023,1/9/2023,1,Alex Kim,29,Male,American,Vacation rental,89.4,Bus,6.6,17.4,7.7,2.8,123.9
 770,Kandy,4/15/2023,4/22/2023,1,Maria Hernandez,42,Female,Mexican,Airbnb,17.9,Bus,7.6,19.5,7.5,3.3,55.8
 771,Kandy,6/7/2023,6/14/2023,1,John Smith,46,Male,British,Hostel,11.3,Bus,7.1,15.3,6.4,2.9,43
@@ -864,9 +864,9 @@ Trip ID,Destination,Start date,End date,Duration (days),Traveler name,Traveler a
 863,Colombo,6/1/2023,6/10/2023,2,Michael Johnson,45,Male,South African,Villa,149.8,Cab,47.3,38,10.9,4.7,250.7
 864,Galle,6/15/2023,6/21/2023,2,Sarah Lee,31,Female,Australian,Hotel,103.8,Bus,13.8,30.5,15.6,7.7,171.4
 865,Weligama,7/1/2023,7/8/2023,2,David Kim,42,Male,Korean,Resort,192.5,Bus,16.6,35.9,10.5,7.7,263.2
-866,Galle,7/15/2023,7/22/2023,2,Emily Davis,27,Female,American,Hotel,115.2,Bus,17,38.7,14.1,4.4,189.4
-867,Colombo,8/1/2023,8/10/2023,2,Jose Perez,37,Male,Brazilian,Villa,168.5,Cab,49.8,35.5,14.7,7.6,276.1
-868,Galle,8/15/2023,8/21/2023,2,Emma Wilson,29,Female,Canadian,Airbnb,47.9,Cab,49.6,39.2,13.7,5.1,155.5
-869,Matara,9/1/2023,9/8/2023,2,Ryan Chen,34,Male,Chinese,Villa,147.8,Cab,47.6,30.4,11.8,6.6,244.2
-870,Galle,9/15/2023,9/22/2023,2,Sofia Rodriguez,25,Female,Spanish,Airbnb,49.3,Bus,14.2,39.1,10.9,5.1,118.6
-871,Nuwara Eliya,10/1/2023,10/8/2023,5,William Brown,39,Male,New Zealander,Hostel,56.9,Bus,48.1,79.1,28.2,16.7,229
+866,Hikkaduwa,7/15/2023,7/22/2023,2,Emily Davis,27,Female,American,Hotel,115.2,Bus,17,38.7,14.1,4.4,189.4
+867,Hikkaduwa,8/1/2023,8/10/2023,2,Jose Perez,37,Male,Brazilian,Villa,168.5,Cab,49.8,35.5,14.7,7.6,276.1
+868,Hikkaduwa,8/15/2023,8/21/2023,2,Emma Wilson,29,Female,Canadian,Airbnb,47.9,Cab,49.6,39.2,13.7,5.1,155.5
+869,Hikkaduwa,9/1/2023,9/8/2023,2,Ryan Chen,34,Male,Chinese,Villa,147.8,Cab,47.6,30.4,11.8,6.6,244.2
+870,Hikkaduwa,9/15/2023,9/22/2023,2,Sofia Rodriguez,25,Female,Spanish,Airbnb,49.3,Bus,14.2,39.1,10.9,5.1,118.6
+871,Hikkaduwa,10/1/2023,10/8/2023,5,William Brown,39,Male,New Zealander,Hostel,56.9,Bus,48.1,79.1,28.2,16.7,229

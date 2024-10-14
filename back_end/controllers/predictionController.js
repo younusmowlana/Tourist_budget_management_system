@@ -1,5 +1,6 @@
 const asyncHandler = require("express-async-handler");
 const Prediction = require("../models/Prediction");
+const TravelPlan = require("../models/TravelPlan"); // Import the TravelPlan model
 const axios = require("axios");
 
 const addPrediction = asyncHandler(async (req, res) => {
@@ -30,7 +31,7 @@ const addPrediction = asyncHandler(async (req, res) => {
     });
   }
 
-  const minBudgetPerVisitor = 50;  // Set a minimum realistic value
+  const minBudgetPerVisitor = 50;  
   const totalMinimumBudget = minBudgetPerVisitor * visitor_count;
 
   if (budget < totalMinimumBudget) {
@@ -60,17 +61,44 @@ const addPrediction = asyncHandler(async (req, res) => {
     });
 
     console.log(response.data);
-    res.status(200).json({
+
+    const { Budget_Friendly, Mid_Range, High_End } = response.data;
+
+    
+    const budgetPlanTypes = [];
+    if (Budget_Friendly) budgetPlanTypes.push("Budget_Friendly");
+    if (Mid_Range) budgetPlanTypes.push("Mid_Range");
+    if (High_End) budgetPlanTypes.push("High_End");
+
+    
+    const travelPlans = await TravelPlan.findOne(
+      { DesiredArea: destination },
+      { BudgetPlans: 1 }
+    );
+
+    if (!travelPlans) {
+      return res.status(404).json({
+        error: "No travel plans found for the specified destination.",
+      });
+    }
+
+   
+    const selectedPlans = travelPlans.BudgetPlans.filter((plan) =>
+      budgetPlanTypes.includes(plan.type)
+    );
+
+    return res.status(200).json({
       message: "Prediction added and processed successfully!",
       predictionResponse: response.data,
+      travelPlans: selectedPlans,
     });
+
   } catch (error) {
     console.log(error);
-    
+
     if (error.response && error.response.status === 400) {
       return res.status(400).json({
-        error:
-          error.response.data.message || "Invalid input provided to Flask API.",
+        error: error.response.data.message || "Invalid input provided to Flask API.",
       });
     }
 
@@ -79,6 +107,7 @@ const addPrediction = asyncHandler(async (req, res) => {
     });
   }
 });
+
 module.exports = {
   addPrediction,
 };

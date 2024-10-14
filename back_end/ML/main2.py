@@ -6,7 +6,6 @@ app = Flask(__name__)
 
 save_path = r"C:\Users\Younus\Desktop\Research\Tourist_budget_management_system\back_end\ML"  
 
-minimum_accommodation_cost_per_person = 25
 
 # Load the models from the saved .pkl files
 model_accommodation = joblib.load(save_path + r'\model_accommodation.pkl')
@@ -21,7 +20,6 @@ high_end_multiplier = 4.5
 
 @app.route('/', methods=['POST'])
 def predict():
-
     data = request.json
     budget = data.get('budget')
     destination = data.get('destination')
@@ -48,24 +46,16 @@ def predict():
         user_df[col] = 0  # Add missing columns with 0 value if not present in input
 
     # Predict costs for the Budget Friendly plan
-    accommodation_cost_per_person = model_accommodation.predict(user_df)[0] / visitor_count
-    transportation_cost_per_person = model_transportation.predict(user_df)[0] / visitor_count
-    food_cost_per_person = model_food.predict(user_df)[0] / visitor_count
-    activities_cost_per_person = model_activities.predict(user_df)[0] / visitor_count
-    others_cost_per_person = model_others.predict(user_df)[0] / visitor_count
+    accommodation_cost_per_person = round(model_accommodation.predict(user_df)[0] / visitor_count, 2)
+    transportation_cost_per_person = round(model_transportation.predict(user_df)[0] / visitor_count, 2)
+    food_cost_per_person = round(model_food.predict(user_df)[0] / visitor_count, 2)
+    activities_cost_per_person = round(model_activities.predict(user_df)[0] / visitor_count, 2)
+    others_cost_per_person = round(model_others.predict(user_df)[0] / visitor_count, 2)
 
-   
-    # if accommodation_cost_per_person < minimum_accommodation_cost_per_person:
-    #     return jsonify({
-    #         "status": "error",
-    #         "message": f"The accommodation cost per person is below the minimum allowed value of {minimum_accommodation_cost_per_person}."
-    #     }), 400
+    total_cost_per_person = round(accommodation_cost_per_person + transportation_cost_per_person +
+                                  food_cost_per_person + activities_cost_per_person + others_cost_per_person, 2)
 
-    total_cost_per_person = (accommodation_cost_per_person + transportation_cost_per_person +
-                             food_cost_per_person + activities_cost_per_person + others_cost_per_person)
-
-    
-    total_cost = total_cost_per_person * visitor_count
+    total_cost = round(total_cost_per_person * visitor_count, 2)
 
     if total_cost > budget:
         return jsonify({
@@ -86,28 +76,28 @@ def predict():
     }
 
     # Calculate costs for Mid-Range plan
-    accommodation_cost_per_person_mid = accommodation_cost_per_person * mid_range_multiplier
-    transportation_cost_per_person_mid = transportation_cost_per_person * mid_range_multiplier
-    food_cost_per_person_mid = food_cost_per_person * mid_range_multiplier
-    activities_cost_per_person_mid = activities_cost_per_person * mid_range_multiplier
-    others_cost_per_person_mid = others_cost_per_person * mid_range_multiplier
+    accommodation_cost_per_person_mid = round(accommodation_cost_per_person * mid_range_multiplier, 2)
+    transportation_cost_per_person_mid = round(transportation_cost_per_person * mid_range_multiplier, 2)
+    food_cost_per_person_mid = round(food_cost_per_person * mid_range_multiplier, 2)
+    activities_cost_per_person_mid = round(activities_cost_per_person * mid_range_multiplier, 2)
+    others_cost_per_person_mid = round(others_cost_per_person * mid_range_multiplier, 2)
 
-    total_cost_per_person_mid = (accommodation_cost_per_person_mid + transportation_cost_per_person_mid +
-                                 food_cost_per_person_mid + activities_cost_per_person_mid + others_cost_per_person_mid)
+    total_cost_per_person_mid = round(accommodation_cost_per_person_mid + transportation_cost_per_person_mid +
+                                      food_cost_per_person_mid + activities_cost_per_person_mid + others_cost_per_person_mid, 2)
 
-    total_cost_mid = total_cost_per_person_mid * visitor_count
+    total_cost_mid = round(total_cost_per_person_mid * visitor_count, 2)
 
     # Calculate costs for High-End plan
-    accommodation_cost_per_person_high = accommodation_cost_per_person * high_end_multiplier
-    transportation_cost_per_person_high = transportation_cost_per_person * high_end_multiplier
-    food_cost_per_person_high = food_cost_per_person * high_end_multiplier
-    activities_cost_per_person_high = activities_cost_per_person * high_end_multiplier
-    others_cost_per_person_high = others_cost_per_person * high_end_multiplier
+    accommodation_cost_per_person_high = round(accommodation_cost_per_person * high_end_multiplier, 2)
+    transportation_cost_per_person_high = round(transportation_cost_per_person * high_end_multiplier, 2)
+    food_cost_per_person_high = round(food_cost_per_person * high_end_multiplier, 2)
+    activities_cost_per_person_high = round(activities_cost_per_person * high_end_multiplier, 2)
+    others_cost_per_person_high = round(others_cost_per_person * high_end_multiplier, 2)
 
-    total_cost_per_person_high = (accommodation_cost_per_person_high + transportation_cost_per_person_high +
-                                  food_cost_per_person_high + activities_cost_per_person_high + others_cost_per_person_high)
+    total_cost_per_person_high = round(accommodation_cost_per_person_high + transportation_cost_per_person_high +
+                                       food_cost_per_person_high + activities_cost_per_person_high + others_cost_per_person_high, 2)
 
-    total_cost_high = total_cost_per_person_high * visitor_count
+    total_cost_high = round(total_cost_per_person_high * visitor_count, 2)
 
     # Determine which plans to include based on budget
     if total_cost_mid <= budget:
