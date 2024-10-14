@@ -60,7 +60,7 @@ def predict():
     if total_cost > budget:
         return jsonify({
             "status": "error",
-            "message": "Predicted costs exceed the budget"
+            "message": "The predicted costs exceed your budget. Please adjust your budget or explore alternative options."
         }), 400
 
     # Prepare response for Budget Friendly plan

@@ -161,3 +161,7 @@ button.submit-button {
     padding: 15px;
   }
 }
+
+.danger {
+  color: red;
+}
