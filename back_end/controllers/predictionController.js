@@ -1,6 +1,6 @@
 const asyncHandler = require("express-async-handler");
 const Prediction = require("../models/Prediction");
-const TravelPlan = require("../models/TravelPlan"); // Import the TravelPlan model
+const TravelPlan = require("../models/TravelPlan"); 
 const axios = require("axios");
 
 const addPrediction = asyncHandler(async (req, res) => {
