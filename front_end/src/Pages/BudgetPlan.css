@@ -1,0 +1,117 @@
+.budget-plan-container {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .summary-box {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .title-text {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #6e44ff;
+  }
+  
+  .budget-details {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+  
+  .detail-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .detail-item {
+    font-size: 1rem;
+    color: #6e44ff;
+  }
+  
+  .detail-value {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .sub-text {
+    margin-bottom: 30px;
+    font-size: 0.9rem;
+    color: #666;
+    text-align: center;
+  }
+  
+  .budget-card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .budget-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  .plan-title {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #6e44ff;
+  }
+  
+  .total-price {
+    background: linear-gradient(to right, #ffafbd, #ffc3a0);
+    color: white;
+    padding: 5px 12px;
+    border-radius: 8px;
+    font-weight: bold;
+  }
+  
+  .budget-items {
+    margin-top: 20px;
+  }
+  
+  .budget-item {
+    padding: 10px 0;
+    font-size: 1rem;
+  }
+  
+  .divider {
+    margin: 15px 0;
+    background-color: #ddd;
+  }
+  
+  .button-container {
+    text-align: right;
+    padding: 10px;
+  }
+  
+  .next-button {
+    background: black;
+    color: white;
+    padding: 8px 16px;
+    font-weight: bold;
+    text-transform: none;
+    transition: background 0.3s ease;
+  }
+  
+  .next-button:hover {
+    background: #333;
+  }
+  
