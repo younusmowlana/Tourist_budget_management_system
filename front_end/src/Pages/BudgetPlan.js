@@ -31,15 +31,15 @@ const BudgetPlan = () => {
     <Box
       sx={{
         padding: '20px',
-        maxWidth: '900px', // Reduce maxWidth for smaller devices
+        maxWidth: '900px', 
         margin: '0 auto',
         [theme.breakpoints.down('sm')]: {
           padding: '10px',
-          maxWidth: '100%', // Allow full width on smaller screens
+          maxWidth: '100%', 
         },
       }}
     >
-      {/* Header Section */}
+     
       <Card
         sx={{
           padding: '20px',
@@ -56,7 +56,7 @@ const BudgetPlan = () => {
             color: '#4e54c8',
             textAlign: 'center',
             [theme.breakpoints.down('sm')]: {
-              fontSize: '1.5rem', // Reduce font size on small screens
+              fontSize: '1.5rem', 
             },
           }}
         >
@@ -72,7 +72,7 @@ const BudgetPlan = () => {
             gap: '15px',
             textAlign: 'center',
             [theme.breakpoints.down('sm')]: {
-              flexDirection: 'column', // Stack items vertically on small screens
+              flexDirection: 'column', 
               gap: '10px',
             },
           }}
@@ -91,8 +91,8 @@ const BudgetPlan = () => {
         </Typography>
       </Card>
 
-      {/* Budget Plans Section */}
-      <Grid container spacing={2}> {/* Reduce spacing for mobile */}
+     
+      <Grid container spacing={2}> 
         {budgetPlans.map((plan) => (
           <Grid item xs={12} sm={6} key={plan.id}>
             <Card
@@ -113,7 +113,7 @@ const BudgetPlan = () => {
                     alignItems: 'center',
                     marginBottom: '15px',
                     [theme.breakpoints.down('sm')]: {
-                      flexDirection: 'column', // Stack items vertically on small screens
+                      flexDirection: 'column', 
                       textAlign: 'center',
                     },
                   }}
@@ -133,7 +133,7 @@ const BudgetPlan = () => {
                       fontWeight: 'bold',
                       marginTop: '10px',
                       [theme.breakpoints.down('sm')]: {
-                        marginTop: '10px', // Add spacing on mobile
+                        marginTop: '10px', 
                       },
                     }}
                   >
@@ -168,7 +168,7 @@ const BudgetPlan = () => {
                   textAlign: 'right',
                   padding: '10px 20px',
                   [theme.breakpoints.down('sm')]: {
-                    textAlign: 'center', // Center align button on small screens
+                    textAlign: 'center', 
                   },
                 }}
               >
