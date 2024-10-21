@@ -1,195 +1,216 @@
 import React from 'react';
 import { Box, Typography, Card, CardContent, Button, Grid, Stack, Divider, useTheme } from '@mui/material';
+import HotelIcon from '@mui/icons-material/Hotel';
+import DirectionsBusIcon from '@mui/icons-material/DirectionsBus';
+import FastfoodIcon from '@mui/icons-material/Fastfood';
+import RowingIcon from '@mui/icons-material/Rowing';
+import MoodIcon from '@mui/icons-material/Mood';
+import './BudgetPlan.css';
+import { useLocation } from 'react-router-dom';
 
 const BudgetPlan = () => {
   const theme = useTheme();
+  const location = useLocation();
+  const { data } = location.state;
+  const { predictionResponse } = data;
 
-  const budgetPlans = [
-    {
-      plan:"Budget Friendly Plan",
-      id: 1,
-      total: '19,500 LKR',
-      accommodation: 8000,
-      transport: 2300,
-      foods: 8000,
-      activities: 1000,
-      others: 700,
-    },
-    {
-      id: 2,
-      plan:"Mid Range Budget Plan",
-      total: '17,700 LKR',
-      accommodation: 6000,
-      transport: 2000,
-      foods: 8000,
-      activities: 1000,
-      others: 700,
-    },
+  const {tripData} = location.state;
+ 
+
+  const budgetCategories = [
+    { label: 'Budget Friendly', key: 'Budget_Friendly' },
+    { label: 'Mid Range Plan', key: 'Mid_Range' },
+    { label: 'High End Plan', key: 'High_End' },
   ];
 
   return (
     <Box
       sx={{
         padding: '20px',
-        maxWidth: '900px', 
+        flexDirection: 'column',
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
         margin: '0 auto',
         [theme.breakpoints.down('sm')]: {
           padding: '10px',
-          maxWidth: '100%', 
+          maxWidth: '100%',
         },
       }}
     >
-     
-      <Card
+      <Typography
+        className='topCardSec'
+        variant="h4"
         sx={{
-          padding: '20px',
-          borderRadius: '12px',
-          marginBottom: '40px',
-          backgroundColor: '#f7f7f7',
-          boxShadow: '0px 4px 15px rgba(0, 0, 0, 0.1)',
+          background: 'linear-gradient(to right, #1C1BA0, #6B26BB, #a069e0)',
+          width: '72vw',
+          height: '20vh',
+          fontWeight: 'bold',
+          color: '#FFFFFF',
+          marginBottom: '16vh',
+          textAlign: 'center',
+          [theme.breakpoints.down('sm')]: {
+            fontSize: '1.5rem',
+          },
+          borderRadius: '16px',
+          display: 'flex',
+          justifyContent: 'center',
+          paddingTop: '2vh',
         }}
       >
-        <Typography
-          variant="h4"
+        Colombo ➔ {tripData?.destination}
+
+        <Card
+          className='baseDataSec'
           sx={{
-            fontWeight: 'bold',
-            color: '#4e54c8',
-            textAlign: 'center',
-            [theme.breakpoints.down('sm')]: {
-              fontSize: '1.5rem', 
-            },
+            padding: '20px',
+            borderRadius: '12px',
+            marginTop: '8vh',
+            marginBottom: '40px',
+            backgroundColor: '#FFFFFF',
+            boxShadow: '0px 4px 15px rgba(0, 0, 0, 0.1)',
+            position: 'absolute',
           }}
         >
-          Colombo ➔ Ella
-        </Typography>
+          <Box
+            sx={{
+              marginTop: '20px',
+              textAlign: 'center',
+            }}
+          >
+            <Grid container spacing={2}>
+              <Grid item xs={12} sm={6} md={3}>
+                <BudgetDetailItem label="Total Budget" value={tripData?.budget} />
+              </Grid>
+              <Grid item xs={12} sm={6} md={3}>
+                <BudgetDetailItem label="Head Count" value={tripData?.visitor_count} />
+              </Grid>
+              {/* <Grid item xs={12} sm={6} md={3}>
+                <BudgetDetailItem label="Budget per Person" value={tripData.budget/tripData.visitor_count} />
+              </Grid> */}
+              <Grid item xs={12} sm={6} md={3}>
+                <BudgetDetailItem label="Days to Stay" value={tripData?.number_of_days} />
+              </Grid>
+            </Grid>
+          </Box>
 
-        <Box
-          sx={{
-            display: 'flex',
-            justifyContent: 'space-between',
-            flexWrap: 'wrap',
-            marginTop: '20px',
-            gap: '15px',
-            textAlign: 'center',
-            [theme.breakpoints.down('sm')]: {
-              flexDirection: 'column', 
-              gap: '10px',
-            },
-          }}
-        >
-          <BudgetDetailItem label="Total Budget" value="100,000 LKR" />
-          <BudgetDetailItem label="Head Count" value="5" />
-          <BudgetDetailItem label="Budget per Person" value="20,000 LKR" />
-          <BudgetDetailItem label="Days to Stay" value="3" />
-        </Box>
+          <Typography
+            variant="body2"
+            sx={{ textAlign: 'center', color: '#888', marginTop: '20px' }}
+          >
+            Budget plan is calculated per person*
+          </Typography>
+        </Card>
+      </Typography>
 
-        <Typography
-          variant="body2"
-          sx={{ textAlign: 'center', color: '#888', marginTop: '20px' }}
-        >
-          Budget plan is calculated per person*
-        </Typography>
-      </Card>
-
-     
-      <Grid container spacing={2}> 
-        {budgetPlans.map((plan) => (
-          <Grid item xs={12} sm={6} key={plan.id}>
-            <Card
-              sx={{
-                borderRadius: '12px',
-                boxShadow: '0px 4px 20px rgba(0, 0, 0, 0.1)',
-                transition: 'transform 0.3s ease-in-out',
-                '&:hover': {
-                  transform: 'translateY(-5px)',
-                },
-              }}
-            >
-              <CardContent>
-                <Box
+      <Grid container spacing={2} style={{ display: 'flex', justifyContent: 'center' }}>
+        {budgetCategories
+          .filter(category => predictionResponse[category.key])
+          .map((category) => {
+            const plan = predictionResponse[category.key];
+            return (
+              <Grid item xs={12} sm={6} md={3} key={category.key}>
+                <Card
                   sx={{
-                    display: 'flex',
-                    justifyContent: 'space-between',
-                    alignItems: 'center',
-                    marginBottom: '15px',
-                    [theme.breakpoints.down('sm')]: {
-                      flexDirection: 'column', 
-                      textAlign: 'center',
+                    borderRadius: '12px',
+                    boxShadow: '0px 4px 20px rgba(0, 0, 0, 0.1)',
+                    transition: 'transform 0.3s ease-in-out',
+                    '&:hover': {
+                      transform: 'translateY(-5px)',
                     },
                   }}
                 >
-                  <Typography
-                    variant="h6"
-                    sx={{ fontWeight: 'bold', color: '#4e54c8' }}
-                  >
-                    {plan.plan}
-                  </Typography>
-                  <Typography
+                  <CardContent>
+                    <Box
+                      sx={{
+                        display: 'flex',
+                        justifyContent: 'space-between',
+                        alignItems: 'center',
+                        marginBottom: '15px',
+                        [theme.breakpoints.down('sm')]: {
+                          flexDirection: 'column',
+                          textAlign: 'center',
+                        },
+                      }}
+                    >
+                      <Typography
+                        variant="h6"
+                        sx={{ fontWeight: 'bold', color: '#4e54c8' }}
+                      >
+                        {category.label}
+                      </Typography>
+                      <Typography
+                        sx={{
+                          background: 'linear-gradient(to right, #FBC676, #E35CC5)',
+                          color: 'white',
+                          padding: '5px 12px',
+                          borderRadius: '8px',
+                          fontWeight: 'bold',
+                          marginTop: '10px',
+                          [theme.breakpoints.down('sm')]: {
+                            marginTop: '10px',
+                          },
+                        }}
+                      >
+                        {plan?.total_cost} $
+                      </Typography>
+                    </Box>
+
+                    <Divider sx={{ marginY: '15px' }} />
+
+                    <Box>
+                      {[
+                        { label: 'Accommodation', value: plan?.accommodation_cost_per_person, icon: <HotelIcon /> },
+                        { label: 'Transport', value: plan?.transportation_cost_per_person, icon: <DirectionsBusIcon /> },
+                        { label: 'Foods', value: plan?.food_cost_per_person, icon: <FastfoodIcon /> },
+                        { label: 'Activities', value: plan?.activities_cost_per_person, icon: <RowingIcon /> },
+                        { label: 'Others', value: plan?.others_cost_per_person, icon: <MoodIcon /> },
+                      ].map((item, index) => (
+                        <Stack
+                          direction="row"
+                          justifyContent="space-between"
+                          key={index}
+                          sx={{ padding: '10px 0' }}
+                        >
+                          <Stack direction="row" alignItems="center" spacing={1}>
+                            {item.icon}
+                            <Typography>{item.label}</Typography>
+                          </Stack>
+                          <Typography>{item.value} $</Typography>
+                        </Stack>
+                      ))}
+                    </Box>
+                  </CardContent>
+                  <Box
                     sx={{
-                      background: 'linear-gradient(to right, #ffafbd, #ffc3a0)',
-                      color: 'white',
-                      padding: '5px 12px',
-                      borderRadius: '8px',
-                      fontWeight: 'bold',
-                      marginTop: '10px',
+                      textAlign: 'right',
+                      padding: '10px 20px',
                       [theme.breakpoints.down('sm')]: {
-                        marginTop: '10px', 
+                        textAlign: 'center',
                       },
                     }}
                   >
-                    {plan.total}
-                  </Typography>
-                </Box>
-
-                <Divider sx={{ marginY: '15px' }} />
-
-                <Box>
-                  {[
-                    { label: 'Accommodation', value: plan.accommodation },
-                    { label: 'Transport', value: plan.transport },
-                    { label: 'Foods', value: plan.foods },
-                    { label: 'Activities', value: plan.activities },
-                    { label: 'Others', value: plan.others },
-                  ].map((item, index) => (
-                    <Stack
-                      direction="row"
-                      justifyContent="space-between"
-                      key={index}
-                      sx={{ padding: '10px 0' }}
+                    <Button
+                      variant="contained"
+                      color="secondary"
+                      sx={{
+                        background: '#000000',
+                        color: '#fff',
+                        borderRadius: '16px',
+                        padding: '8px 32px',
+                        textTransform: 'none',
+                        '&:hover': {
+                          background: '#6B26BB',
+                        },
+                      }}
                     >
-                      <Typography>{item.label}</Typography>
-                      <Typography>{item.value} LKR</Typography>
-                    </Stack>
-                  ))}
-                </Box>
-              </CardContent>
-              <Box
-                sx={{
-                  textAlign: 'right',
-                  padding: '10px 20px',
-                  [theme.breakpoints.down('sm')]: {
-                    textAlign: 'center', 
-                  },
-                }}
-              >
-                <Button
-                  variant="contained"
-                  color="secondary"
-                  sx={{
-                    background: '#4e54c8',
-                    color: '#fff',
-                    textTransform: 'none',
-                    '&:hover': {
-                      background: '#3533a2',
-                    },
-                  }}
-                >
-                  Next
-                </Button>
-              </Box>
-            </Card>
-          </Grid>
-        ))}
+                      Next
+                    </Button>
+                  </Box>
+                </Card>
+              </Grid>
+            );
+          })}
       </Grid>
     </Box>
   );

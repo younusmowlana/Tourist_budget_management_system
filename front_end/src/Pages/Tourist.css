@@ -9,6 +9,17 @@
   flex-direction: column;
 }
 
+.trip-section {
+  background-image: url('./resources/backgroundImg2.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 20px;
+  color: white; /* Ensures text stands out on the image */
+  text-align: center; /* Centers the text horizontally */
+  border-radius: 8px; /* Optional: Adds rounded corners */
+  margin-bottom: 20px;
+}
+
 /* Navbar styling */
 .navbar {
   background: rgba(0, 0, 0, 0.7);

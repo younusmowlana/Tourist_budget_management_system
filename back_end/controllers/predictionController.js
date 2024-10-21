@@ -79,6 +79,7 @@ const addPrediction = asyncHandler(async (req, res) => {
     if (!travelPlans) {
       return res.status(404).json({
         error: "No travel plans found for the specified destination.",
+        status: 404
       });
     }
 
@@ -91,6 +92,7 @@ const addPrediction = asyncHandler(async (req, res) => {
       message: "Prediction added and processed successfully!",
       predictionResponse: response.data,
       travelPlans: selectedPlans,
+      status: 200,
     });
 
   } catch (error) {
@@ -99,11 +101,13 @@ const addPrediction = asyncHandler(async (req, res) => {
     if (error.response && error.response.status === 400) {
       return res.status(400).json({
         error: error.response.data.message || "Invalid input provided to Flask API.",
+        status: 400
       });
     }
 
     res.status(500).json({
       error: "Failed to process prediction",
+      status: 500
     });
   }
 });
