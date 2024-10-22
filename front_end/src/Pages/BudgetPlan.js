@@ -11,9 +11,8 @@ import { useLocation } from 'react-router-dom';
 const BudgetPlan = () => {
   const theme = useTheme();
   const location = useLocation();
-  const { data } = location.state;
-  const { predictionResponse } = data;
-
+  const { data } = location?.state || {}; 
+  const predictionResponse = data?.predictionResponse || {};
   const {tripData} = location.state;
  
 
@@ -79,19 +78,17 @@ const BudgetPlan = () => {
             }}
           >
             <Grid container spacing={2}>
-              <Grid item xs={12} sm={6} md={3}>
-                <BudgetDetailItem label="Total Budget" value={tripData?.budget} />
-              </Grid>
-              <Grid item xs={12} sm={6} md={3}>
-                <BudgetDetailItem label="Head Count" value={tripData?.visitor_count} />
-              </Grid>
-              {/* <Grid item xs={12} sm={6} md={3}>
-                <BudgetDetailItem label="Budget per Person" value={tripData.budget/tripData.visitor_count} />
-              </Grid> */}
-              <Grid item xs={12} sm={6} md={3}>
-                <BudgetDetailItem label="Days to Stay" value={tripData?.number_of_days} />
-              </Grid>
-            </Grid>
+  <Grid item xs={12} sm={6} md={4}>
+    <BudgetDetailItem label="Total Budget" value={tripData?.budget} />
+  </Grid>
+  <Grid item xs={12} sm={6} md={4}>
+    <BudgetDetailItem label="Head Count" value={tripData?.visitor_count} />
+  </Grid>
+  <Grid item xs={12} sm={6} md={4}>
+    <BudgetDetailItem label="Days to Stay" value={tripData?.number_of_days} />
+  </Grid>
+</Grid>
+
           </Box>
 
           <Typography
