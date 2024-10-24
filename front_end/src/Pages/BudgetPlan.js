@@ -1,5 +1,7 @@
 import React from 'react';
-import { Box, Typography, Card, CardContent, Button, Grid, Stack, Divider, useTheme } from '@mui/material';
+import { 
+  Box, Typography, Card, CardContent, Button, Grid, Stack, Divider, useTheme
+} from '@mui/material';
 import HotelIcon from '@mui/icons-material/Hotel';
 import DirectionsBusIcon from '@mui/icons-material/DirectionsBus';
 import FastfoodIcon from '@mui/icons-material/Fastfood';
@@ -14,7 +16,7 @@ const BudgetPlan = () => {
   const { data } = location?.state || {}; 
   const predictionResponse = data?.predictionResponse || {};
   const {tripData} = location.state;
- 
+
 
   const budgetCategories = [
     { label: 'Budget Friendly', key: 'Budget_Friendly' },
@@ -25,95 +27,92 @@ const BudgetPlan = () => {
   return (
     <Box
       sx={{
-        padding: '20px',
-        flexDirection: 'column',
+        padding: '30px',
         display: 'flex',
-        justifyContent: 'center',
+        flexDirection: 'column',
         alignItems: 'center',
-        margin: '0 auto',
+        backgroundColor: '#f3f4f6',
+        minHeight: '100vh',
         [theme.breakpoints.down('sm')]: {
-          padding: '10px',
-          maxWidth: '100%',
+          padding: '15px',
         },
       }}
     >
-      <Typography
-        className='topCardSec'
-        variant="h4"
+      {/* Header Section */}
+      <Box
         sx={{
-          background: 'linear-gradient(to right, #1C1BA0, #6B26BB, #a069e0)',
-          width: '72vw',
-          height: '20vh',
-          fontWeight: 'bold',
-          color: '#FFFFFF',
-          marginBottom: '16vh',
+          width: '100%',
           textAlign: 'center',
-          [theme.breakpoints.down('sm')]: {
-            fontSize: '1.5rem',
-          },
-          borderRadius: '16px',
-          display: 'flex',
-          justifyContent: 'center',
-          paddingTop: '2vh',
+          background: 'linear-gradient(to right, #1C1BA0, #6B26BB, #a069e0)',
+          padding: '20px',
+          borderRadius: '20px',
+          marginBottom: '30px',
         }}
       >
-        Colombo ➔ {tripData?.destination}
-
-        <Card
-          className='baseDataSec'
+        <Typography
+          variant="h4"
           sx={{
-            padding: '20px',
-            borderRadius: '12px',
-            marginTop: '8vh',
-            marginBottom: '40px',
-            backgroundColor: '#FFFFFF',
-            boxShadow: '0px 4px 15px rgba(0, 0, 0, 0.1)',
-            position: 'absolute',
+            color: '#fff',
+            fontWeight: 'bold',
+            marginBottom: '10px',
+            [theme.breakpoints.down('sm')]: {
+              fontSize: '1.75rem',
+            },
           }}
         >
-          <Box
-            sx={{
-              marginTop: '20px',
-              textAlign: 'center',
-            }}
-          >
-            <Grid container spacing={2}>
-  <Grid item xs={12} sm={6} md={4}>
-    <BudgetDetailItem label="Total Budget" value={tripData?.budget} />
-  </Grid>
-  <Grid item xs={12} sm={6} md={4}>
-    <BudgetDetailItem label="Head Count" value={tripData?.visitor_count} />
-  </Grid>
-  <Grid item xs={12} sm={6} md={4}>
-    <BudgetDetailItem label="Days to Stay" value={tripData?.number_of_days} />
-  </Grid>
-</Grid>
+          Colombo ➔ {tripData?.destination}
+        </Typography>
+        <Typography variant="h7" sx={{ color: '#ccc' }}>
+          {tripData?.number_of_days} Days | {tripData?.visitor_count} People | ${tripData?.budget}
+        </Typography>
+      </Box>
 
-          </Box>
+      {/* Base Data Section */}
+      <Card
+        sx={{
+          padding: '20px',
+          borderRadius: '16px',
+          marginBottom: '30px',
+          backgroundColor: '#fff',
+          boxShadow: '0px 6px 20px rgba(0, 0, 0, 0.1)',
+          width: '80%',
+        }}
+      >
+        <Grid container spacing={3} justifyContent="center">
+          <Grid item xs={12} sm={4}>
+            <BudgetDetailItem label="Total Budget" value={tripData?.budget} />
+          </Grid>
+          <Grid item xs={12} sm={4}>
+            <BudgetDetailItem label="Head Count" value={tripData?.visitor_count} />
+          </Grid>
+          <Grid item xs={12} sm={4}>
+            <BudgetDetailItem label="Days to Stay" value={tripData?.number_of_days} />
+          </Grid>
+          
+        </Grid>
+        <Typography
+          variant="body2"
+          sx={{ textAlign: 'center', color: '#888', marginTop: '20px' }}
+        >
+          Budget plan is calculated per person*
+        </Typography>
+      </Card>
 
-          <Typography
-            variant="body2"
-            sx={{ textAlign: 'center', color: '#888', marginTop: '20px' }}
-          >
-            Budget plan is calculated per person*
-          </Typography>
-        </Card>
-      </Typography>
-
-      <Grid container spacing={2} style={{ display: 'flex', justifyContent: 'center' }}>
+      {/* Budget Plan Cards */}
+      <Grid container spacing={4} justifyContent="center">
         {budgetCategories
           .filter(category => predictionResponse[category.key])
           .map((category) => {
             const plan = predictionResponse[category.key];
             return (
-              <Grid item xs={12} sm={6} md={3} key={category.key}>
+              <Grid item xs={12} sm={6} md={4} key={category.key}>
                 <Card
                   sx={{
-                    borderRadius: '12px',
-                    boxShadow: '0px 4px 20px rgba(0, 0, 0, 0.1)',
+                    borderRadius: '16px',
+                    boxShadow: '0px 8px 24px rgba(0, 0, 0, 0.1)',
                     transition: 'transform 0.3s ease-in-out',
                     '&:hover': {
-                      transform: 'translateY(-5px)',
+                      transform: 'translateY(-10px)',
                     },
                   }}
                 >
@@ -140,13 +139,9 @@ const BudgetPlan = () => {
                         sx={{
                           background: 'linear-gradient(to right, #FBC676, #E35CC5)',
                           color: 'white',
-                          padding: '5px 12px',
-                          borderRadius: '8px',
+                          padding: '6px 16px',
+                          borderRadius: '12px',
                           fontWeight: 'bold',
-                          marginTop: '10px',
-                          [theme.breakpoints.down('sm')]: {
-                            marginTop: '10px',
-                          },
                         }}
                       >
                         {plan?.total_cost} $
@@ -167,7 +162,7 @@ const BudgetPlan = () => {
                           direction="row"
                           justifyContent="space-between"
                           key={index}
-                          sx={{ padding: '10px 0' }}
+                          sx={{ padding: '8px 0' }}
                         >
                           <Stack direction="row" alignItems="center" spacing={1}>
                             {item.icon}
@@ -180,54 +175,54 @@ const BudgetPlan = () => {
                   </CardContent>
                   <Box
                     sx={{
-                      textAlign: 'right',
+                      display: 'flex',
+                      justifyContent: 'space-between',
                       padding: '10px 20px',
-                      [theme.breakpoints.down('sm')]: {
-                        textAlign: 'center',
-                      },
                     }}
                   >
                     <Button
                       variant="contained"
-                      color="secondary"
+                      color="primary"
                       sx={{
-                        background: '#000000',
+                        backgroundColor: '#000',
                         color: '#fff',
-                        borderRadius: '16px',
-                        padding: '8px 32px',
+                        borderRadius: '12px',
+                        padding: '8px 20px',
                         textTransform: 'none',
                         '&:hover': {
-                          background: '#6B26BB',
+                          backgroundColor: '#6B26BB',
                         },
                       }}
                     >
                       Next
                     </Button>
+                   
                   </Box>
                 </Card>
               </Grid>
             );
           })}
       </Grid>
+
+      {/* Modal for Customizing Costs */}
     </Box>
   );
 };
 
+// Component to render individual budget details
 const BudgetDetailItem = ({ label, value }) => (
-  <Box
-    sx={{
-      display: 'flex',
-      flexDirection: 'column',
-      alignItems: 'center',
-    }}
-  >
-    <Typography variant="body1" sx={{ color: '#4e54c8', fontSize: '1rem' }}>
-      {label}
-    </Typography>
+  <Box sx={{ textAlign: 'center' }}>
     <Typography
       variant="h6"
-      sx={{ color: '#333', fontWeight: 'bold', fontSize: '1.25rem' }}
+      sx={{
+        fontWeight: 'bold',
+        fontSize: '18px',
+        color: '#4e54c8',
+      }}
     >
+      {label}
+    </Typography>
+    <Typography variant="h5" sx={{ color: '#333' }}>
       {value}
     </Typography>
   </Box>
