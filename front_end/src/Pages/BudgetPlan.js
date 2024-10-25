@@ -18,7 +18,7 @@ import FastfoodIcon from "@mui/icons-material/Fastfood";
 import RowingIcon from "@mui/icons-material/Rowing";
 import MoodIcon from "@mui/icons-material/Mood";
 import "./BudgetPlan.css";
-import { useLocation } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import AttachMoneyIcon from "@mui/icons-material/AttachMoney";
 import TrendingUpIcon from "@mui/icons-material/TrendingUp";
 import DiamondIcon from "@mui/icons-material/Diamond";
@@ -40,6 +40,8 @@ const BudgetPlan = () => {
     { label: "High End Plan", key: "High_End", icon: <DiamondIcon /> },
   ];
 
+  const navigate = useNavigate();
+
   const availablePlans = budgetCategories.filter(
     (category) => predictionResponse[category.key]
   );
@@ -54,6 +56,23 @@ const BudgetPlan = () => {
 
   const handleOpenModal = () => setShowModal(true);
   const handleCloseModal = () => setShowModal(false);
+
+  const handleSubmitNext = async (e, plan, categoryKey, label) => {
+    e.preventDefault();
+
+    const selectedTravelPlan = data?.travelPlans.filter(
+      (travelPlan) => travelPlan.type === categoryKey
+    );
+
+    const combinedPlans = selectedTravelPlan.map((matchedPlan) => ({
+      label,
+      ...tripData,
+      ...plan,
+      ...matchedPlan,
+    }));
+
+    navigate("/plan-detail", { state: { data: combinedPlans } });
+  };
 
   return (
     <Box
@@ -270,6 +289,9 @@ const BudgetPlan = () => {
                         backgroundColor: "#6B26BB",
                       },
                     }}
+                    onClick={(e) =>
+                      handleSubmitNext(e, plan, category.key, category.label)
+                    }
                   >
                     Next
                   </Button>
