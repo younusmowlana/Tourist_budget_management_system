@@ -131,7 +131,7 @@ const BudgetPlan = () => {
       >
         <Grid container spacing={3} justifyContent="center">
           <Grid item xs={12} sm={4}>
-            <BudgetDetailItem label="Total Budget" value={tripData?.budget} />
+          <BudgetDetailItem label="Total Budget" value={`$${tripData?.budget}`} />
           </Grid>
           <Grid item xs={12} sm={4}>
             <BudgetDetailItem
