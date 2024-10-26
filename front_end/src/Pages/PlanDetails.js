@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import {
   Card,
   CardContent,
@@ -51,14 +51,32 @@ const PlanDetails = () => {
   const handleClose = () => setOpen(false);
   const handleCloseAttractions = () => setOpenAttractions(false);
   const handleCloseFoodPlaces = () => setOpenFoodPlaces(false);
+  const [origin, setOrigin] = useState("Colombo");
 
   const { data } = location?.state || {};
 
   const destination = data[0]?.destination || "Colombo";
-  // const mapsUrl = `https://www.google.com/maps/embed/v1/directions?key=YOUR_API_KEY&origin=Colombo&destination=${destination}`;
-  const mapsUrl = `https://www.google.com/maps?q=Colombo+to+${destination}&output=embed`;
+  const mapsUrl = `https://www.google.com/maps?q=${origin}+to+${destination}&output=embed`;
 
-  console.log(data[0]);
+  useEffect(() => {
+    if (navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition(
+        (position) => {
+
+          
+          const { latitude, longitude } = position.coords;
+
+          console.log(latitude, longitude);
+          
+          setOrigin(`${latitude},${longitude}`);
+        },
+        (error) => {
+          console.error("Error getting location:", error);
+          setOrigin("Colombo");
+        }
+      );
+    }
+  }, []);
   return (
     <div style={{ margin: "4vw" }}>
       <Card sx={{ borderRadius: 3, boxShadow: 3 }}>

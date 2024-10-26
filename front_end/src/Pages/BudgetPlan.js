@@ -310,6 +310,8 @@ const BudgetPlan = () => {
         budgetCategories={budgetCategories}
         customPlan={customPlan}
         setCustomPlan={setCustomPlan}
+        tripData={tripData}
+        data={data}
       />
     </Box>
   );

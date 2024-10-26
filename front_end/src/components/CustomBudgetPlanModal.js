@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef, useState } from "react";
 import {
   Modal,
   Box,
@@ -10,7 +10,8 @@ import {
   MenuItem,
   Divider,
 } from "@mui/material";
-
+import SimpleReactValidator from "simple-react-validator";
+import { useNavigate } from "react-router-dom";
 
 const CustomBudgetPlanModal = ({
   open,
@@ -18,7 +19,35 @@ const CustomBudgetPlanModal = ({
   predictionResponse,
   customPlan,
   setCustomPlan,
+  tripData,
+  data
 }) => {
+  const validator = useRef(new SimpleReactValidator());
+  const [, forceUpdate] = useState(0);
+  const navigate = useNavigate();
+
+  const [selectedAccommodation, setSelectedAccommodation] = useState("");
+  const [selectedTransportation, setSelectedTransportation] = useState("");
+  const [selectedFood, setSelectedFood] = useState("");
+
+  const filterCustomPlan = (plan) => {
+    const validKeys = [
+      'accommodation_cost_per_person',
+      'activities_cost_per_person',
+      'food_cost_per_person',
+      'others_cost_per_person',
+      'transportation_cost_per_person',
+    ];
+  
+    return Object.keys(plan)
+      .filter((key) => validKeys.includes(key))
+      .reduce((acc, key) => {
+        acc[key] = plan[key];
+        return acc;
+      }, {});
+  };
+  
+
   const handleCustomPlanChange = (category, value) => {
     setCustomPlan((prev) => ({
       ...prev,
@@ -69,6 +98,54 @@ const CustomBudgetPlanModal = ({
     })
   );
 
+  const handleNextClick = (label) => {
+    if (validator.current.allValid()) {
+      const filteredCustomPlan = filterCustomPlan(customPlan);
+
+      const accommodationPlan = data?.travelPlans.find(
+        (plan) => plan.type === selectedAccommodation
+      );
+  
+      const foodPlan = data?.travelPlans.find(
+        (plan) => plan.type === selectedFood
+      );
+  
+      const transportPlan = data?.travelPlans.find(
+        (plan) => plan.type === selectedTransportation
+      );
+  
+      const hotels = [
+        {
+          hotel_name: accommodationPlan?.hotels[0]?.hotel_name || "",
+          hotel_img: accommodationPlan?.hotels[0]?.hotel_img || [],
+          transport_by: transportPlan?.hotels[0]?.transport_by || "",
+          near_by_attractions: accommodationPlan?.hotels[0]?.near_by_attractions || [],
+          img: foodPlan?.hotels[0]?.img || [],
+          food_places: foodPlan?.hotels[0]?.food_places || [],
+        },
+      ];
+  
+      const combinedPlans = [
+        {
+          label,
+          ...tripData,
+          ...filteredCustomPlan,
+          hotels,
+        },
+      ];
+  
+      navigate("/plan-detail", { state: { data: combinedPlans } });
+  
+    } else {
+      validator.current.showMessages();
+      forceUpdate();
+    }
+  };
+  
+  
+  
+  
+
   return (
     <Modal open={open} onClose={onClose}>
       <Box
@@ -99,10 +176,13 @@ const CustomBudgetPlanModal = ({
         <FormControl fullWidth sx={{ mb: 2 }}>
           <InputLabel>Accommodation</InputLabel>
           <Select
-            value={customPlan.accommodation || ""}
-            onChange={(e) =>
-              handleCustomPlanChange("accommodation", e.target.value)
-            }
+            value={customPlan.accommodation_cost_per_person || ""}
+            onChange={(e) => {
+              const selectedKey = accommodationOptions.find(option => option.cost === e.target.value)?.label || "";
+              setSelectedAccommodation(selectedKey);
+              handleCustomPlanChange("accommodation_cost_per_person", e.target.value);
+              validator.current.showMessageFor("accommodation_cost_per_person");
+            }}
             label="Accommodation"
             sx={{
               borderRadius: "12px",
@@ -122,16 +202,26 @@ const CustomBudgetPlanModal = ({
               </MenuItem>
             ))}
           </Select>
+          <Typography color="error">
+            {validator.current.message(
+              "accommodation_cost_per_person",
+              customPlan.accommodation_cost_per_person,
+              "required"
+            )}
+          </Typography>
         </FormControl>
 
         {/* Transportation Cost Dropdown */}
         <FormControl fullWidth sx={{ mb: 2 }}>
           <InputLabel>Transportation</InputLabel>
           <Select
-            value={customPlan.transportation || ""}
-            onChange={(e) =>
-              handleCustomPlanChange("transportation", e.target.value)
-            }
+            value={customPlan.transportation_cost_per_person || ""}
+            onChange={(e) => {
+              const selectedKey = transportationOptions.find(option => option.cost === e.target.value)?.label || "";
+              setSelectedTransportation(selectedKey);
+              handleCustomPlanChange("transportation_cost_per_person", e.target.value);
+              validator.current.showMessageFor("transportation_cost_per_person");
+            }}
             label="Transportation"
             sx={{
               borderRadius: "12px",
@@ -151,14 +241,26 @@ const CustomBudgetPlanModal = ({
               </MenuItem>
             ))}
           </Select>
+          <Typography color="error">
+            {validator.current.message(
+              "transportation_cost_per_person",
+              customPlan.transportation_cost_per_person,
+              "required"
+            )}
+          </Typography>
         </FormControl>
 
         {/* Food Cost Dropdown */}
         <FormControl fullWidth sx={{ mb: 2 }}>
           <InputLabel>Food</InputLabel>
           <Select
-            value={customPlan.food || ""}
-            onChange={(e) => handleCustomPlanChange("food", e.target.value)}
+            value={customPlan.food_cost_per_person || ""}
+            onChange={(e) => {
+              const selectedKey = foodOptions.find(option => option.cost === e.target.value)?.label || "";
+              setSelectedFood(selectedKey);
+              handleCustomPlanChange("food_cost_per_person", e.target.value);
+              validator.current.showMessageFor("food_cost_per_person");
+            }}
             label="Food"
             sx={{
               borderRadius: "12px",
@@ -178,16 +280,20 @@ const CustomBudgetPlanModal = ({
               </MenuItem>
             ))}
           </Select>
+          <Typography color="error">
+            {validator.current.message("food_cost_per_person", customPlan.food_cost_per_person, "required")}
+          </Typography>
         </FormControl>
 
         {/* Activities Cost Dropdown */}
         <FormControl fullWidth sx={{ mb: 2 }}>
           <InputLabel>Activities</InputLabel>
           <Select
-            value={customPlan.activities || ""}
-            onChange={(e) =>
-              handleCustomPlanChange("activities", e.target.value)
-            }
+            value={customPlan.activities_cost_per_person || ""}
+            onChange={(e) => {
+              handleCustomPlanChange("activities_cost_per_person", e.target.value);
+              validator.current.showMessageFor("activities_cost_per_person");
+            }}
             label="Activities"
             sx={{
               borderRadius: "12px",
@@ -207,14 +313,24 @@ const CustomBudgetPlanModal = ({
               </MenuItem>
             ))}
           </Select>
+          <Typography color="error">
+            {validator.current.message(
+              "activities_cost_per_person",
+              customPlan.activities_cost_per_person,
+              "required"
+            )}
+          </Typography>
         </FormControl>
 
         {/* Other Costs Dropdown */}
         <FormControl fullWidth sx={{ mb: 2 }}>
           <InputLabel>Other Costs</InputLabel>
           <Select
-            value={customPlan.others || ""}
-            onChange={(e) => handleCustomPlanChange("others", e.target.value)}
+            value={customPlan.others_cost_per_person || ""}
+            onChange={(e) => {
+              handleCustomPlanChange("others_cost_per_person", e.target.value);
+              validator.current.showMessageFor("others_cost_per_person");
+            }}
             label="Other Costs"
             sx={{
               borderRadius: "12px",
@@ -234,6 +350,9 @@ const CustomBudgetPlanModal = ({
               </MenuItem>
             ))}
           </Select>
+          <Typography color="error">
+            {validator.current.message("others_cost_per_person", customPlan.others_cost_per_person, "required")}
+          </Typography>
         </FormControl>
 
         <Divider sx={{ my: 2 }} />
@@ -242,21 +361,22 @@ const CustomBudgetPlanModal = ({
         </Typography>
 
         <Button
-                      variant="contained"
-                      color="primary"
-                      sx={{
-                        backgroundColor: '#000',
-                        color: '#fff',
-                        borderRadius: '12px',
-                        padding: '8px 20px',
-                        textTransform: 'none',
-                        '&:hover': {
-                          backgroundColor: '#6B26BB',
-                        },
-                      }}
-                    >
-                      Next
-                    </Button>
+          variant="contained"
+          color="primary"
+          sx={{
+            backgroundColor: "#000",
+            color: "#fff",
+            borderRadius: "12px",
+            padding: "8px 20px",
+            textTransform: "none",
+            "&:hover": {
+              backgroundColor: "#6B26BB",
+            },
+          }}
+          onClick={() => handleNextClick("Customized Plan")}
+        >
+          Next
+        </Button>
       </Box>
     </Modal>
   );

@@ -3,7 +3,6 @@ import ReactSelect from "react-select";
 import { TouristService } from "../service/touristService";
 import SimpleReactValidator from "simple-react-validator";
 import Swal from "sweetalert2";
-import BudgetPlan from "./BudgetPlan";
 import Backdrop from "@mui/material/Backdrop";
 import CircularProgress from "@mui/material/CircularProgress";
 import { useNavigate } from "react-router-dom"; 
