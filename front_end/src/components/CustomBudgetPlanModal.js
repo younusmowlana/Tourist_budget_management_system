@@ -124,6 +124,8 @@ const CustomBudgetPlanModal = ({
           food_places: foodPlan?.hotels[0]?.food_places || [],
         },
       ];
+
+      const totalCost = calculateTotalCustomCost();
   
       const combinedPlans = [
         {
@@ -131,6 +133,7 @@ const CustomBudgetPlanModal = ({
           ...tripData,
           ...filteredCustomPlan,
           hotels,
+          total_cost: totalCost,
         },
       ];
   
