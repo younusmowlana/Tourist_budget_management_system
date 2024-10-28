@@ -1,6 +1,12 @@
+/* src/index.css or src/App.css */
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+
 /* Full page background */
 .background-container {
-  background-image: url('./resources/backgroundImg.png');
+  background-image: url('./resources/backgroundImg3.jpg');
   /* Replace with your background image URL */
   background-size: cover;
   background-position: center;
@@ -22,15 +28,18 @@
 
 /* Navbar styling */
 .navbar {
-  background: rgba(0, 0, 0, 0.7);
+  /* background: rgba(0, 0, 0, 0.7); */
   /* Semi-transparent background */
   padding: 1rem;
   display: flex;
   justify-content: center;
+  gap:48px;
 }
 
 .navItem {
   color: white;
+  font-weight: 600;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .navbar ul li a:hover {
@@ -41,7 +50,7 @@
 .landingContent {
   color: white;
   text-align: center;
-  margin: auto;
+  margin: 80px;
 }
 
 .landingContent h1 {
@@ -52,6 +61,18 @@
   font-size: 1.5rem;
 }
 
+.social-icon{
+  border-radius: 50px;
+  border: 1px solid #FFFFFF;
+  padding: 8px;
+  width: 30px;
+  margin: 8px;
+}
+
+.social{
+display: flex;
+justify-content: end;
+}
 
 @media (max-width: 768px) {
 
@@ -90,12 +111,19 @@
 }
 
 .LandBtmSection {
-  color: #b9c0da;
+  color: #FFFFFF;
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  bottom: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
 }
 
 .landing_text {
   max-width: 30vw;
-  color: #000;
+  color: #FFFFFF;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .landTopic {
@@ -111,11 +139,13 @@
 }
 
 .landButton {
-  margin-top: 16px;
+  margin-top: 10vh;
   border-radius: 50px;
   padding: 16px 24px;
   font-weight: 500;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  display: flex;
+  font-size: 16px;
 }
 
 
