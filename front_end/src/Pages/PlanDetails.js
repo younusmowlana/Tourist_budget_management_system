@@ -148,7 +148,7 @@ const PlanDetails = () => {
               {data[0]?.hotels[0]?.hotel_name}
             </Typography>
             <Typography variant="body2" color="textSecondary">
-              Room cost per person - ${data[0]?.accommodation_cost_per_person}
+              Room cost per day - ${data[0]?.accommodation_cost_per_person}
             </Typography>
           </Box>
 
