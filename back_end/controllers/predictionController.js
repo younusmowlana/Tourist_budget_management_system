@@ -2,6 +2,8 @@ const asyncHandler = require("express-async-handler");
 const Prediction = require("../models/Prediction");
 const TravelPlan = require("../models/TravelPlan"); 
 const axios = require("axios");
+const { error } = require("console");
+const spawn = require("child_process").spawn; 
 
 const addPrediction = asyncHandler(async (req, res) => {
   const { budget, destination, number_of_days, visitor_count } = req.body;
@@ -40,10 +42,7 @@ const addPrediction = asyncHandler(async (req, res) => {
     });
   }
 
-  console.log("budget " + budget);
-  console.log("destination " + destination);
-  console.log("number_of_days " + number_of_days);
-  console.log("visitor_count " + visitor_count);
+
 
   const predictionResult = await Prediction.create({
     budget,
@@ -53,61 +52,80 @@ const addPrediction = asyncHandler(async (req, res) => {
   });
 
   try {
-    const response = await axios.post("http://127.0.0.1:5000/", {
+    const pythonProcess = spawn("python", [
+      "./ML/main.py",
       budget,
       destination,
       number_of_days,
       visitor_count,
+    ]);
+
+    pythonProcess.stdout.on("data", async (data) => {
+      const dataString = data.toString();
+      console.log("Data Received from Python:", dataString);
+
+      try {
+        const parsedData = JSON.parse(dataString);
+
+        if (parsedData.status === "error") {
+          return res.status(400).json({
+            error: parsedData.message,
+            status: 400,
+          });
+        }
+
+        const { Budget_Friendly, Mid_Range, High_End } = parsedData;
+        const budgetPlanTypes = [];
+        
+        if (Budget_Friendly) budgetPlanTypes.push("Budget_Friendly");
+        if (Mid_Range) budgetPlanTypes.push("Mid_Range");
+        if (High_End) budgetPlanTypes.push("High_End");
+
+        const travelPlans = await TravelPlan.findOne(
+          { DesiredArea: destination },
+          { BudgetPlans: 1 }
+        );
+
+        if (!travelPlans) {
+          return res.status(404).json({
+            error: "No travel plans found for the specified destination.",
+            status: 404,
+          });
+        }
+
+        const selectedPlans = travelPlans.BudgetPlans.filter((plan) =>
+          budgetPlanTypes.includes(plan.type)
+        );
+
+        return res.status(200).json({
+          message: "Prediction added and processed successfully!",
+          predictionResponse: parsedData,
+          travelPlans: selectedPlans,
+          status: 200,
+        });
+      } catch (error) {
+        console.error("Error parsing JSON:", error);
+        return res.status(500).json({
+          error: "Failed to parse prediction response",
+          status: 500,
+        });
+      }
     });
 
-    console.log(response.data);
-
-    const { Budget_Friendly, Mid_Range, High_End } = response.data;
-
-    
-    const budgetPlanTypes = [];
-    if (Budget_Friendly) budgetPlanTypes.push("Budget_Friendly");
-    if (Mid_Range) budgetPlanTypes.push("Mid_Range");
-    if (High_End) budgetPlanTypes.push("High_End");
-
-    
-    const travelPlans = await TravelPlan.findOne(
-      { DesiredArea: destination },
-      { BudgetPlans: 1 }
-    );
-
-    if (!travelPlans) {
-      return res.status(404).json({
-        error: "No travel plans found for the specified destination.",
-        status: 404
-      });
-    }
-
-   
-    const selectedPlans = travelPlans.BudgetPlans.filter((plan) =>
-      budgetPlanTypes.includes(plan.type)
-    );
-
-    return res.status(200).json({
-      message: "Prediction added and processed successfully!",
-      predictionResponse: response.data,
-      travelPlans: selectedPlans,
-      status: 200,
+    pythonProcess.stderr.on("data", (error) => {
+      console.error("Python Error:", error.toString());
     });
 
+    pythonProcess.on("close", (code) => {
+      if (code !== 0) {
+        console.error(`Python process exited with code ${code}`);
+      }
+    });
   } catch (error) {
-    console.log(error);
-
-    if (error.response && error.response.status === 400) {
-      return res.status(400).json({
-        error: error.response.data.message || "Invalid input provided to Flask API.",
-        status: 400
-      });
-    }
-
+    console.error("Error in getPrediction function:", error);
     res.status(500).json({
       error: "Failed to process prediction",
-      status: 500
+      status: 500,
     });
   }
 });
