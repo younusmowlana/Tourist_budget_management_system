@@ -90,6 +90,7 @@ const TouristForm = () => {
   };
 
   return (
+    <div className="form-background4">
     <div className="form-container">
       <Backdrop
         sx={{ color: "#fff", zIndex: (theme) => theme.zIndex.drawer + 1 }}
@@ -205,6 +206,8 @@ const TouristForm = () => {
             </button>
           </form>
        
+    </div>
+    
     </div>
   );
 };

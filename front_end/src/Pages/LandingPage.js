@@ -25,7 +25,9 @@ const LandingPage = () => {
             <Grid container spacing={2}>
               <Grid xs={8} style={{ display: "flex", textAlign: "left" }}>
                 <div className="landing_text landTopic">
-                Welcome to Sri Lankan Budget Explorer – make your journey easy and awesome!
+                Welcome to <br />
+                Sri Lankan Budget Explorer <br />
+                - make your journey easy & awesome!
                 </div>
                 <div className="landing_text landbody"></div>
               </Grid>

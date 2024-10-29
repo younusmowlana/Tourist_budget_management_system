@@ -121,7 +121,7 @@ justify-content: end;
 }
 
 .landing_text {
-  max-width: 30vw;
+  max-width: 50vw;
   color: #FFFFFF;
   font-family: 'Montserrat', sans-serif;
 }
@@ -153,7 +153,7 @@ justify-content: end;
 
 .form-container {
   max-width: 400px;
-  margin: auto;
+  width: 100%;
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -205,4 +205,14 @@ button.submit-button {
 
 .danger {
   color: red;
+}
+
+.form-background4 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url('./resources/mountain.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
 }
