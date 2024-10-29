@@ -98,7 +98,6 @@ const TouristForm = () => {
         <CircularProgress color="inherit" />
       </Backdrop>
       
-        <>
           <h2 className="trip-section">Let's start your trip</h2>
           <form onSubmit={handleSubmit}>
             <div className="input-container">
@@ -157,12 +156,14 @@ const TouristForm = () => {
                 value={visitorCount}
                 onChange={(e) => setVisitorCount(e.target.value)}
                 placeholder="Enter visitor count"
+                min="1"
+                max="5"
               />
               <div className="danger">
                 {simpleValidator.current.message(
                   "visitorCount",
                   visitorCount,
-                  "required|numeric"
+                  "required|numeric|min:1,num|max:5,num"
                 )}
               </div>
             </div>
@@ -175,12 +176,14 @@ const TouristForm = () => {
                 value={timeStay}
                 onChange={(e) => setTimeStay(e.target.value)}
                 placeholder="Enter time of stay"
+                min="1"
+                max="5"
               />
               <div className="danger">
                 {simpleValidator.current.message(
                   "timeStay",
                   timeStay,
-                  "required|numeric"
+                  "required|numeric|min:1,num|max:5,num"
                 )}
               </div>
             </div>
@@ -201,7 +204,7 @@ const TouristForm = () => {
               Let's Go
             </button>
           </form>
-        </>
+       
     </div>
   );
 };
