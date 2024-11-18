@@ -13,7 +13,7 @@ model_food = joblib.load(save_path + r'\model_food.pkl')
 model_activities = joblib.load(save_path + r'\model_activities.pkl')
 model_others = joblib.load(save_path + r'\model_others.pkl')
 
-# Multipliers for cost estimation
+
 mid_range_multiplier = 1.5
 high_end_multiplier = 4.5
 
