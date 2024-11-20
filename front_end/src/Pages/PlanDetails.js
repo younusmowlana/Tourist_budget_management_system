@@ -20,6 +20,7 @@ import {
   LocationOn as LocationOnIcon,
 } from "@mui/icons-material";
 import { useLocation } from "react-router-dom";
+import './Tourist.css';
 
 const style = {
   position: "absolute",
@@ -94,7 +95,7 @@ const PlanDetails = () => {
               >
                 {data[0]?.label}
               </Typography>
-              <Typography variant="body2" color="textSecondary">
+              <Typography variant="body2" className="textckrthird">
                 Destination: {data[0]?.destination} | Days:{" "}
                 {data[0]?.number_of_days} | Visitor Count:{" "}
                 {data[0]?.visitor_count}
@@ -144,10 +145,10 @@ const PlanDetails = () => {
               </Grid>
             </Grid>
 
-            <Typography variant="body2" color="textSecondary">
+            <Typography variant="body2" className="textckrthird">
               {data[0]?.hotels[0]?.hotel_name}
             </Typography>
-            <Typography variant="body2" color="textSecondary">
+            <Typography variant="body2" className="textckrthird">
               Room cost per day - ${data[0]?.accommodation_cost_per_person}
             </Typography>
           </Box>
@@ -167,11 +168,11 @@ const PlanDetails = () => {
               </Grid>
             </Grid>
 
-            <Typography variant="body2" color="textSecondary">
+            <Typography variant="body2" className="textckrthird">
               Transport By - {data[0]?.hotels[0]?.transport_by}
             </Typography>
 
-            <Typography variant="body2" color="textSecondary">
+            <Typography variant="body2" className="textckrthird">
               Transport Up and Down cost - $
               {data[0]?.transportation_cost_per_person}
             </Typography>
@@ -198,17 +199,17 @@ const PlanDetails = () => {
             </Grid>
             {data[0]?.hotels[0]?.near_by_attractions.map(
               (attraction, index) => (
-                <Typography key={index} variant="body2" color="textSecondary">
+                <Typography key={index} variant="body2" className="textckrthird">
                   {attraction.name}
                 </Typography>
               )
             )}
             <br />
-            <Typography variant="body2" color="textSecondary">
+            <Typography variant="body2" className="textckrthird">
               Activities costs per person - $
               {data[0]?.activities_cost_per_person}
             </Typography>
-            <Typography variant="body2" color="textSecondary">
+            <Typography variant="body2" className="textckrthird">
               Other costs per person - ${data[0]?.others_cost_per_person}
             </Typography>
           </Box>
@@ -236,12 +237,12 @@ const PlanDetails = () => {
               </Grid>
             </Grid>
             {data[0]?.hotels[0]?.food_places.map((place, index) => (
-              <Typography key={index} variant="body2" color="textSecondary">
+              <Typography key={index} variant="body2" className="textckrthird">
                 {place}
               </Typography>
             ))}
             <br />
-            <Typography variant="body2" color="textSecondary">
+            <Typography variant="body2" className="textckrthird">
               Foods and Beverages per person - ${data[0]?.food_cost_per_person}
             </Typography>
           </Box>

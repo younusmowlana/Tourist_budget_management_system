@@ -148,7 +148,7 @@ const BudgetPlan = () => {
         </Grid>
         <Typography
           variant="body2"
-          sx={{ textAlign: "center", color: "#888", marginTop: "20px" }}
+          sx={{ textAlign: "center", color: "#5b5a5a", marginTop: "20px", fontWeight:'600' }}
         >
           Budget plan is calculated per person*
         </Typography>
